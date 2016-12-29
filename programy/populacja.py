@@ -14,17 +14,20 @@ N = 100 # cała populacja
 M = 20 # ilość z daną cechą
 p = M/N
 
-populacja1 = np.zeros(N)
+populacja1 = np.append(np.ones(M), np.zeros(N-M))
+np.random.shuffle(populacja1)
 
-licznik = M
-
-# dokładnie 20 z inną cechą
-
-while licznik > 0:
-    x = round(random.random()*(N-1)) #losujemy od 0 do N-1
-    if populacja1[x] == 0:
-        populacja1[x] = 1
-        licznik -= 1
+#==============================================================================
+# licznik = M
+# 
+# # dokładnie 20 z inną cechąmp
+# 
+# while licznik > 0:
+#     x = round(random.random()*(N-1)) #losujemy od 0 do N-1
+#     if populacja1[x] == 0:
+#         populacja1[x] = 1
+#         licznik -= 1
+#==============================================================================
         
 # losujemy czy osobnik ma daną cechę z prawdop p
 #==============================================================================

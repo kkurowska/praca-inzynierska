@@ -6,64 +6,104 @@ Created on Tue Dec 20 13:58:35 2016
 """
 
 import numpy as np
-from math import sqrt
-from scipy.stats import norm #cdf - dystybuanta
-import pickle
-import random
+from math import sqrt, floor
+from scipy.stats import norm, hypergeom as hg #cdf - dystybuanta
+import matplotlib.pyplot as plt
 
-counter = 10000 # proby monte carlo
+def countZ(n1, n2, k1, k2, variance):
+    if ((k1 == 0 and k2 == 0) or variance == 0):
+        Z = 0
+    else:
+        Z = (k1/n1 - k2/n2) / sqrt(variance)
+    return Z
+    
+#def pvalueE(x1, n1, M1, N1, x2, n2, M2, N2, Z_k, Z_x):
+    
+
+counter = 1000 # proby monte carlo
 alpha = 0.05
 
 N1 = 100 # cała populacja
-M1 = 20 # ilość z daną cechą
-n1 = 20 # probka
+M1 = 10 # ilość z daną cechą
+n1 = 60 # probka
 p1 = M1/N1
-with open('populacja1_N100_M20.pickle', 'rb') as f:
-    population1 = pickle.load(f)
+population1 = np.append(np.ones(M1), np.zeros(N1-M1))
+np.random.shuffle(population1)
     
 N2 = 100 # cała populacja
-M2 = 20 # ilość z daną cechą
-n2 = 20 # probka
+M2 = 10        # ilość z daną cechą
+n2 = 60 # probka
 p2 = M2/N2
-with open('populacja2_N100_M20.pickle', 'rb') as f:
-    population2 = pickle.load(f)
-    
-arrayZ = np.array([])
-    
-for i in range(counter):
+population2 = np.append(np.ones(M2), np.zeros(N2-M2))
+np.random.shuffle(population1)
 
-    sample1 = np.zeros(n1)
-    m = N1 - 1
-    population = population1
+vectorExactSizeZ = np.array([])    
+vectorExactSizeE = np.array([])
     
-    for i in range(n1):
-        x = round(random.random()*m) #losujemy elem z populacji
-        sample1[i] = population[x]
-        m-=1
-        population=np.delete(population, x) #usuwa wylosowany element
-    
-    k1 = np.sum(sample1)    
+for n in range(1, n2+1):
+
+    vectorZ_k = np.array([])
+    vectorpvalueE = np.array([])
         
-    sample2 = np.zeros(n2)
-    m = N2 - 1
-    population = population2
+    for i in range(counter):
     
-    for i in range(n2):
-        x = round(random.random()*m) #losujemy elem z populacji
-        sample2[i] = population[x]
-        m-=1
-        population=np.delete(population, x) #usuwa wylosowany element
+        sample1 = np.random.choice(population1, n)  
+        k1 = np.sum(sample1)    
+            
+        sample2 = np.random.choice(population2, n)   
+        k2 = np.sum(sample2)            
+        
+        variance_k = ((N1 - n)/(n*(N1 - 1)) + (N2 - n)/(n*(N2 - 1))) * ((k1 + k2)/(n + n)) * (1 - (k1 + k2)/(n + n))  
+        
+        Z_k = countZ(n, n, k1, k2, variance_k)        
+        vectorZ_k = np.append(vectorZ_k, Z_k)
+        
+        estp = (k1 + k2)/(n + n)
+        estM1 = floor(N1 * estp)
+        estM2 = floor(N2 * estp) 
+        L1 = max(0, estM1 - N1 + n)
+        L2 = max(0, estM2 - N2 + n)
+        U1 = min(n, estM1)
+        U2 = min(n, estM2)
+        
+#        vectorX1 = np.arange(L1, U1 + 1)
+#        vectorX2 = np.arange(L2, U2 + 1)
+        hg1 = hg(N1, estM1, n) 
+        hg2 = hg(N2, estM2, n)
+        
+        vectorZ_x = np.array([])
+        
+        pvalueE = 0
+        
+        for x1 in range(L1, U1 + 1):
+            h1 = hg1.pmf(x1)
+            for x2 in range(L2, U2 + 1):                     
+                variance_x = ((N1 - n)/(n*(N1 - 1)) + (N2 - n)/(n*(N2 - 1))) * ((x1 + x2)/(n + n)) * (1 - (x1 + x1)/(n + n))
+                Z_x = countZ(n, n, x1, x2, variance_x)
+                if Z_x >= Z_k:
+                    h2 = hg2.pmf(x2)
+                    pvalueE += h1 * h2
+        
+        vectorpvalueE = np.append(vectorpvalueE, pvalueE)           
     
-    k2 = np.sum(sample2)            
+    vectorpvalueZ = 2 * (1 - norm.cdf(np.abs(vectorZ_k)))
+    exactSizeZ = np.sum(vectorpvalueZ < alpha) / counter
+    vectorExactSizeZ = np.append(vectorExactSizeZ, exactSizeZ)
     
-    variance = ((N1 - n1)/(n1*(N1 - 1)) + (N2 - n2)/(n2*(N2 - 1))) * ((k1 + k2)/(n1 + n2)) * (1 - (k1 + k2)/(n1 + n2))  
-    
-    Z = (k1/n1 - k2/n2) / sqrt(variance)
-    
-    arrayZ = np.append(arrayZ, Z)
+    exactSizeE = np.sum(vectorpvalueE < alpha) / counter
+    vectorExactSizeE = np.append(vectorExactSizeE, exactSizeE)    
+        
 
-pvalue = 2 * (1 - norm.cdf(np.abs(arrayZ)))
+vectorX = np.arange(1, n2+1)
 
-exactSize = np.sum(pvalue < alpha) / counter
-
-print("exact size =", exactSize)
+fig = plt.figure()
+plt.plot(vectorX, vectorExactSizeZ)
+plt.plot(vectorX, vectorExactSizeE)
+#plt.vlines(vectorX, 0, vectorP1)
+#plt.axis([0, n, 0, maxY])
+plt.grid(True)
+plt.xlabel('$n$', fontsize=14)
+plt.ylabel('Exact size')
+title = "$p=" + str(p2) + "$"
+plt.title(title, fontsize=14)
+#plt.xticks(vectorX)
