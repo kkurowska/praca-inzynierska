@@ -39,7 +39,7 @@ M2 = 10        # ilość z daną cechą
 n2 = 60 # probka
 p2 = M2/N2
 population2 = np.append(np.ones(M2), np.zeros(N2-M2))
-np.random.shuffle(population1)
+np.random.shuffle(population2)
 
 vectorExactSizeZ = np.array([])    
 vectorExactSizeE = np.array([])
