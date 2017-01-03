@@ -12,6 +12,8 @@ import matplotlib.pyplot as plt
 def countarrayZ(n1, n2, x1, x2, variance):
     Z = np.zeros(np.shape(x1))
     b = (variance > 0) # bo inaczej wywali błąd, czy może zostać Z=0?
+    if (np.any(variance<0)):
+        print("wariancja<0!!")
     Z[b] = (x1[b]/n1 - x2[b]/n2) / np.sqrt(variance[b])
     return Z
     
@@ -67,8 +69,11 @@ for n in range(1, n2+1):
         arrayH = arrayH1 * arrayH2
         
         variance = ((N1 - n1)/(n1*(N1 - 1)) + (N2 - n)/(n*(N2 - 1))) * ((arrayK1 + arrayK2)/(n1 + n)) * (1 - (arrayK1 + arrayK1)/(n1 + n))
+      #  Z = countarrayZ(n1, n, arrayK1, arrayK2, variance)
         Z = countarrayZ(n1, n, arrayK1, arrayK2, variance)
         bZ = np.abs(Z) > quantile # indykator
+        b0 = (variance == 0) #w tym przypadku porownujemy estp1 i estp2
+        bZ[b0] = (arrayK1[b0]/n1 != arrayK2[b0]/n)
         powerZ = np.sum(arrayH[bZ])
         arrayPowerZ[i, n-1] = powerZ
 
@@ -93,6 +98,8 @@ for n in range(1, n2+1):
    
         Zb = countarrayZ(n1, n, arrayX1, arrayX2, varianceb)
         bZb = np.abs(Zb) > quantile # indykator
+        bb0 = (varianceb == 0) #w tym przypadku porownujemy estp1 i estp2
+        bZb[bb0] = (arrayX1[bb0]/n1 != arrayX2[bb0]/n)
         powerZb = np.sum(arrayB[bZb])
         arrayPowerZb[i, n-1] = powerZb
 

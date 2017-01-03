@@ -11,8 +11,10 @@ from scipy.stats import norm, hypergeom as hg
 import matplotlib.pyplot as plt
 
 def countZ(n1, n2, k1, k2, variance):
-    if (variance <= 0): # czy mogę tak to robić?
+    if (variance == 0): # czy mogę tak to robić?
         Z = 0
+    elif(variance < 0):
+        print("wariancja<0!!, pojedyncze")  
     else:
         Z = (k1/n1 - k2/n2) / sqrt(variance)
     return Z
@@ -20,6 +22,8 @@ def countZ(n1, n2, k1, k2, variance):
 def countarrayZ(n1, n2, x1, x2, variance):
     Z = np.zeros(np.shape(x1))
     b = (variance > 0) # bo inaczej wywali błąd, czy może zostać Z=0?
+    if (np.any(variance<0)):
+        print("wariancja<0!!, macierz")
     Z[b] = (x1[b]/n1 - x2[b]/n2) / np.sqrt(variance[b])
     return Z
       
@@ -87,7 +91,7 @@ for n in range(1, n2+1):
         
         vectorZ_x = np.array([])
         
-        variance_x = ((N1 - n1)/(n1*(N1 - 1)) + (N2 - n)/(n*(N2 - 1))) * ((arrayX1 + arrayX2)/(n1 + n)) * (1 - (arrayX1 + arrayX1)/(n1 + n))
+        variance_x = ((N1 - n1)/(n1*(N1 - 1)) + (N2 - n)/(n*(N2 - 1))) * ((arrayX1 + arrayX2)/(n1 + n)) * (1 - (arrayX1 + arrayX2)/(n1 + n))
         Z_x = countarrayZ(n1, n, arrayX1, arrayX2, variance_x)
         bZxZk = Z_x >= Z_k # indykator
         pvalueE = np.sum(arrayH[bZxZk])

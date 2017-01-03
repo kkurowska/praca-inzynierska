@@ -11,8 +11,10 @@ from scipy.stats import norm, hypergeom as hg
 import matplotlib.pyplot as plt
 
 def countZ(p1, p2, variance):
-    if (variance <= 0): # czy mogę tak to robić?
+    if (variance == 0): # czy mogę tak to robić?
         Z = 0
+    elif(variance < 0):
+        print("wariancja<0!!")  
     else:
         Z = (p1 - p2) / sqrt(variance)
     return Z
