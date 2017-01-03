@@ -1,4 +1,4 @@
-\documentclass[twoside,a4paper]{book}
+\documentclass[twoside,a4paper,12pt]{book}
 
 \usepackage{polski}
 \usepackage[utf8]{inputenc}
@@ -8,10 +8,13 @@
 
 \begin{document}
 	
-\chapter{Wstęp}
-Porównanie rozkładu dwumianowego z rozkładem hipergeometrycznym.
+\chapter*{Wstęp}
+Już na początku XVIII wieku ukazały się pierwsze prace związane z rozkładem dwumianowym (Bernoulliego). Na przestrzeni tych kilku wieków teoria rachunku prawdopodobieństwa i statystyki znacząco się rozwinęła. W przypadku dyskretnym, najczęściej testowane są proporcje populacji. Albo czy dana próbka ma jakąś konkretną proporcję, albo czy dwie próbki mają tą samą. Obecnie znana jest powszechnie teoria dotycząca testowania hipotez, gdy populacja jest nieskończona (a raczej na tyle duża, że możemy ją w przybliżeniu uznać za nieskończoną). Wtedy proporcja to paramet $p$ rozkładu dwumianowego. Jednak przypadek nieskończonej populacji nie wyczerpuje tematu testowania proporcji. Gdy populacja jest bardzo mała, albo gdy próbka jest niewiele mniejsza od całej populacji rozkład dwumianowy nie jest dobrym modelem. Natomiast dobrze taką sytuację modeluje rozkład hipergeometryczny, ponieważ uwzględnia on rozmiar populacji. Załóżmy, że $N$ będzie rozmiarem populacji, $n$ rozmiarem próbki, a $M$ ilością osobników w populacji z daną cechą (której proporcje będziemy testować). Wtedy zmienna losowa $X$ z rozkładu hipergeometrycznego określa ilość osobników z daną cechą w próbce. Funkcja prawdopodobieństwa określona jest wzorem
+\begin{equation}
+h(k;n,M,N) = P(X=k) = \frac{\binom{M}{k} \binom{N-M}{n-k}}{\binom{N}{n}},
+\end{equation}
+gdzie $L\leq k\leq U$, $L=\max\{0,M-N+n\}$ i $U=\min\{n,M\}$.
 
-Już od dawna wszystkim znany jest rozkład dwumianowy, inaczej Bernoulliego. Modeluje on sytuację, gdy mamy $n$ prób i prawdopodobieństwo sukcesu $p$. Wtedy zmienna z rozkładu dwumianowego to liczba sukcesu w $n$ próbach 
 
 \bibliographystyle{unsrt}
 \bibliography{dokument_KK}
