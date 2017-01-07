@@ -1,7 +1,7 @@
 % Encoding: UTF-8
 
 @Article{Edgeworth1918,
-  author  = {Edgeworth, F. Y.},
+  author  = {F. Y. Edgeworth},
   title   = {On the Value of a Mean as Calculated from a Sample},
   journal = {Journal of the Royal Statistical Society},
   year    = {1918},
@@ -12,7 +12,7 @@
 }
 
 @Article{K.Krishnamoorthy2002,
-  author  = {Krishnamoorthy, K. and Thomson, Jessica},
+  author  = {K. Krishnamoorthy, J. Thomson},
   title   = {Hypothesis Testing about Proportions in Two Finite Populations},
   journal = {The American Statistician},
   year    = {2002},
@@ -22,7 +22,7 @@
 }
 
 @Article{Buonaccorsi1987,
-  author  = {Buonaccorsi, J. P.},
+  author  = {J. P. Buonaccorsi},
   title   = {A Note on Confidence Intervals for Proportions in Finite Populations},
   journal = {The American Statistician},
   year    = {1987},

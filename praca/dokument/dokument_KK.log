@@ -1,14 +1,18 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.10.24)  7 JAN 2017 14:30
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.10.24)  7 JAN 2017 23:49
 entering extended mode
 **./dokument_KK.tex
 (dokument_KK.tex
 LaTeX2e <2016/03/31> patch level 3
 Babel <3.9r> and hyphenation patterns for 75 language(s) loaded.
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\book.cls"
-Document Class: book 2014/09/29 v1.4h Standard LaTeX document class
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\bk12.clo"
-File: bk12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+(mwbk.cls
+Document Class: mwbk 2002/05/12 v0.55 A LaTeX document class (MW)
+*** Beta version. Formatting may change
+*** in future versions of this class.
+\l@nohyphenation=\language75
+("C:\Program Files\MiKTeX 2.9\tex\latex\mwcls\mwbk12.clo"
+File: mwbk12.clo 2009/09/27 v0.74 A document class size option (MW)
 )
+\@parindent=\dimen102
 \c@part=\count79
 \c@chapter=\count80
 \c@section=\count81
@@ -20,13 +24,12 @@ File: bk12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 \c@table=\count87
 \abovecaptionskip=\skip41
 \belowcaptionskip=\skip42
-\bibindent=\dimen102
+\bibindent=\dimen103
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\polski\polski.sty"
 Package: polski 2008/02/24 v1.3.3 Polish language package
 
 Document language package `polski' v1.3.3 <2008/02/24>
-\l@nohyphenation=\language75
    Switching to Polish text encoding and Polish maths fonts.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\ot4enc.def"
 File: ot4enc.def 2016/06/19 v1.99m Standard LaTeX file
@@ -396,11 +399,11 @@ Package: amstext 2000/06/29 v2.01 AMS text
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsgen.sty"
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks16
-\ex@=\dimen103
+\ex@=\dimen104
 ))
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsbsy.sty"
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen104
+\pmbraise@=\dimen105
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsopn.sty"
 Package: amsopn 2016/03/08 v2.02 operator names
@@ -417,7 +420,7 @@ LaTeX Info: Redefining \dots on input line 397.
 LaTeX Info: Redefining \cdots on input line 518.
 \Mathstrutbox@=\box26
 \strutbox@=\box27
-\big@size=\dimen105
+\big@size=\dimen106
 LaTeX Font Info:    Redeclaring font encoding OML on input line 634.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 635.
 \macc@depth=\count93
@@ -430,12 +433,12 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 635.
 \column@=\count98
 \maxfields@=\count99
 \andhelp@=\toks18
-\eqnshift@=\dimen106
-\alignsep@=\dimen107
-\tagshift@=\dimen108
-\tagwidth@=\dimen109
-\totwidth@=\dimen110
-\lineht@=\dimen111
+\eqnshift@=\dimen107
+\alignsep@=\dimen108
+\tagshift@=\dimen109
+\tagwidth@=\dimen110
+\totwidth@=\dimen111
+\lineht@=\dimen112
 \@envbody=\toks19
 \multlinegap=\skip44
 \multlinetaggap=\skip45
@@ -504,8 +507,8 @@ Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 Package: calc 2014/10/28 v4.3 Infix arithmetic (KKT,FJ)
 \calc@Acount=\count101
 \calc@Bcount=\count102
-\calc@Adimen=\dimen112
-\calc@Bdimen=\dimen113
+\calc@Adimen=\dimen113
+\calc@Bdimen=\dimen114
 \calc@Askip=\skip49
 \calc@Bskip=\skip50
 LaTeX Info: Redefining \setlength on input line 80.
@@ -540,11 +543,11 @@ File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 99.
 )
-\Gin@req@height=\dimen114
-\Gin@req@width=\dimen115
+\Gin@req@height=\dimen115
+\Gin@req@width=\dimen116
 )
-\AM@pagewidth=\dimen116
-\AM@pageheight=\dimen117
+\AM@pagewidth=\dimen117
+\AM@pageheight=\dimen118
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\pdfpages\pppdftex.def"
 File: pppdftex.def 2016/12/11 v0.5g Pdfpages driver for pdfTeX (AM)
@@ -561,17 +564,26 @@ Package: caption 2016/02/21 v3.3-144 Customizing captions (AR)
 ("C:\Program Files\MiKTeX 2.9\tex\latex\caption\caption3.sty"
 Package: caption3 2016/05/22 v1.7-166 caption3 kernel (AR)
 Package caption3 Info: TeX engine: e-TeX on input line 67.
-\captionmargin=\dimen118
-\captionmargin@=\dimen119
-\captionwidth=\dimen120
-\caption@tempdima=\dimen121
-\caption@indent=\dimen122
-\caption@parindent=\dimen123
-\caption@hangindent=\dimen124
+\captionmargin=\dimen119
+\captionmargin@=\dimen120
+\captionwidth=\dimen121
+\caption@tempdima=\dimen122
+\caption@indent=\dimen123
+\caption@parindent=\dimen124
+\caption@hangindent=\dimen125
+Package caption Info: Unknown document class (or package),
+(caption)             standard defaults will be used.
 )
+
+Package caption Warning: Unsupported document class (or package) detected,
+(caption)                usage of the caption package is not recommended.
+See the caption package documentation for explanation.
+
+Package caption Info: \@makecaption = \long macro:#1#2->\addvspace \abovecaptio
+nskip \bgroup \centeredlast #1.\enspace #2\par \egroup \vskip \belowcaptionskip
+ .
 \c@ContinuedFloat=\count105
-)
-("C:\Program Files\MiKTeX 2.9\tex\latex\caption\subcaption.sty"
+) ("C:\Program Files\MiKTeX 2.9\tex\latex\caption\subcaption.sty"
 Package: subcaption 2016/05/22 v1.1-161 Sub-captions (AR)
 \c@subfigure=\count106
 \c@subtable=\count107
@@ -592,14 +604,14 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \Gm@cnth=\count108
 \Gm@cntv=\count109
 \c@Gm@tempcnt=\count110
-\Gm@bindingoffset=\dimen125
-\Gm@wd@mp=\dimen126
-\Gm@odd@mp=\dimen127
-\Gm@even@mp=\dimen128
-\Gm@layoutwidth=\dimen129
-\Gm@layoutheight=\dimen130
-\Gm@layouthoffset=\dimen131
-\Gm@layoutvoffset=\dimen132
+\Gm@bindingoffset=\dimen126
+\Gm@wd@mp=\dimen127
+\Gm@odd@mp=\dimen128
+\Gm@even@mp=\dimen129
+\Gm@layoutwidth=\dimen130
+\Gm@layoutheight=\dimen131
+\Gm@layouthoffset=\dimen132
+\Gm@layoutvoffset=\dimen133
 \Gm@dimlist=\toks30
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\geometry\geometry.cfg"))
@@ -617,14 +629,14 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 * \textheight=702.78308pt
 * \oddsidemargin=-1.1381pt
 * \evensidemargin=-1.1381pt
-* \topmargin=-33.0119pt
-* \headheight=12.0pt
-* \headsep=19.8738pt
+* \topmargin=-32.1381pt
+* \headheight=14.5pt
+* \headsep=16.5pt
 * \topskip=12.0pt
-* \footskip=30.0pt
-* \marginparwidth=88.0pt
-* \marginparsep=7.0pt
-* \columnsep=10.0pt
+* \footskip=29.0pt
+* \marginparwidth=0.0pt
+* \marginparsep=0.0pt
+* \columnsep=25.6802pt
 * \skip\footins=10.8pt plus 4.0pt minus 2.0pt
 * \hoffset=0.0pt
 * \voffset=0.0pt
@@ -636,34 +648,34 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 
-(dokument_KK.aux (wstep.aux) (rozdzial1.aux))
+(dokument_KK.aux (wstep.aux) (rozdzial1.aux) (rozdzial2.aux))
 \openout1 = `dokument_KK.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for OT4/cmr/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for OT4/cmr/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
 
 ("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count111
-\scratchdimen=\dimen133
+\scratchdimen=\dimen134
 \scratchbox=\box30
 \nofMPsegments=\count112
 \nofMParguments=\count113
 \everyMPshowfont=\toks31
 \MPscratchCnt=\count114
-\MPscratchDim=\dimen134
+\MPscratchDim=\dimen135
 \MPnumerator=\count115
 \makeMPintoPDFobject=\count116
 \everyMPtoPDFconversion=\toks32
@@ -720,8 +732,20 @@ Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 )
 Package caption Info: Begin \AtBeginDocument code.
-Package caption Info: End \AtBeginDocument code.
+Package caption Info: Incompatible package detected (regarding \@caption).
+(caption)             \@caption = \long macro:#1[#2]#3->\par \addcontentsline {
+\csname ext@#1\endcsname }{#1}{\protect \numberline {\csname the#1\endcsname .}
+{\ignorespaces #2}}\begingroup \@parboxrestore \if@minipage \@setminipage \fi \
+captionfont \@makecaption {\csname fnum@#1\endcsname }{\ignorespaces #3}\par \e
+ndgroup .
 
+
+Package caption Warning: Forced redefinition of \caption since the
+(caption)                unsupported(!) package option `compatibility=false'
+(caption)                was given.
+See the caption package documentation for explanation.
+
+Package caption Info: End \AtBeginDocument code.
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -738,14 +762,14 @@ Package caption Info: End \AtBeginDocument code.
 * \textheight=702.78308pt
 * \oddsidemargin=-1.1381pt
 * \evensidemargin=-1.1381pt
-* \topmargin=-33.0119pt
-* \headheight=12.0pt
-* \headsep=19.8738pt
+* \topmargin=-32.1381pt
+* \headheight=14.5pt
+* \headsep=16.5pt
 * \topskip=12.0pt
-* \footskip=30.0pt
-* \marginparwidth=88.0pt
-* \marginparsep=7.0pt
-* \columnsep=10.0pt
+* \footskip=29.0pt
+* \marginparwidth=0.0pt
+* \marginparsep=0.0pt
+* \columnsep=25.6802pt
 * \skip\footins=10.8pt plus 4.0pt minus 2.0pt
 * \hoffset=0.0pt
 * \voffset=0.0pt
@@ -759,37 +783,37 @@ Package caption Info: End \AtBeginDocument code.
 <StronaTytulowa.pdf, id=1, 597.50829pt x 845.0471pt>
 File: StronaTytulowa.pdf Graphic file (type pdf)
  <use StronaTytulowa.pdf>
-Package pdftex.def Info: StronaTytulowa.pdf used on input line 43.
+Package pdftex.def Info: StronaTytulowa.pdf used on input line 46.
 (pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
 File: StronaTytulowa.pdf Graphic file (type pdf)
 
 <use StronaTytulowa.pdf>
-Package pdftex.def Info: StronaTytulowa.pdf used on input line 43.
+Package pdftex.def Info: StronaTytulowa.pdf used on input line 46.
 (pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
 
 <StronaTytulowa.pdf, id=4, page=1, 597.50829pt x 845.0471pt>
 File: StronaTytulowa.pdf Graphic file (type pdf)
 
 <use StronaTytulowa.pdf, page 1>
-Package pdftex.def Info: StronaTytulowa.pdf, page1 used on input line 43.
+Package pdftex.def Info: StronaTytulowa.pdf, page1 used on input line 46.
 (pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
 File: StronaTytulowa.pdf Graphic file (type pdf)
  <use StronaTytulowa.pdf, page 1>
-Package pdftex.def Info: StronaTytulowa.pdf, page1 used on input line 43.
+Package pdftex.def Info: StronaTytulowa.pdf, page1 used on input line 46.
 (pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
 File: StronaTytulowa.pdf Graphic file (type pdf)
 
 <use StronaTytulowa.pdf, page 1>
-Package pdftex.def Info: StronaTytulowa.pdf, page1 used on input line 43.
+Package pdftex.def Info: StronaTytulowa.pdf, page1 used on input line 46.
 (pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
 File: StronaTytulowa.pdf Graphic file (type pdf)
  <use StronaTytulowa.pdf, page 1>
-Package pdftex.def Info: StronaTytulowa.pdf, page1 used on input line 43.
+Package pdftex.def Info: StronaTytulowa.pdf, page1 used on input line 46.
 (pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
 File: StronaTytulowa.pdf Graphic file (type pdf)
 
 <use StronaTytulowa.pdf, page 1>
-Package pdftex.def Info: StronaTytulowa.pdf, page1 used on input line 43.
+Package pdftex.def Info: StronaTytulowa.pdf, page1 used on input line 46.
 (pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
  [1
 
@@ -800,65 +824,65 @@ Package pdftex.def Info: StronaTytulowa.pdf, page1 used on input line 43.
 File: StronaTytulowa_ang.pdf Graphic file (type pdf)
 
 <use StronaTytulowa_ang.pdf>
-Package pdftex.def Info: StronaTytulowa_ang.pdf used on input line 44.
+Package pdftex.def Info: StronaTytulowa_ang.pdf used on input line 47.
 (pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
 File: StronaTytulowa_ang.pdf Graphic file (type pdf)
  <use StronaTytulowa_ang.pdf>
-Package pdftex.def Info: StronaTytulowa_ang.pdf used on input line 44.
+Package pdftex.def Info: StronaTytulowa_ang.pdf used on input line 47.
 (pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
 
 <StronaTytulowa_ang.pdf, id=44, page=1, 597.50829pt x 845.0471pt>
 File: StronaTytulowa_ang.pdf Graphic file (type pdf)
 
 <use StronaTytulowa_ang.pdf, page 1>
-Package pdftex.def Info: StronaTytulowa_ang.pdf, page1 used on input line 44.
+Package pdftex.def Info: StronaTytulowa_ang.pdf, page1 used on input line 47.
 (pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
 File: StronaTytulowa_ang.pdf Graphic file (type pdf)
  <use StronaTytulowa_ang.pdf, page 1>
-Package pdftex.def Info: StronaTytulowa_ang.pdf, page1 used on input line 44.
+Package pdftex.def Info: StronaTytulowa_ang.pdf, page1 used on input line 47.
 (pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
 File: StronaTytulowa_ang.pdf Graphic file (type pdf)
 
 <use StronaTytulowa_ang.pdf, page 1>
-Package pdftex.def Info: StronaTytulowa_ang.pdf, page1 used on input line 44.
+Package pdftex.def Info: StronaTytulowa_ang.pdf, page1 used on input line 47.
 (pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
 File: StronaTytulowa_ang.pdf Graphic file (type pdf)
  <use StronaTytulowa_ang.pdf, page 1>
-Package pdftex.def Info: StronaTytulowa_ang.pdf, page1 used on input line 44.
+Package pdftex.def Info: StronaTytulowa_ang.pdf, page1 used on input line 47.
 (pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
 File: StronaTytulowa_ang.pdf Graphic file (type pdf)
 
 <use StronaTytulowa_ang.pdf, page 1>
-Package pdftex.def Info: StronaTytulowa_ang.pdf, page1 used on input line 44.
+Package pdftex.def Info: StronaTytulowa_ang.pdf, page1 used on input line 47.
 (pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
  [2 <./StronaTytulowa_ang.pdf>]
 (dokument_KK.toc
-LaTeX Font Info:    Try loading font information for OML+plm on input line 3.
+LaTeX Font Info:    Try loading font information for OML+plm on input line 1.
  ("C:\Program Files\MiKTeX 2.9\tex\latex\polski\omlplm.fd"
 File: omlplm.fd 2008/02/24 v1.2.1 Font defs for fonts PL (MW)
 )
-LaTeX Font Info:    Try loading font information for OMS+plsy on input line 3.
+LaTeX Font Info:    Try loading font information for OMS+plsy on input line 1.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\polski\omsplsy.fd"
 File: omsplsy.fd 2008/02/24 v1.2.1 Font defs for fonts PL (MW)
 )
-LaTeX Font Info:    Try loading font information for OMX+plex on input line 3.
+LaTeX Font Info:    Try loading font information for OMX+plex on input line 1.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\polski\omxplex.fd"
 File: omxplex.fd 2008/02/24 v1.2.1 Font defs for fonts PL (MW)
 )
 LaTeX Font Info:    External font `plex10' loaded for size
-(Font)              <12> on input line 3.
+(Font)              <10.95> on input line 1.
 LaTeX Font Info:    External font `plex10' loaded for size
-(Font)              <8> on input line 3.
+(Font)              <8> on input line 1.
 LaTeX Font Info:    External font `plex10' loaded for size
-(Font)              <6> on input line 3.
-LaTeX Font Info:    Try loading font information for U+msa on input line 3.
+(Font)              <6> on input line 1.
+LaTeX Font Info:    Try loading font information for U+msa on input line 1.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 3.
+LaTeX Font Info:    Try loading font information for U+msb on input line 1.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -876,163 +900,171 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 
 ]
- 0.
-[5] <b_pmf10.png, id=87, 399.4925pt x 288.07625pt>
-File: b_pmf10.png Graphic file (type png)
- <use b_pmf10.png>
-Package pdftex.def Info: b_pmf10.png used on input line 18.
-(pdftex.def)             Requested size: 204.85846pt x 147.72574pt.
-
-<hg_pmf10.png, id=89, 399.4925pt x 288.07625pt>
-File: hg_pmf10.png Graphic file (type png)
- <use hg_pmf10.png>
-Package pdftex.def Info: hg_pmf10.png used on input line 18.
-(pdftex.def)             Requested size: 204.85846pt x 147.72574pt.
-
-Overfull \hbox (2.61108pt too wide) in paragraph at lines 18--19
-[]$[]$ $[]$
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 18--19
-
- []
-
-<b_pmf17.png, id=90, 392.46625pt x 288.07625pt>
-File: b_pmf17.png Graphic file (type png)
- <use b_pmf17.png>
-Package pdftex.def Info: b_pmf17.png used on input line 23.
-(pdftex.def)             Requested size: 204.85846pt x 150.37193pt.
-
-<hg_pmf17.png, id=91, 392.46625pt x 288.07625pt>
-File: hg_pmf17.png Graphic file (type png)
- <use hg_pmf17.png>
-Package pdftex.def Info: hg_pmf17.png used on input line 23.
-(pdftex.def)             Requested size: 204.85846pt x 150.37193pt.
-
-Overfull \hbox (2.61108pt too wide) in paragraph at lines 23--24
-[]$[]$ $[]$
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 23--24
-
- []
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<b_pmf20.png, id=92, 399.4925pt x 288.07625pt>
-File: b_pmf20.png Graphic file (type png)
- <use b_pmf20.png>
-Package pdftex.def Info: b_pmf20.png used on input line 28.
-(pdftex.def)             Requested size: 204.85846pt x 147.72574pt.
-
-<hg_pmf20.png, id=93, 399.4925pt x 288.07625pt>
-File: hg_pmf20.png Graphic file (type png)
- <use hg_pmf20.png>
-Package pdftex.def Info: hg_pmf20.png used on input line 28.
-(pdftex.def)             Requested size: 204.85846pt x 147.72574pt.
-
-Overfull \hbox (2.61108pt too wide) in paragraph at lines 28--29
-[]$[]$ $[]$
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 28--29
-
- []
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[6 <./b_pmf10.png> <./hg_pmf10.png>]
-<b_var.png, id=100, 399.4925pt x 288.07625pt>
-File: b_var.png Graphic file (type png)
- <use b_var.png>
-Package pdftex.def Info: b_var.png used on input line 37.
-(pdftex.def)             Requested size: 204.85846pt x 147.72574pt.
-
-<hg_var.png, id=101, 399.4925pt x 288.07625pt>
-File: hg_var.png Graphic file (type png)
- <use hg_var.png>
-Package pdftex.def Info: hg_var.png used on input line 37.
-(pdftex.def)             Requested size: 204.85846pt x 147.72574pt.
-
-Overfull \hbox (2.61108pt too wide) in paragraph at lines 37--38
-[]$[]$ $[]$
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 37--38
-
- []
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-) [7 <./b_pmf17.png> <./hg_pmf17.png> <./b_pmf20.png> <./hg_pmf20.png>]
-[8 <./b_var.png> <./hg_var.png>]
+LaTeX Font Info:    External font `plex10' loaded for size
+(Font)              <12> on input line 5.
+) [5]
 \openout2 = `rozdzial1.aux'.
 
- (rozdzial1.tex
- 1.
+ (rozdzial1.tex [6
+
+
+
+]
+Rozdzia\PlPrIeC {\l } 1.
+
+Overfull \hbox (16.21974pt too wide) in paragraph at lines 7--8
+[]\OT4/cmr/m/n/12 Tymczasem do-brze ta-k¡ sy-tu-acj¦ mo-de-lu-je roz-kªad hi-pe
+r-ge-ome-trycz-ny, po-nie-wa» uwzgl¦d-
+ []
+
+[7] <b_pmf10.png, id=95, 399.4925pt x 288.07625pt>
+File: b_pmf10.png Graphic file (type png)
+ <use b_pmf10.png>
+Package pdftex.def Info: b_pmf10.png used on input line 19.
+(pdftex.def)             Requested size: 204.85846pt x 147.72574pt.
+
+<hg_pmf10.png, id=97, 399.4925pt x 288.07625pt>
+File: hg_pmf10.png Graphic file (type png)
+ <use hg_pmf10.png>
+Package pdftex.def Info: hg_pmf10.png used on input line 19.
+(pdftex.def)             Requested size: 204.85846pt x 147.72574pt.
+
+Overfull \hbox (2.61108pt too wide) in paragraph at lines 19--20
+[]$[]$ $[]$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 19--20
+
+ []
+
+<b_pmf17.png, id=98, 392.46625pt x 288.07625pt>
+File: b_pmf17.png Graphic file (type png)
+ <use b_pmf17.png>
+Package pdftex.def Info: b_pmf17.png used on input line 24.
+(pdftex.def)             Requested size: 204.85846pt x 150.37193pt.
+
+<hg_pmf17.png, id=99, 392.46625pt x 288.07625pt>
+File: hg_pmf17.png Graphic file (type png)
+ <use hg_pmf17.png>
+Package pdftex.def Info: hg_pmf17.png used on input line 24.
+(pdftex.def)             Requested size: 204.85846pt x 150.37193pt.
+
+Overfull \hbox (2.61108pt too wide) in paragraph at lines 24--25
+[]$[]$ $[]$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 24--25
+
+ []
+
+<b_pmf20.png, id=100, 399.4925pt x 288.07625pt>
+File: b_pmf20.png Graphic file (type png)
+ <use b_pmf20.png>
+Package pdftex.def Info: b_pmf20.png used on input line 29.
+(pdftex.def)             Requested size: 204.85846pt x 147.72574pt.
+
+<hg_pmf20.png, id=101, 399.4925pt x 288.07625pt>
+File: hg_pmf20.png Graphic file (type png)
+ <use hg_pmf20.png>
+Package pdftex.def Info: hg_pmf20.png used on input line 29.
+(pdftex.def)             Requested size: 204.85846pt x 147.72574pt.
+
+Overfull \hbox (2.61108pt too wide) in paragraph at lines 29--30
+[]$[]$ $[]$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 29--30
+
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[8 <./b_pmf10.png> <./hg_pmf10.png> <./b_pmf17.png> <./hg_pmf17.png>]
+<b_var.png, id=110, 399.4925pt x 288.07625pt>
+File: b_var.png Graphic file (type png)
+ <use b_var.png>
+Package pdftex.def Info: b_var.png used on input line 38.
+(pdftex.def)             Requested size: 204.85846pt x 147.72574pt.
+
+<hg_var.png, id=111, 399.4925pt x 288.07625pt>
+File: hg_var.png Graphic file (type png)
+ <use hg_var.png>
+Package pdftex.def Info: hg_var.png used on input line 38.
+(pdftex.def)             Requested size: 204.85846pt x 147.72574pt.
+
+Overfull \hbox (2.61108pt too wide) in paragraph at lines 38--39
+[]$[]$ $[]$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 38--39
+
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+) [9 <./b_pmf20.png> <./hg_pmf20.png>] [10 <./b_var.png> <./hg_var.png>]
+\openout2 = `rozdzial2.aux'.
+
+
+(rozdzial2.tex
+Rozdzia\PlPrIeC {\l } 2.
 LaTeX Font Info:    Try loading font information for U+dsrom on input line 35.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\doublestroke\udsrom.fd"
 File: Udsrom.fd 1995/08/01 v0.1 Double stroke roman font definitions
-) [9
+) [11
 
 
 
-] [10]
-Overfull \hbox (4.73271pt too wide) in paragraph at lines 69--70
-\OT4/cmr/m/n/12 wi¦c $\OML/plm/m/it/12 X[]$ \OT4/cmr/m/n/12 i $\OML/plm/m/it/12
- X[]$ \OT4/cmr/m/n/12 s¡ nie-za-le»-ny-mi zmien-ny-mi lo-so-wy-mi o roz-kªa-dzi
-e Ber-no-ul-le-go $\OML/plm/m/it/12 X[] \OMS/plsy/m/n/12  \OML/plm/m/it/12 B\O
-T4/cmr/m/n/12 (\OML/plm/m/it/12 n[]; p[]\OT4/cmr/m/n/12 )$,
- []
-
-) [11] [12
+] [12])
+[13] [14
 
 
 ] (dokument_KK.lof)
 \tf@lof=\write4
 \openout4 = `dokument_KK.lof'.
 
- (dokument_KK.bbl [13] [14
+ (dokument_KK.bbl [15] [16
 
-]) [15] (dokument_KK.aux (wstep.aux) (rozdzial1.aux)) ) 
+]) [17] (dokument_KK.aux
+(wstep.aux) (rozdzial1.aux) (rozdzial2.aux)) ) 
 Here is how much of TeX's memory you used:
- 6004 strings out of 493334
- 85325 string characters out of 3139251
- 166282 words of memory out of 3000000
- 9370 multiletter control sequences out of 15000+200000
- 13237 words of font info for 42 fonts, out of 3000000 for 9000
+ 6130 strings out of 493334
+ 87079 string characters out of 3139251
+ 167712 words of memory out of 3000000
+ 9487 multiletter control sequences out of 15000+200000
+ 13366 words of font info for 45 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 40i,18n,43p,1691b,490s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files/MiKTeX
- 2.9/fonts/enc/dvips/pl/plit.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/p
-l/plmi.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/pl/plrm.enc}{C:/Program
- Files/MiKTeX 2.9/fonts/enc/dvips/pl/plms.enc}{C:/Program Files/MiKTeX 2.9/font
-s/enc/dvips/pl/plme.enc}<C:/Program Files/MiKTeX 2.9/fonts/type1/public/doubles
-troke/dsrom12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/fpl/fplrc8a.p
-fb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/fpl/fplrij8a.pfb><C:/Program
- Files/MiKTeX 2.9/fonts/type1/public/pl/plbx12.pfb><C:/Program Files/MiKTeX 2.9
-/fonts/type1/public/pl/plex10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publ
-ic/pl/plmi12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/pl/plmi6.pfb><
-C:/Program Files/MiKTeX 2.9/fonts/type1/public/pl/plmi8.pfb><C:/Program Files/M
-iKTeX 2.9/fonts/type1/public/pl/plr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
-pe1/public/pl/plr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/pl/plr6
-.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/pl/plr8.pfb><C:/Program Fi
-les/MiKTeX 2.9/fonts/type1/public/pl/plsl12.pfb><C:/Program Files/MiKTeX 2.9/fo
-nts/type1/public/pl/plsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/
-pl/plsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/pl/plti12.pfb><C:/
-Program Files/MiKTeX 2.9/fonts/type1/urw/palatino/uplb8a.pfb><C:/Program Files/
-MiKTeX 2.9/fonts/type1/urw/palatino/uplr8a.pfb><C:/Program Files/MiKTeX 2.9/fon
-ts/type1/urw/palatino/uplri8a.pfb>
-Output written on dokument_KK.pdf (15 pages, 297851 bytes).
+ 40i,18n,43p,1695b,469s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Program Files/MiKTeX 2.9/font
+s/enc/dvips/pl/plmi.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/pl/plrm.en
+c}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/pl/plit.enc}{C:/Program Files/Mi
+KTeX 2.9/fonts/enc/dvips/pl/plms.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvi
+ps/pl/plme.enc}<C:/Program Files/MiKTeX 2.9/fonts/type1/public/doublestroke/dsr
+om12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/fpl/fplrc8a.pfb><C:/Pr
+ogram Files/MiKTeX 2.9/fonts/type1/public/fpl/fplrij8a.pfb><C:/Program Files/Mi
+KTeX 2.9/fonts/type1/public/pl/plbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
+pe1/public/pl/plbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/pl/ple
+x10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/pl/plmi10.pfb><C:/Progr
+am Files/MiKTeX 2.9/fonts/type1/public/pl/plmi12.pfb><C:/Program Files/MiKTeX 2
+.9/fonts/type1/public/pl/plmi6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pub
+lic/pl/plmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/pl/plr10.pfb><
+C:/Program Files/MiKTeX 2.9/fonts/type1/public/pl/plr12.pfb><C:/Program Files/M
+iKTeX 2.9/fonts/type1/public/pl/plr6.pfb><C:/Program Files/MiKTeX 2.9/fonts/typ
+e1/public/pl/plr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/pl/plsy10
+.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/pl/plsy8.pfb><C:/Program F
+iles/MiKTeX 2.9/fonts/type1/public/pl/plti10.pfb><C:/Program Files/MiKTeX 2.9/f
+onts/type1/urw/palatino/uplb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw
+/palatino/uplr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/palatino/uplr
+i8a.pfb>
+Output written on dokument_KK.pdf (17 pages, 317017 bytes).
 PDF statistics:
- 196 PDF objects out of 1000 (max. 8388607)
+ 206 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  81 words of extra memory for PDF output out of 10000 (max. 10000000)
 

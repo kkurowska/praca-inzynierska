@@ -1,20 +1,23 @@
-\documentclass[twoside,a4paper,12pt]{book}
+\documentclass[twoside,a4paper,12pt]{mwbk}
 
 \usepackage{polski}
 \usepackage[utf8]{inputenc}
+%\usepackage{times}
 \usepackage{amsmath,amssymb,amsthm}
 \usepackage{xcolor}
 \usepackage[final]{pdfpages}
 \usepackage{graphicx}
 \usepackage{caption}
 \usepackage{subcaption}
+\captionsetup{compatibility=false}
 \usepackage{dsfont}
 \usepackage{geometry}
 \newgeometry{tmargin=2.5cm, bmargin=2.5cm, lmargin=2.5cm, rmargin=2.5cm}
 
 \numberwithin{equation}{section}
+\numberwithin{figure}{section}
 \renewcommand{\thefigure}{\thechapter.\arabic{figure}}
-\renewcommand{\chaptername}{}
+
 
 \newcommand{\1}[1]{\mathds{1}\left(#1\right)}
 
@@ -49,6 +52,7 @@
 
 \include{wstep}
 \include{rozdzial1}
+\include{rozdzial2}
 
 \addcontentsline{toc}{chapter}{Spis rysunków}
 \listoffigures
