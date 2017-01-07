@@ -1,2 +1,3 @@
-\contentsline {chapter}{\numberline {1}Wst\IeC {\k e}p}{5}
-\contentsline {chapter}{\numberline {2}Opis test\IeC {\'o}w}{7}
+\contentsline {chapter}{Wst\IeC {\k e}p}{5}
+\contentsline {chapter}{\numberline {1}Opis test\IeC {\'o}w}{11}
+\contentsline {chapter}{Spis rysunk\IeC {\'o}w}{12}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.10.24)  6 JAN 2017 19:22
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.10.24)  7 JAN 2017 04:10
 entering extended mode
 **./dokument_KK.tex
 (dokument_KK.tex
@@ -555,36 +555,57 @@ File: pppdftex.def 2016/12/11 v0.5g Pdfpages driver for pdfTeX (AM)
 \c@AM@survey=\count104
 \AM@templatesizebox=\box29
 )
+("C:\Program Files\MiKTeX 2.9\tex\latex\caption\caption.sty"
+Package: caption 2016/02/21 v3.3-144 Customizing captions (AR)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\caption\caption3.sty"
+Package: caption3 2016/05/22 v1.7-166 caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 67.
+\captionmargin=\dimen118
+\captionmargin@=\dimen119
+\captionwidth=\dimen120
+\caption@tempdima=\dimen121
+\caption@indent=\dimen122
+\caption@parindent=\dimen123
+\caption@hangindent=\dimen124
+)
+\c@ContinuedFloat=\count105
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\caption\subcaption.sty"
+Package: subcaption 2016/05/22 v1.1-161 Sub-captions (AR)
+\c@subfigure=\count106
+\c@subtable=\count107
+)
 (dokument_KK.aux (wstep.aux) (rozdzial1.aux))
 \openout1 = `dokument_KK.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for OT4/cmr/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OT4/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
 
 ("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count105
-\scratchdimen=\dimen118
+\scratchcounter=\count108
+\scratchdimen=\dimen125
 \scratchbox=\box30
-\nofMPsegments=\count106
-\nofMParguments=\count107
+\nofMPsegments=\count109
+\nofMParguments=\count110
 \everyMPshowfont=\toks30
-\MPscratchCnt=\count108
-\MPscratchDim=\dimen119
-\MPnumerator=\count109
-\makeMPintoPDFobject=\count110
+\MPscratchCnt=\count111
+\MPscratchDim=\dimen126
+\MPnumerator=\count112
+\makeMPintoPDFobject=\count113
 \everyMPtoPDFconversion=\toks31
 ) ("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\pdftexcmds.sty"
 Package: pdftexcmds 2016/05/21 v0.22 Utility functions of pdfTeX for LuaTeX (HO
@@ -641,40 +662,43 @@ Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 ("C:\Program Files\MiKTeX 2.9\tex\generic\ifxetex\ifxetex.sty"
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 ))
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
+
 <StronaTytulowa.pdf, id=1, 597.50829pt x 845.0471pt>
 File: StronaTytulowa.pdf Graphic file (type pdf)
  <use StronaTytulowa.pdf>
-Package pdftex.def Info: StronaTytulowa.pdf used on input line 12.
+Package pdftex.def Info: StronaTytulowa.pdf used on input line 34.
 (pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
 File: StronaTytulowa.pdf Graphic file (type pdf)
 
 <use StronaTytulowa.pdf>
-Package pdftex.def Info: StronaTytulowa.pdf used on input line 12.
+Package pdftex.def Info: StronaTytulowa.pdf used on input line 34.
 (pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
 
 <StronaTytulowa.pdf, id=4, page=1, 597.50829pt x 845.0471pt>
 File: StronaTytulowa.pdf Graphic file (type pdf)
 
 <use StronaTytulowa.pdf, page 1>
-Package pdftex.def Info: StronaTytulowa.pdf, page1 used on input line 12.
+Package pdftex.def Info: StronaTytulowa.pdf, page1 used on input line 34.
 (pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
 File: StronaTytulowa.pdf Graphic file (type pdf)
  <use StronaTytulowa.pdf, page 1>
-Package pdftex.def Info: StronaTytulowa.pdf, page1 used on input line 12.
+Package pdftex.def Info: StronaTytulowa.pdf, page1 used on input line 34.
 (pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
 File: StronaTytulowa.pdf Graphic file (type pdf)
 
 <use StronaTytulowa.pdf, page 1>
-Package pdftex.def Info: StronaTytulowa.pdf, page1 used on input line 12.
+Package pdftex.def Info: StronaTytulowa.pdf, page1 used on input line 34.
 (pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
 File: StronaTytulowa.pdf Graphic file (type pdf)
  <use StronaTytulowa.pdf, page 1>
-Package pdftex.def Info: StronaTytulowa.pdf, page1 used on input line 12.
+Package pdftex.def Info: StronaTytulowa.pdf, page1 used on input line 34.
 (pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
 File: StronaTytulowa.pdf Graphic file (type pdf)
 
 <use StronaTytulowa.pdf, page 1>
-Package pdftex.def Info: StronaTytulowa.pdf, page1 used on input line 12.
+Package pdftex.def Info: StronaTytulowa.pdf, page1 used on input line 34.
 (pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
  [1
 
@@ -684,36 +708,36 @@ Package pdftex.def Info: StronaTytulowa.pdf, page1 used on input line 12.
 File: StronaTytulowa_ang.pdf Graphic file (type pdf)
 
 <use StronaTytulowa_ang.pdf>
-Package pdftex.def Info: StronaTytulowa_ang.pdf used on input line 13.
+Package pdftex.def Info: StronaTytulowa_ang.pdf used on input line 35.
 (pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
 File: StronaTytulowa_ang.pdf Graphic file (type pdf)
  <use StronaTytulowa_ang.pdf>
-Package pdftex.def Info: StronaTytulowa_ang.pdf used on input line 13.
+Package pdftex.def Info: StronaTytulowa_ang.pdf used on input line 35.
 (pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
 
 <StronaTytulowa_ang.pdf, id=44, page=1, 597.50829pt x 845.0471pt>
 File: StronaTytulowa_ang.pdf Graphic file (type pdf)
 
 <use StronaTytulowa_ang.pdf, page 1>
-Package pdftex.def Info: StronaTytulowa_ang.pdf, page1 used on input line 13.
+Package pdftex.def Info: StronaTytulowa_ang.pdf, page1 used on input line 35.
 (pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
 File: StronaTytulowa_ang.pdf Graphic file (type pdf)
  <use StronaTytulowa_ang.pdf, page 1>
-Package pdftex.def Info: StronaTytulowa_ang.pdf, page1 used on input line 13.
+Package pdftex.def Info: StronaTytulowa_ang.pdf, page1 used on input line 35.
 (pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
 File: StronaTytulowa_ang.pdf Graphic file (type pdf)
 
 <use StronaTytulowa_ang.pdf, page 1>
-Package pdftex.def Info: StronaTytulowa_ang.pdf, page1 used on input line 13.
+Package pdftex.def Info: StronaTytulowa_ang.pdf, page1 used on input line 35.
 (pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
 File: StronaTytulowa_ang.pdf Graphic file (type pdf)
  <use StronaTytulowa_ang.pdf, page 1>
-Package pdftex.def Info: StronaTytulowa_ang.pdf, page1 used on input line 13.
+Package pdftex.def Info: StronaTytulowa_ang.pdf, page1 used on input line 35.
 (pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
 File: StronaTytulowa_ang.pdf Graphic file (type pdf)
 
 <use StronaTytulowa_ang.pdf, page 1>
-Package pdftex.def Info: StronaTytulowa_ang.pdf, page1 used on input line 13.
+Package pdftex.def Info: StronaTytulowa_ang.pdf, page1 used on input line 35.
 (pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
  [2 <./StronaTytulowa_ang.pdf>]
 (dokument_KK.toc)
@@ -729,78 +753,179 @@ Package pdftex.def Info: StronaTytulowa_ang.pdf, page1 used on input line 13.
 
 
 ]
-Rozdzia\PlPrIeC {\l } 1.
-LaTeX Font Info:    Try loading font information for OML+plm on input line 2.
+LaTeX Font Info:    Try loading font information for OML+plm on input line 3.
+
 ("C:\Program Files\MiKTeX 2.9\tex\latex\polski\omlplm.fd"
 File: omlplm.fd 2008/02/24 v1.2.1 Font defs for fonts PL (MW)
 )
-LaTeX Font Info:    Try loading font information for OMS+plsy on input line 2.
+LaTeX Font Info:    Try loading font information for OMS+plsy on input line 3.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\polski\omsplsy.fd"
 File: omsplsy.fd 2008/02/24 v1.2.1 Font defs for fonts PL (MW)
 )
-LaTeX Font Info:    Try loading font information for OMX+plex on input line 2.
+LaTeX Font Info:    Try loading font information for OMX+plex on input line 3.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\polski\omxplex.fd"
 File: omxplex.fd 2008/02/24 v1.2.1 Font defs for fonts PL (MW)
 )
 LaTeX Font Info:    External font `plex10' loaded for size
-(Font)              <12> on input line 2.
+(Font)              <12> on input line 3.
 LaTeX Font Info:    External font `plex10' loaded for size
-(Font)              <8> on input line 2.
+(Font)              <8> on input line 3.
 LaTeX Font Info:    External font `plex10' loaded for size
-(Font)              <6> on input line 2.
-LaTeX Font Info:    Try loading font information for U+msa on input line 2.
+(Font)              <6> on input line 3.
+LaTeX Font Info:    Try loading font information for U+msa on input line 3.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 2.
+LaTeX Font Info:    Try loading font information for U+msb on input line 3.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) [5]) [6]
+) [5]
+<b_pmf10.png, id=89, 399.4925pt x 288.07625pt>
+File: b_pmf10.png Graphic file (type png)
+ <use b_pmf10.png>
+Package pdftex.def Info: b_pmf10.png used on input line 15.
+(pdftex.def)             Requested size: 175.49881pt x 126.55173pt.
+
+<hg_pmf10.png, id=91, 399.4925pt x 288.07625pt>
+File: hg_pmf10.png Graphic file (type png)
+ <use hg_pmf10.png>
+Package pdftex.def Info: hg_pmf10.png used on input line 15.
+(pdftex.def)             Requested size: 175.49881pt x 126.55173pt.
+
+Overfull \hbox (2.61108pt too wide) in paragraph at lines 15--16
+[]$[]$ $[]$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 15--16
+
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<b_pmf17.png, id=92, 392.46625pt x 288.07625pt>
+File: b_pmf17.png Graphic file (type png)
+ <use b_pmf17.png>
+Package pdftex.def Info: b_pmf17.png used on input line 20.
+(pdftex.def)             Requested size: 175.49881pt x 128.8199pt.
+
+<hg_pmf17.png, id=93, 392.46625pt x 288.07625pt>
+File: hg_pmf17.png Graphic file (type png)
+ <use hg_pmf17.png>
+Package pdftex.def Info: hg_pmf17.png used on input line 20.
+(pdftex.def)             Requested size: 175.49881pt x 128.8199pt.
+
+Overfull \hbox (2.61108pt too wide) in paragraph at lines 20--21
+[]$[]$ $[]$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 20--21
+
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<b_pmf20.png, id=94, 399.4925pt x 288.07625pt>
+File: b_pmf20.png Graphic file (type png)
+ <use b_pmf20.png>
+Package pdftex.def Info: b_pmf20.png used on input line 25.
+(pdftex.def)             Requested size: 175.49881pt x 126.55173pt.
+
+<hg_pmf20.png, id=95, 399.4925pt x 288.07625pt>
+File: hg_pmf20.png Graphic file (type png)
+ <use hg_pmf20.png>
+Package pdftex.def Info: hg_pmf20.png used on input line 25.
+(pdftex.def)             Requested size: 175.49881pt x 126.55173pt.
+
+Overfull \hbox (2.61108pt too wide) in paragraph at lines 25--26
+[]$[]$ $[]$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 25--26
+
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[6] [7 <./b_pmf10.png> <./hg_pmf10.png> <./b_pmf17.png> <./hg_pmf17.png> <./b_p
+mf20.png> <./hg_pmf20.png>] <b_var.png, id=110, 399.4925pt x 288.07625pt>
+File: b_var.png Graphic file (type png)
+
+<use b_var.png>
+Package pdftex.def Info: b_var.png used on input line 34.
+(pdftex.def)             Requested size: 175.49881pt x 126.55173pt.
+ <hg_var.png, id=111, 399.4925pt x 288.07625pt>
+File: hg_var.png Graphic file (type png)
+
+<use hg_var.png>
+Package pdftex.def Info: hg_var.png used on input line 34.
+(pdftex.def)             Requested size: 175.49881pt x 126.55173pt.
+
+Overfull \hbox (2.61108pt too wide) in paragraph at lines 34--35
+[]$[]$ $[]$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 34--35
+
+ []
+
+) [8 <./b_var.png> <./hg_var.png>] [9]
 \openout2 = `rozdzial1.aux'.
 
-
-(rozdzial1.tex
-Rozdzia\PlPrIeC {\l } 2.
-) [7
+ (rozdzial1.tex [10
 
 
 
-] (dokument_KK.bbl [8
+]
+Rozdzia\PlPrIeC {\l } 1.
+) [11] [12
 
 
-]) [9] (dokument_KK.aux (wstep.aux) (rozdzial1.aux)) ) 
+] (dokument_KK.lof)
+\tf@lof=\write4
+\openout4 = `dokument_KK.lof'.
+
+
+No file dokument_KK.bbl.
+[13] (dokument_KK.aux (wstep.aux) (rozdzial1.aux)) ) 
 Here is how much of TeX's memory you used:
- 4328 strings out of 493334
- 56838 string characters out of 3139251
- 131597 words of memory out of 3000000
- 7733 multiletter control sequences out of 15000+200000
- 11453 words of font info for 36 fonts, out of 3000000 for 9000
+ 5509 strings out of 493334
+ 77916 string characters out of 3139251
+ 155246 words of memory out of 3000000
+ 8895 multiletter control sequences out of 15000+200000
+ 11949 words of font info for 37 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 40i,18n,43p,1664b,444s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files/MiKTeX 
-2.9/fonts/enc/dvips/pl/plrm.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/pl
-/plms.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/pl/plmi.enc}{C:/Program 
-Files/MiKTeX 2.9/fonts/enc/dvips/pl/plme.enc}{C:/Program Files/MiKTeX 2.9/fonts
-/enc/dvips/pl/plit.enc}<C:/Program Files/MiKTeX 2.9/fonts/type1/public/fpl/fplr
-c8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/fpl/fplrij8a.pfb><C:/Pr
-ogram Files/MiKTeX 2.9/fonts/type1/public/pl/plbx12.pfb><C:/Program Files/MiKTe
-X 2.9/fonts/type1/public/pl/plex10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1
-/public/pl/plmi12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/pl/plmi8.
-pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/pl/plr12.pfb><C:/Program Fi
-les/MiKTeX 2.9/fonts/type1/public/pl/plr8.pfb><C:/Program Files/MiKTeX 2.9/font
-s/type1/public/pl/plsl12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/pl
-/plsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/pl/plsy8.pfb><C:/Pr
-ogram Files/MiKTeX 2.9/fonts/type1/public/pl/plti12.pfb><C:/Program Files/MiKTe
-X 2.9/fonts/type1/urw/palatino/uplb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
-pe1/urw/palatino/uplr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/palati
-no/uplri8a.pfb>
-Output written on dokument_KK.pdf (9 pages, 197990 bytes).
+ 40i,18n,43p,1694b,490s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Program Files/MiKTeX 2.
+9/fonts/enc/dvips/pl/plrm.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/pl/p
+lms.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/pl/plmi.enc}{C:/Program Fi
+les/MiKTeX 2.9/fonts/enc/dvips/pl/plme.enc}{C:/Program Files/MiKTeX 2.9/fonts/e
+nc/dvips/pl/plit.enc}<C:/Program Files/MiKTeX 2.9/fonts/type1/public/fpl/fplrc8
+a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/fpl/fplrij8a.pfb><C:/Prog
+ram Files/MiKTeX 2.9/fonts/type1/public/pl/plbx12.pfb><C:/Program Files/MiKTeX 
+2.9/fonts/type1/public/pl/plex10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/p
+ublic/pl/plmi12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/pl/plmi8.pf
+b><C:/Program Files/MiKTeX 2.9/fonts/type1/public/pl/plr10.pfb><C:/Program File
+s/MiKTeX 2.9/fonts/type1/public/pl/plr12.pfb><C:/Program Files/MiKTeX 2.9/fonts
+/type1/public/pl/plr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/pl/pl
+sl12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/pl/plsy10.pfb><C:/Prog
+ram Files/MiKTeX 2.9/fonts/type1/public/pl/plsy8.pfb><C:/Program Files/MiKTeX 2
+.9/fonts/type1/public/pl/plti12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/ur
+w/palatino/uplb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/palatino/upl
+r8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/palatino/uplri8a.pfb>
+Output written on dokument_KK.pdf (13 pages, 266764 bytes).
 PDF statistics:
- 144 PDF objects out of 1000 (max. 8388607)
+ 178 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 41 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 81 words of extra memory for PDF output out of 10000 (max. 10000000)
 
