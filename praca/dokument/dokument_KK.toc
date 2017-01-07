@@ -1,3 +1,9 @@
-\contentsline {chapter}{Wst\IeC {\k e}p}{5}
-\contentsline {chapter}{\numberline {1}Opis test\IeC {\'o}w}{11}
+\contentsline {chapter}{\numberline {0}Wst\IeC {\k e}p}{5}
+\contentsline {chapter}{\numberline {1}Przedstawienie test\IeC {\'o}w}{9}
+\contentsline {section}{\numberline {1.1}Sformu\IeC {\l }owanie problemu}{9}
+\contentsline {section}{\numberline {1.2}Test Z}{9}
+\contentsline {section}{\numberline {1.3}Test E}{10}
+\contentsline {section}{\numberline {1.4}B\IeC {\l }\IeC {\k a}d I rodzaju}{10}
+\contentsline {section}{\numberline {1.5}Moc testu}{10}
+\contentsline {section}{\numberline {1.6}Test bez sko\IeC {\'n}czonej poprawki}{11}
 \contentsline {chapter}{Spis rysunk\IeC {\'o}w}{12}
