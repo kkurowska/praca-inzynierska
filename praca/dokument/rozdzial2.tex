@@ -1,90 +1,119 @@
 \chapter{Przedstawienie testów}
 
-W niniejszym rozdziale chciałabym opisać dwa testy wykorzystujące rozkład hipergeometryczny oraz test oparty na rozkładzie dwumianowym. Omówię także sposób liczenia prawdopodobieństwa błędu I~rodzaju i~mocy testu.
+W niniejszym rozdziale są przedstawione trzy testy, jeden oparty na rozkładzie dwumianowym i~dwa wykorzystujące rozkład hipergeometryczny. Jest także omówiony sposób liczenia dla nich mocy testu.
 
 \section{Sformułowanie problemu}
-Załóżmy, że $X_1$ i~$X_2$ są niezależnymi zmiennymi losowymi o~rozkładzie hipergeometrycznym $X_1\sim h(n_1,M_1,N_1)$, $X_2\sim h(n_2,M_2,N_2)$. Zaobserwowane wartości $X_1$ i~$X_2$ oznaczmy odpowiednio $k_1$ i~$k_2$ oraz proporcje $p_1=M_1/N_1$, $p_2=M_2/N_2$. Będę zajmować się testowaniem hipotez
+Załóżmy, że $X_1$ i~$X_2$ są niezależnymi zmiennymi losowymi. Zaobserwowane wartości $X_1$ i~$X_2$ oznaczmy odpowiednio $k_1$ i~$k_2$ oraz proporcje w~obserwacjach $p_1$ i~$p_2$. Będę zajmować się testowaniem hipotez
 \begin{equation}
 H_0{:}\ p_1=p_2\quad \text{przeciwko} \quad H_1{:}\ p_1\neq p_2,
 \end{equation}
-w oparciu o~$(k_1,n_1,N_1)$ i~$(k_2,n_2,N_2)$.
+w oparciu o~wartości obserwacji i~znane parametry populacji.
 Rozważmy unormowaną statystykę
 \begin{equation}
 Z_{X_1,X_2} = \frac{X_1/n_1-X_2/n_2}{\sqrt{V_{X_1,X_2}}},
 \end{equation}
-gdzie estymator wariancji pod warunkiem zachodzenia $H_0$ jest równy
+gdzie $V_{X_1,X_2}$ to estymator wariancji rozkładu łącznego zmiennej losowej $X_1/n_1-X_2/n_2$ pod warunkiem prawdziwości $H_0$. Jego wzór zależy od rozkładu, z~którego pochodzą zmienne losowe $X_1$ i~$X_2$.
+Wartość statystyki $Z_{X_1,X_2}$ oznaczmy jako $Z_{k_1,k_2}$. Jest ona wyliczana według powyższych wzorów, poprzez zamienienie $X_1$ i~$X_2$ odpowiednio wartościami obserwacji $k_1$ i~$k_2$.
+
+\section{Testy ze skończoną poprawką}
+\label{r2:skonczonapoprawka}
+Jak już było wspomniane w~sekcji \ref{r1:skonczonapopulacja}, próbki w~przypadku skończonej populacji pochodzą z~rozkładu hipergeometrycznego. Zatem $X_1\sim \mathcal{H}(n_1,M_1,N_1)$, $X_2\sim \mathcal{H}(n_2,M_2,N_2)$ oraz proporcje są równe $p_1=M_1/N_1$, $p_2=M_2/N_2$. Znane parametry to rozmiary próbek $n_1$ i~$n_2$ oraz wielkości populacji $N_1$ i~$N_2$.
+
+W celu wyprowadzenia wariancji rozkładu łącznego $X_1/n_1-X_2/n_2$ pod warunkiem $p_1=p_2$, zapiszmy łączną wariancję rozważanej zmiennej losowej, korzystając z~własności wariancji oraz tego, że $Cov(X_1,X_2)=0$ z~niezależności $X_1$ i~$X_2$
+\begin{equation}
+Var(X_1/n_1-X_2/n_2)=Var(X_1/n_1) + Var(X_2/n_2) = Var(X_1)/n_1^2+Var(X_2)/n_2^2.
+\end{equation}
+Wiemy, że wariancje $X_1$ i~$X_2$ są równe
+\begin{align}
+Var(X_1)=n_1 p_1 (1-p_1)(N_1-n_1)/(N_1-1),\\
+Var(X_2)=n_2 p_2 (1-p_2)(N_2-n_2)/(N_2-1).
+\end{align}
+Pamiętając, że zakładamy równość $p_1=p_2$ zastąpmy oba parametry jednym równym $p$. Po podstawieniu otrzymujemy
+\begin{equation}
+\begin{split}
+V_{X_1,X_2} = \frac{1}{n_1}p(1-p)\frac{N_1-n_1}{N_1-1} + \frac{1}{n_2}p(1-p)\frac{N_2-n_2}{N_2-1}&= \\
+=p(1-p)&\left(\frac{N_1-n_1}{n_1(N_1-1)}+\frac{N_2-n_2}{n_2(N_2-1)}\right),
+\end{split}
+\end{equation}
+przy czym $p$ to proporcja liczby osobników z~daną cechą do całości populacji w~rozkładzie łącznym.  Zatem jest ona równa $p=(X_1+X_2)/(n_1+n_2)$. Ostatecznie otrzymujemy
 \begin{equation}
 V_{X_1,X_2} = \left(\frac{N_1-n_1}{n_1(N_1-1)}+\frac{N_2-n_2}{n_2(N_2-1)}\right)\left(\frac{X_1+X_2}{n_1+n_2}\right)\left(1-\frac{X_1+X_2}{n_1+n_2}\right).
 \end{equation}
-Wartość statystyki dla $k_1$ i~$k_2$ będę oznaczać jako $Z_{k_1,k_2}$. Jest ona wyliczana według powyższych wzorów, poprzez zamienienie $X_1$ i~$X_2$ odpowiednio wartościami obserwacji $k_1$ i~$k_2$.
 
-\section{Test Z}
-Ten test jest oparty na centralnym twierdzeniu granicznym, które mówi, że pod warunkiem prawdziwości $H_0$ rozważana statystyka $Z_{X_1,X_2}$ jest w~przybliżeniu z~rozkładu standardowego normalnego $\mathcal{N}(0,1)$. Wtedy $p$-wartość wyraża się wzorem
+\subsection{Test Z}
+Test~Z jest oparty na centralnym twierdzeniu granicznym, które mówi, że pod warunkiem prawdziwości $H_0$ rozważana statystyka $Z_{X_1,X_2}$ jest w~przybliżeniu z~rozkładu standardowego normalnego $\mathcal{N}(0,1)$. Wtedy $p$-wartość wyraża się wzorem
 \begin{equation}
 P(|Z_{X_1,X_2}|\geq|Z_{k_1,k_2}|\ |H_0) = 2(1-\Phi(|Z_{k_1,k_2}|)),
 \end{equation}
 gdzie $\Phi$ oznacza dystrybuantę rozkładu $N(0,1)$. Test Z~odrzuca hipotezę zerową, gdy $p$-wartość jest mniejsza od poziomu istotności $\alpha$.
 
-\section{Test E}
-W tym przypadku opieramy się o~rzeczywistą $p$-wartość, która jest równa
+\subsection{Test E}
+Test E opiera się o~rzeczywistą $p$-wartość, która, według artykułu K. Krishnamoorthy i~J. Thomson z~2002 roku, jest równa \cite{K.Krishnamoorthy2002}
 \begin{equation}
 \label{realpvalue}
 \begin{split}
-P(|Z_{X_1,X_2}|\geq|Z_{k_1,k_2}|\ |H_0) =& E_{X_1,X_2}(\1{|Z_{X_1,X_2}|\geq|Z_{k_1,k_2}|}\ |H_0) = \\
-= \sum_{x_1=L_1}^{U_1}\sum_{x_2=L_2}^{U_2}& h(x_1;n_1,N_1p,N_1)h(x_2;n_2,N_2p,N_2)\1{|Z_{X_1,X_2}|\geq|Z_{k_1,k_2}|},
+P(|Z_{X_1,X_2}|&\geq|Z_{k_1,k_2}|\ |H_0) = E_{X_1,X_2}(\1{|Z_{X_1,X_2}|\geq|Z_{k_1,k_2}|}\ |H_0) = \\
+&= \sum_{x_1=L_1}^{U_1}\sum_{x_2=L_2}^{U_2} h(x_1;n_1,N_1p,N_1)h(x_2;n_2,N_2p,N_2)\1{|Z_{X_1,X_2}|\geq|Z_{k_1,k_2}|},
 \end{split}
 \end{equation}
-gdzie $E_{X_1,X_2}$ to wartość oczekiwana łącznego rozkładu $(X_1,X_2)$, a~$p$ jest nieznaną wspólną proporcją pod warunkiem $H_0$. Nie jest możliwe policzenie $p$-wartości wprost ze wzoru (\ref{realpvalue}), ponieważ nie znamy parametru proporcji $p$. W~artykule \cite{K.Krishnamoorthy2002} zaproponowany jest estymator $p$-wartości
+gdzie $E_{X_1,X_2}$ to wartość oczekiwana łącznego rozkładu $(X_1,X_2)$, a~$p$ jest nieznaną wspólną proporcją pod warunkiem $H_0$. Nie jest możliwe policzenie $p$-wartości wprost ze wzoru (\ref{realpvalue}), ponieważ nie znamy parametru proporcji $p$. Krishnamoorthy i~Thomson (2002) zaproponowali estymator $p$-wartości \cite{K.Krishnamoorthy2002}
 \begin{equation}
 \label{estpvalue}
 \begin{split}
-P(|Z_{X_1,X_2}|\geq|Z_{k_1,k_2}|\ |H_0) =& \\ =\sum_{x_1=L_{x_1}}^{U_{x_1}}\sum_{x_2=L_{x_2}}^{U_{x_2}}& h(x_1;n_1,\hat{M_1},N_1)h(x_2;n_2,\hat{M_2},N_2)\1{|Z_{X_1,X_2}|\geq|Z_{k_1,k_2}|},
+P(|Z_{X_1,X_2}|\geq|Z_{k_1,k_2}|\ |H_0) =& \\ =\sum_{x_1=L_{x_1}}^{U_{x_1}}\sum_{x_2=L_{x_2}}^{U_{x_2}} h(x_1;&n_1,\hat{M_1},N_1)h(x_2;n_2,\hat{M_2},N_2)\1{|Z_{X_1,X_2}|\geq|Z_{k_1,k_2}|},
 \end{split}
 \end{equation}
-przy czym $\hat{p}=(k_1+k_2)/(n_1+n_2)$, $\hat{M_i}=[N_i\hat{p}]$, $L_{x_i}=\max\{0,\hat{M_i}-N_i+n_i\}$, $U_{x_i}=\min\{n_i,\hat{M_i}\}$, $i=1,2$. Test odrzuca $H_0$ wtedy, gdy $p$-wartość wyliczona wg wzoru (\ref{estpvalue}) jest mniejsza od poziomu istotności $\alpha$.
+przy czym $\hat{p}=(k_1+k_2)/(n_1+n_2)$, $\hat{M_i}=[N_i\hat{p}]$ oraz  $L_{x_i}=\max\{0,\hat{M_i}-N_i+n_i\}$, $U_{x_i}=\min\{n_i,\hat{M_i}\}$, $i=1,2$. Test odrzuca $H_0$ wtedy, gdy $p$-wartość wyliczona wg wzoru (\ref{estpvalue}) jest mniejsza od poziomu istotności $\alpha$.
 
-\section{Moc testu}
+\subsection{Moc testu}
 Moc testu to prawdopodobieństwo odrzucenia hipotezy zerowej, gdy jest ona nieprawdziwa. Toteż jest ona wyznacznikiem dobrego testu. Większa wartość mocy oznacza lepszy test.
 
-Moc obu testów można wyliczyć, korzystając z~funkcji prawdopodobieństwa rozkładu hipergeometrycznego. Dla testu Z~pod warunkiem hipotezy alternatywnej $H_1$ moc jest równa
+Moc obu testów można wyliczyć, korzystając z~funkcji prawdopodobieństwa rozkładu hipergeometrycznego. Dla testu~Z pod warunkiem hipotezy alternatywnej $H_1$ moc, zgodnie z~rozważaniami Krishnamoorthy i~Thomson (2002), jest równa \cite{K.Krishnamoorthy2002}
 \begin{equation}
 \label{powerZ}
 \sum_{k_1=L_1}^{U_1}\sum_{k_2=L_2}^{U_2} h(k_1;n_1,M_1,N_1)h(k_2;n_2,M_2,N_2)\1{|Z_{k_1,k_2}|>z_{1-\alpha/2}},
 \end{equation}
 gdzie $L_i=\max\{0,M_i-N_i+n_i\}$ i~$U_i=\min\{n_i,M_i\}$, a~$z_{1-\alpha/2}$ oznacza kwantyl rozkładu normalnego standardowego rzędu $1-\alpha/2$.
 
-Tymczasem dla testu E moc zdefiniowana jest następująco
+Tymczasem dla testu E, wg Krishnamoorthy i~Thomson (2002), moc zdefiniowana jest następująco \cite{K.Krishnamoorthy2002}
 \begin{equation}
 \begin{split}
 &\sum_{k_1=L_1}^{U_1}\sum_{k_2=L_2}^{U_2} h(k_1;n_1,M_1,N_1)h(k_2;n_2,M_2,N_2) \times \\
-& \times \1{\sum_{x_1=L_{x_1}}^{U_{x_1}}\sum_{x_2=L_{x_2}}^{U_{x_2}} h(x_1;n_1,\hat{M_1},N_1)h(x_2;n_2,\hat{M_2},N_2) \1{|Z_{X_1,X_2}|\geq|Z_{k_1,k_2}|}\leq\alpha },
+&\times \1{\sum_{x_1=L_{x_1}}^{U_{x_1}}\sum_{x_2=L_{x_2}}^{U_{x_2}} h(x_1;n_1,\hat{M_1},N_1)h(x_2;n_2,\hat{M_2},N_2) \1{|Z_{X_1,X_2}|\geq|Z_{k_1,k_2}|}\leq\alpha },
 \end{split}
 \end{equation}
 gdzie wszelkie parametry oznaczają są takie same jak we wzorach (\ref{estpvalue}) i~(\ref{powerZ}).
 
 \section{Test bez skończonej poprawki}
-Dla testu bez poprawki na skończony rozmiar populacji, zamiast rozkładu hipergeometrycznego używamy dwumianowego, a~więc $X_1$ i~$X_2$ są niezależnymi zmiennymi losowymi o~rozkładzie Bernoullego $X_1\sim B(n_1,p_1)$, $X_2\sim B(n_2,p_2)$. Unormowana statystyka w~tym przypadku przyjmuje postać
-\begin{equation}
-Z_{X_1,X_2} = \frac{X_1/n_1-X_2/n_2}{\sqrt{V_{X_1,X_2}}},
-\end{equation}
-gdzie estymator wariancji pod warunkiem $H_0$ jest równy
-\begin{equation}
-V_{X_1,X_2} = \sqrt{p(1-p)(1/n_1+1/n_2)},
-\end{equation}
-gdzie $p=(X_1+X_2)/(n_1+n_2)$.
-Wartość statystyki $Z_{k_1,k_2}$ jest wyliczana według powyższych wzorów, wstawiając obserwacje $k_1$ i~$k_2$ w~miejsca zmiennych losowych.
+Dla testu bez poprawki na skończony rozmiar populacji, zamiast rozkładu hipergeometrycznego używamy dwumianowego, a~więc $X_1$ i~$X_2$ są niezależnymi zmiennymi losowymi o~rozkładzie Bernoullego $X_1\sim \mathcal{B}(n_1,p_1)$, $X_2\sim \mathcal{B}(n_2,p_2)$. Znane parametry to rozmiary próbek $n_1$ i~$n_2$.
 
-Ten test jest, podobnie jak omówiony wcześniej test Z, oparty na centralnym twierdzeniu granicznym. Czyli rozważana statystyka $Z_{X_1,X_2}$ ma rozkład standardowy normalny $N(0,1)$. Wtedy $p$-wartość wyraża się wzorem
+Wariancję rozkładu łącznego $X_1/n_1-X_2/n_2$ pod warunkiem $p_1=p_2$ możemy wyprowadzić analogicznie jak w~sekcji \ref{r2:skonczonapoprawka}, wychodząc od łącznej wariancji rozważanej zmiennej losowej
 \begin{equation}
-P(|Z_{X_1,X_2}|\geq|Z_{k_1,k_2}|\ |H_0) = 2(1-\Phi(|Z_{k_1,k_2}|)).
+Var(X_1/n_1-X_2/n_2) = Var(X_1)/n_1^2+Var(X_2)/n_2^2.
 \end{equation}
+Wariancje $X_1$ i~$X_2$ są równe
+\begin{align}
+Var(X_1)=n_1 p_1 (1-p_1),\\
+Var(X_2)=n_2 p_2 (1-p_2).
+\end{align}
+Zastępując $p_1$ i~$p_2$ jednym parametrem równym $p$, otrzymujemy
+\begin{equation}
+V_{X_1,X_2} = p(1-p)/n_1 + p(1-p)/n_2 = p(1-p)(1/n_1+1/n_2)
+\end{equation}
+przy czym $p=(X_1+X_2)/(n_1+n_2)$.
+
+Ten test jest, podobnie jak omówiony wcześniej test E, oparty o~estymator $p$-wartości, który, zgodnie z~artykułem Storer i~Kim z~1990 roku, jest równy \cite{Storer1990}
+\begin{equation}
+P(|Z_{X_1,X_2}|\geq|Z_{k_1,k_2}|\ |H_0) = \sum_{x_1=0}^{n_1}\sum_{x_2=0}^{n_2} b(x_1;n_1,\hat{p_1})b(x_2;n_2,\hat{p_2})\1{|Z_{X_1,X_2}|\geq|Z_{k_1,k_2}|},
+\end{equation}
+gdzie $\hat{p}=(k_1+k_2)/(n_1+n_2)$.
 Test odrzuca hipotezę zerową, gdy $p$-wartość jest mniejsza od poziomu istotności $\alpha$.
 
-Prawdopodobieństwo błędu I~rodzaju jest liczone analogicznie jak w~przypadku poprzednich testów. Aczkolwiek moc testu jest liczona inaczej, ze względu na inny rozkład zmiennych losowych. W~tym przypadku będzie ona równa
+Moc testu jest również podobna do mocy testu E. W~tym przypadku wyraża się wzorem
 \begin{equation}
-\sum_{k_1=0}^{n}\sum_{k_2=0}^{n} b(k_1;n_1,p_1)b(k_2;n_2,p_2)\1{|Z_{k_1,k_2}|>z_{1-\alpha/2}},
+\begin{split}
+\sum_{k_1=0}^{n}\sum_{k_2=0}^{n} b(k_1;n_1,&p_1)b(k_2;n_2,p_2) \times \\
+\times &\1{\sum_{x_1=0}^{n_1} \sum_{x_2=0}^{n_2} b(x_1;n_1,\hat{p_1}) b(x_2;n_2,\hat{p_2}) \1{|Z_{X_1,X_2}|\geq|Z_{k_1,k_2}|} \leq\alpha}.
+\end{split}
 \end{equation}
-przy czym $b(k;n,p)$ oznacza funkcję prawdopodobieństwa rozkładu dwumianowego określoną wzorem
-\begin{equation}
-b(k;n,p) = P(X=k) = \binom{n}{k} p^k (1-p)^{n-k},\ 0\leq k\leq n.
-\end{equation}
+

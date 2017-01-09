@@ -11,7 +11,7 @@ import matplotlib.pyplot as plt
 
 N = 20 #N
 M = 5 #M
-n = 17 #n
+n = 20 #n
 
 hg = hypergeom(N, M, n)
 p = M/N
@@ -33,7 +33,7 @@ vectorX2 = np.arange(0, n+1)
 vectorP1 = hg.pmf(vectorX1)
 vectorP2 = b.pmf(vectorX2)
 
-maxy = 0.5
+maxy = 1
 
 fig = plt.figure()
 plt.plot(vectorX1, vectorP1, 'o')
@@ -42,7 +42,7 @@ plt.axis([0, n, 0, maxy])
 plt.grid(True)
 plt.xlabel('$k$', fontsize=14)
 plt.ylabel('$P(X=k)$', fontsize=14)
-plt.title('$X\sim h(17,5,20)$', fontsize=14)
+plt.title('$X\sim H(20,5,20)$', fontsize=14)
 
 fig = plt.figure()
 plt.plot(vectorX2, vectorP2, 'ro')

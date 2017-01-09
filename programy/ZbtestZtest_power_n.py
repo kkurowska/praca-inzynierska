@@ -80,8 +80,8 @@ for n in range(1, n2+1):
 
         # test Z bez skończonej poprawki
 
-        size1b = n1 + 1 # nie jestem pewna jaki powinien być rozmiar
-        size2b = n + 1 # nie jestem pewna jaki powinien być rozmiar
+        size1b = n1 + 1
+        size2b = n + 1
         vectorX1 = np.arange(size1b).reshape((size1b, 1))
         vectorX2 = np.arange(size2b)
         arrayX1 = np.tile(vectorX1, (1, size2b))
@@ -121,7 +121,7 @@ for i in range (3):
     plt.plot(vectorX, arrayPowerZb[i], color[i], ls = '--', label = legZb[i])
 plt.grid(True)
 plt.xlabel("$n$", fontsize=14)
-plt.ylabel("Power")
+plt.ylabel("moc testu")
 title = "$N_1=N_2=" + str(N1) + "$, $" + "p_2=" + str(p2) + "$"
 plt.title(title, fontsize=14)
 #plt.legend([legZ1, legZb1, legZ2, legZb2, legZ3, legZb3], loc='upper center', bbox_to_anchor=(0.5, -0.2), ncol=3)

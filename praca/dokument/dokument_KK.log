@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.10.24)  7 JAN 2017 23:49
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.10.24)  9 JAN 2017 10:34
 entering extended mode
 **./dokument_KK.tex
 (dokument_KK.tex
@@ -648,7 +648,7 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 
-(dokument_KK.aux (wstep.aux) (rozdzial1.aux) (rozdzial2.aux))
+(dokument_KK.aux (wstep.aux) (rozdzial1.aux) (rozdzial2.aux) (rozdzial3.aux))
 \openout1 = `dokument_KK.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 43.
@@ -899,10 +899,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 [4
 
 
-]
-LaTeX Font Info:    External font `plex10' loaded for size
-(Font)              <12> on input line 5.
-) [5]
+]) [5]
 \openout2 = `rozdzial1.aux'.
 
  (rozdzial1.tex [6
@@ -911,89 +908,63 @@ LaTeX Font Info:    External font `plex10' loaded for size
 
 ]
 Rozdzia\PlPrIeC {\l } 1.
-
-Overfull \hbox (16.21974pt too wide) in paragraph at lines 7--8
-[]\OT4/cmr/m/n/12 Tymczasem do-brze ta-k¡ sy-tu-acj¦ mo-de-lu-je roz-kªad hi-pe
-r-ge-ome-trycz-ny, po-nie-wa» uwzgl¦d-
- []
-
-[7] <b_pmf10.png, id=95, 399.4925pt x 288.07625pt>
+LaTeX Font Info:    External font `plex10' loaded for size
+(Font)              <12> on input line 7.
+[7] <b_pmf10.png, id=96, 399.4925pt x 288.07625pt>
 File: b_pmf10.png Graphic file (type png)
  <use b_pmf10.png>
-Package pdftex.def Info: b_pmf10.png used on input line 19.
+Package pdftex.def Info: b_pmf10.png used on input line 28.
 (pdftex.def)             Requested size: 204.85846pt x 147.72574pt.
 
-<hg_pmf10.png, id=97, 399.4925pt x 288.07625pt>
+<hg_pmf10.png, id=98, 399.4925pt x 288.07625pt>
 File: hg_pmf10.png Graphic file (type png)
  <use hg_pmf10.png>
-Package pdftex.def Info: hg_pmf10.png used on input line 19.
+Package pdftex.def Info: hg_pmf10.png used on input line 28.
 (pdftex.def)             Requested size: 204.85846pt x 147.72574pt.
 
-Overfull \hbox (2.61108pt too wide) in paragraph at lines 19--20
+Overfull \hbox (2.61108pt too wide) in paragraph at lines 28--29
 []$[]$ $[]$
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 19--20
+Underfull \hbox (badness 10000) in paragraph at lines 28--29
 
  []
 
-<b_pmf17.png, id=98, 392.46625pt x 288.07625pt>
+<b_pmf17.png, id=99, 392.46625pt x 288.07625pt>
 File: b_pmf17.png Graphic file (type png)
  <use b_pmf17.png>
-Package pdftex.def Info: b_pmf17.png used on input line 24.
+Package pdftex.def Info: b_pmf17.png used on input line 33.
 (pdftex.def)             Requested size: 204.85846pt x 150.37193pt.
 
-<hg_pmf17.png, id=99, 392.46625pt x 288.07625pt>
+<hg_pmf17.png, id=100, 392.46625pt x 288.07625pt>
 File: hg_pmf17.png Graphic file (type png)
  <use hg_pmf17.png>
-Package pdftex.def Info: hg_pmf17.png used on input line 24.
+Package pdftex.def Info: hg_pmf17.png used on input line 33.
 (pdftex.def)             Requested size: 204.85846pt x 150.37193pt.
 
-Overfull \hbox (2.61108pt too wide) in paragraph at lines 24--25
+Overfull \hbox (2.61108pt too wide) in paragraph at lines 33--34
 []$[]$ $[]$
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 24--25
-
- []
-
-<b_pmf20.png, id=100, 399.4925pt x 288.07625pt>
-File: b_pmf20.png Graphic file (type png)
- <use b_pmf20.png>
-Package pdftex.def Info: b_pmf20.png used on input line 29.
-(pdftex.def)             Requested size: 204.85846pt x 147.72574pt.
-
-<hg_pmf20.png, id=101, 399.4925pt x 288.07625pt>
-File: hg_pmf20.png Graphic file (type png)
- <use hg_pmf20.png>
-Package pdftex.def Info: hg_pmf20.png used on input line 29.
-(pdftex.def)             Requested size: 204.85846pt x 147.72574pt.
-
-Overfull \hbox (2.61108pt too wide) in paragraph at lines 29--30
-[]$[]$ $[]$
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 29--30
+Underfull \hbox (badness 10000) in paragraph at lines 33--34
 
  []
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[8 <./b_pmf10.png> <./hg_pmf10.png> <./b_pmf17.png> <./hg_pmf17.png>]
-<b_var.png, id=110, 399.4925pt x 288.07625pt>
-File: b_var.png Graphic file (type png)
- <use b_var.png>
-Package pdftex.def Info: b_var.png used on input line 38.
+<b_pmf20.png, id=101, 399.4925pt x 288.07625pt>
+File: b_pmf20.png Graphic file (type png)
+ <use b_pmf20.png>
+Package pdftex.def Info: b_pmf20.png used on input line 38.
 (pdftex.def)             Requested size: 204.85846pt x 147.72574pt.
 
-<hg_var.png, id=111, 399.4925pt x 288.07625pt>
-File: hg_var.png Graphic file (type png)
- <use hg_var.png>
-Package pdftex.def Info: hg_var.png used on input line 38.
+<hg_pmf20.png, id=102, 399.4925pt x 288.07625pt>
+File: hg_pmf20.png Graphic file (type png)
+ <use hg_pmf20.png>
+Package pdftex.def Info: hg_pmf20.png used on input line 38.
 (pdftex.def)             Requested size: 204.85846pt x 147.72574pt.
 
 Overfull \hbox (2.61108pt too wide) in paragraph at lines 38--39
@@ -1008,63 +979,97 @@ Underfull \hbox (badness 10000) in paragraph at lines 38--39
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-) [9 <./b_pmf20.png> <./hg_pmf20.png>] [10 <./b_var.png> <./hg_var.png>]
+[8 <./b_pmf10.png> <./hg_pmf10.png>]
+Underfull \vbox (badness 7468) has occurred while \output is active []
+
+ [9 <./b_pmf17.png> <./hg_pmf17.png> <./b_pmf20.png> <./hg_pmf20.png>]
+<b_var.png, id=116, 399.4925pt x 288.07625pt>
+File: b_var.png Graphic file (type png)
+ <use b_var.png>
+Package pdftex.def Info: b_var.png used on input line 56.
+(pdftex.def)             Requested size: 204.85846pt x 147.72574pt.
+
+<hg_var.png, id=117, 399.4925pt x 288.07625pt>
+File: hg_var.png Graphic file (type png)
+ <use hg_var.png>
+Package pdftex.def Info: hg_var.png used on input line 56.
+(pdftex.def)             Requested size: 204.85846pt x 147.72574pt.
+
+Overfull \hbox (2.61108pt too wide) in paragraph at lines 56--57
+[]$[]$ $[]$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 56--57
+
+ []
+
+) [10 <./b_var.png> <./hg_var.png>]
 \openout2 = `rozdzial2.aux'.
 
-
-(rozdzial2.tex
+ (rozdzial2.tex
 Rozdzia\PlPrIeC {\l } 2.
-LaTeX Font Info:    Try loading font information for U+dsrom on input line 35.
-("C:\Program Files\MiKTeX 2.9\tex\latex\doublestroke\udsrom.fd"
+[11
+
+
+
+]
+LaTeX Font Info:    Try loading font information for U+dsrom on input line 57.
+ ("C:\Program Files\MiKTeX 2.9\tex\latex\doublestroke\udsrom.fd"
 File: Udsrom.fd 1995/08/01 v0.1 Double stroke roman font definitions
-) [11
+) [12]
+[13]) [14]
+\openout2 = `rozdzial3.aux'.
+
+ (rozdzial3.tex
+Rozdzia\PlPrIeC {\l } 3.
+) [15
 
 
 
-] [12])
-[13] [14
+] [16
 
 
 ] (dokument_KK.lof)
 \tf@lof=\write4
 \openout4 = `dokument_KK.lof'.
 
- (dokument_KK.bbl [15] [16
+ (dokument_KK.bbl [17] [18
 
-]) [17] (dokument_KK.aux
-(wstep.aux) (rozdzial1.aux) (rozdzial2.aux)) ) 
+]) [19] (dokument_KK.aux (wstep.aux) (rozdzial1.aux) (rozdzial2.aux) (rozdzial3
+.aux)) ) 
 Here is how much of TeX's memory you used:
- 6130 strings out of 493334
- 87079 string characters out of 3139251
- 167712 words of memory out of 3000000
- 9487 multiletter control sequences out of 15000+200000
- 13366 words of font info for 45 fonts, out of 3000000 for 9000
+ 6144 strings out of 493334
+ 87270 string characters out of 3139251
+ 169048 words of memory out of 3000000
+ 9493 multiletter control sequences out of 15000+200000
+ 13904 words of font info for 46 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 40i,18n,43p,1695b,469s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files/MiKTeX 2.9/font
-s/enc/dvips/pl/plmi.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/pl/plrm.en
-c}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/pl/plit.enc}{C:/Program Files/Mi
-KTeX 2.9/fonts/enc/dvips/pl/plms.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvi
-ps/pl/plme.enc}<C:/Program Files/MiKTeX 2.9/fonts/type1/public/doublestroke/dsr
-om12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/fpl/fplrc8a.pfb><C:/Pr
-ogram Files/MiKTeX 2.9/fonts/type1/public/fpl/fplrij8a.pfb><C:/Program Files/Mi
-KTeX 2.9/fonts/type1/public/pl/plbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
-pe1/public/pl/plbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/pl/ple
-x10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/pl/plmi10.pfb><C:/Progr
-am Files/MiKTeX 2.9/fonts/type1/public/pl/plmi12.pfb><C:/Program Files/MiKTeX 2
-.9/fonts/type1/public/pl/plmi6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pub
-lic/pl/plmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/pl/plr10.pfb><
-C:/Program Files/MiKTeX 2.9/fonts/type1/public/pl/plr12.pfb><C:/Program Files/M
-iKTeX 2.9/fonts/type1/public/pl/plr6.pfb><C:/Program Files/MiKTeX 2.9/fonts/typ
-e1/public/pl/plr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/pl/plsy10
-.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/pl/plsy8.pfb><C:/Program F
-iles/MiKTeX 2.9/fonts/type1/public/pl/plti10.pfb><C:/Program Files/MiKTeX 2.9/f
-onts/type1/urw/palatino/uplb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw
-/palatino/uplr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/palatino/uplr
-i8a.pfb>
-Output written on dokument_KK.pdf (17 pages, 317017 bytes).
+ 40i,18n,43p,1631b,469s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/pl/plmi.enc}{C:/Program Fi
+les/MiKTeX 2.9/fonts/enc/dvips/pl/plrm.enc}{C:/Program Files/MiKTeX 2.9/fonts/e
+nc/dvips/pl/plit.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/pl/plms.enc}{
+C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/pl/plme.enc}<C:/Program Files/MiKTe
+X 2.9/fonts/type1/public/doublestroke/dsrom12.pfb><C:/Program Files/MiKTeX 2.9/
+fonts/type1/public/fpl/fplrc8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pub
+lic/fpl/fplrij8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/pl/plbx10.
+pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/pl/plbx12.pfb><C:/Program F
+iles/MiKTeX 2.9/fonts/type1/public/pl/plex10.pfb><C:/Program Files/MiKTeX 2.9/f
+onts/type1/public/pl/plmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public
+/pl/plmi12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/pl/plmi6.pfb><C:
+/Program Files/MiKTeX 2.9/fonts/type1/public/pl/plmi8.pfb><C:/Program Files/MiK
+TeX 2.9/fonts/type1/public/pl/plr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type
+1/public/pl/plr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/pl/plr6.p
+fb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/pl/plr8.pfb><C:/Program File
+s/MiKTeX 2.9/fonts/type1/public/pl/plsy10.pfb><C:/Program Files/MiKTeX 2.9/font
+s/type1/public/pl/plsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/pl/
+plti10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/pl/plti12.pfb><C:/Pr
+ogram Files/MiKTeX 2.9/fonts/type1/urw/palatino/uplb8a.pfb><C:/Program Files/Mi
+KTeX 2.9/fonts/type1/urw/palatino/uplr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts
+/type1/urw/palatino/uplri8a.pfb>
+Output written on dokument_KK.pdf (19 pages, 333473 bytes).
 PDF statistics:
- 206 PDF objects out of 1000 (max. 8388607)
+ 217 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  81 words of extra memory for PDF output out of 10000 (max. 10000000)
 

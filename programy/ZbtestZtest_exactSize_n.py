@@ -45,6 +45,8 @@ for n in range(1, n2+1):
 
     vectorZ = np.array([])
     vectorZb = np.array([])
+    exactSizeZ = 0
+    exactSizeZb = 0
         
     for i in range(counter):
     
@@ -61,23 +63,32 @@ for n in range(1, n2+1):
         # test Z ze skończoną poprawką                 
         variance = ((N1 - n1)/(n1*(N1 - 1)) + (N2 - n)/(n*(N2 - 1))) * ((k1 + k2)/(n1 + n)) * (1 - (k1 + k2)/(n1 + n))  
         
-        Z = countZ(estp1, estp2, variance)        
-        vectorZ = np.append(vectorZ, Z)
-
+        if (variance != 0):
+            Z = countZ(estp1, estp2, variance)    
+            pvalueZ = 2 * (1 - norm.cdf(abs(Z)))
+            if (pvalueZ < alpha):
+                exactSizeZ += 1 
+        elif (k1/n1 != k2/n):
+                exactSizeZ += 1
+            
+        
         # test Z bez skończonej poprawki
         varianceb = estp*(1 - estp)*(1/n1 + 1/n)  
         
-        Zb = countZ(estp1, estp2, varianceb)        
-        vectorZb = np.append(vectorZb, Zb)  
+        if (varianceb != 0):
+            Zb = countZ(estp1, estp2, varianceb)    
+            pvalueZb = 2 * (1 - norm.cdf(abs(Zb)))
+            if (pvalueZb < alpha):
+                exactSizeZb += 1 
+        else:
+            if (k1/n1 != k2/n):
+                exactSizeZb += 1
+                
               
     
-    vectorpvalueZ = 2 * (1 - norm.cdf(np.abs(vectorZ)))
-    exactSizeZ = np.sum(vectorpvalueZ < alpha) / counter
-    vectorExactSizeZ = np.append(vectorExactSizeZ, exactSizeZ)
+    vectorExactSizeZ = np.append(vectorExactSizeZ, exactSizeZ/counter)
 
-    vectorpvalueZb = 2 * (1 - norm.cdf(np.abs(vectorZb)))
-    exactSizeZb = np.sum(vectorpvalueZb < alpha) / counter
-    vectorExactSizeZb = np.append(vectorExactSizeZb, exactSizeZb)
+    vectorExactSizeZb = np.append(vectorExactSizeZb, exactSizeZb/counter)
 
 
 vectorX = np.arange(1, n2+1)
@@ -90,7 +101,7 @@ plt.plot(vectorX, vectorAplha, '.r')
 #plt.axis([0, n2, 0, 0.1])
 plt.grid(True)
 plt.xlabel('$n_2$', fontsize=14)
-plt.ylabel('Exact size')
+plt.ylabel('p-stwo bledu I rodzaju')
 title = "$n_1=" + str(n1) + "," + "p=" + str(p2) + "$"
 plt.title(title, fontsize=14)
-plt.legend(["test Z", "test Z bez skonczonej poprawki"])
+plt.legend(["test Z", "test Z bez skonczonej poprawki"], loc=4)
