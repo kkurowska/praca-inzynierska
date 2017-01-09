@@ -1,9 +1,10 @@
 # -*- coding: utf-8 -*-
 """
-Created on Sat Dec 31 14:56:46 2016
+Created on Mon Jan  9 19:26:14 2017
 
 @author: Kinia
 """
+
 
 import numpy as np
 from scipy.stats import norm, hypergeom as hg, binom
@@ -22,32 +23,34 @@ def countarrayZ(n1, n2, x1, x2, variance):
     
 alpha = 0.05
 
-licznik=25
+licznik=50
 
 #N1 = 30 # cała populacja
 #vectorM1 = np.array([21, 24, 27]) # ilość z daną cechą
-N1 = 100
-vectorM1 = np.array([20, 30, 40])
+N1 = 1000
+vectorM1 = np.array([500, 400, 300])
 n1 = 25 # probka
 vectorp1 = vectorM1/N1
     
 #N2 = 50 # cała populacja
 #M2 = 30  # ilość z daną cechą
-N2 = 200
-M2 = 20
+N2 = 3000
+M2 = 1800
 n2 = 50 # probka
 p2 = M2/N2
 
 arrayPowerZ = np.zeros((3, licznik))    
-arrayPowerE = np.zeros((3, licznik))  
+arrayPowerZb = np.zeros((3, licznik))  
     
 for j in range(1, licznik+1):
     
-    n=2*j
+    n=j #n2
     
     n1=j # n1 = n2 ?
             
     for i in range(3):
+        
+        # test Z (ze skończoną poprawką)
         
         M1 = vectorM1[i]
         p1 = vectorp1[i]        
@@ -72,62 +75,75 @@ for j in range(1, licznik+1):
         
         variance_k = ((N1 - n1)/(n1*(N1 - 1)) + (N2 - n)/(n*(N2 - 1))) * ((arrayK1 + arrayK2)/(n1 + n)) * (1 - (arrayK1 + arrayK2)/(n1 + n))
         Z_k = countarrayZ(n1, n, arrayK1, arrayK2, variance_k)
-      
-        # test Z (ze skończoną poprawką)
+        
         quantile = norm.ppf(1-alpha/2)
         bZ = np.abs(Z_k) > quantile # indykator
         b0 = (variance_k == 0) #w tym przypadku porownujemy estp1 i estp2
         bZ[b0] = (arrayK1[b0]/n1 != arrayK2[b0]/n)
         powerZ = np.sum(arrayH[bZ])
         arrayPowerZ[i, j-1] = powerZ
-
-
-        # test E
-
-        bE = np.zeros((size1, size2))
+      
+        # test bez skończonej poprawki
+    
+        size1 = n1 + 1
+        size2 = n + 1
+        vectorK1 = np.arange(size1).reshape((size1, 1))
+        vectorK2 = np.arange(size2)
+        arrayK1 = np.tile(vectorK1, (1, size2))
+        arrayK2 = np.tile(vectorK2, (size1, 1))
+        
+        b1 = binom.pmf(vectorK1, n1, p1) 
+        b2 = binom.pmf(vectorK2, n, p2)
+        arrayB1 = np.tile(b1, (1, size2))
+        arrayB2 = np.tile(b2, (size1, 1)) 
+        arrayB = arrayB1 * arrayB2
+    
+        vectorestp = (arrayK1 + arrayK2)/(n1 + n)
+        varianceb_k = vectorestp*(1 - vectorestp)*(1/n1 + 1/n)  
+       
+        Zb_k = countarrayZ(n1, n, arrayK1, arrayK2, varianceb_k)
+    
+    
+        bZb = np.zeros((size1, size2))
         
         for r in range(size1):
             for c in range(size2):
                 
-                if (variance_k[r,c] != 0):
-
-                    estp = (arrayK1[r,c] + arrayK2[r,c])/(n1 + n)
-                    estM1 = floor(N1 * estp)
-                    estM2 = floor(N2 * estp) 
-                    Lx1 = max(0, estM1 - N1 + n1)
-                    Lx2 = max(0, estM2 - N2 + n)
-                    Ux1 = min(n1, estM1)
-                    Ux2 = min(n, estM2)
+                if (varianceb_k[r,c] != 0):
                     
-                    sizex1 = Ux1 + 1 - Lx1
-                    sizex2 = Ux2 + 1 - Lx2 
-                    vectorX1 = np.arange(Lx1, Ux1 + 1).reshape((sizex1, 1)) # pionowy wektor
-                    vectorX2 = np.arange(Lx2, Ux2 + 1)
+                    estpK = (arrayK1[r,c] + arrayK2[r,c])/(n1 + n)
+                
+                    sizex1 = n1 + 1
+                    sizex2 = n + 1 
+                    vectorX1 = np.arange(sizex1).reshape((sizex1, 1)) # pionowy wektor
+                    vectorX2 = np.arange(sizex2)
                     arrayX1 = np.tile(vectorX1, (1, sizex2)) # wektory X1 w pionie
                     arrayX2 = np.tile(vectorX2, (sizex1, 1)) # wektory X2 w poziomie
                     
-                    hx1 = hg.pmf(vectorX1, N1, estM1, n1) 
-                    hx2 = hg.pmf(vectorX2, N2, estM2, n)
-                    arrayHx1 = np.tile(hx1, (1, sizex2)) # wektory w pionie
-                    arrayHx2 = np.tile(hx2, (sizex1, 1)) # wektory w poziomie  
-                    arrayHx = arrayHx1 * arrayHx2
+                    bx1 = binom.pmf(vectorX1, n1, estpK) 
+                    bx2 = binom.pmf(vectorX2, n, estpK)
+                    arrayBx1 = np.tile(bx1, (1, sizex2))
+                    arrayBx2 = np.tile(bx2, (sizex1, 1)) 
+                    arrayBx = arrayBx1 * arrayBx2
                     
-                    variance_x = ((N1 - n1)/(n1*(N1 - 1)) + (N2 - n)/(n*(N2 - 1))) * ((arrayX1 + arrayX2)/(n1 + n)) * (1 - (arrayX1 + arrayX2)/(n1 + n))
-                    Z_x = countarrayZ(n1, n, arrayX1, arrayX2, variance_x)  
-                    bZx = np.abs(Z_x) >= np.abs(Z_k[r,c]) # indykator
-                    bx0 = variance_x == 0
-                    bZx[bx0] = np.abs(Z_x[bx0]) >= abs(arrayK1[r,c]/n1 - arrayK2[r,c]/n)
-    #                bZx0 = (variance_x == 0) #w tym przypadku porownujemy estp1 i estp2
-    #                bZx[bZx0] = (arrayX1[bZx0]/n1 != arrayX2[bZx0]/n)
-                    pvalueE = np.sum(arrayHx[bZx])
-                    bE[r,c] = pvalueE <= alpha # zapisuje się 0 lub 1
+                    estp = (arrayX1 + arrayX2)/(n1 + n)
+                    
+                    varianceb_x = estp*(1 - estp)*(1/n1 + 1/n)
+                    Zb_x = countarrayZ(n1, n, arrayX1, arrayX2, varianceb_x)  
+                    bZx = np.abs(Zb_x) >= np.abs(Zb_k[r,c]) # indykator
+                    bx0 = varianceb_x == 0
+                    bZx[bx0] = np.abs(Zb_x[bx0]) >= abs(arrayK1[r,c]/n1 - arrayK2[r,c]/n)
+                    pvalueZb = np.sum(arrayBx[bZx])
+                    bZb[r,c] = pvalueZb <= alpha # zapisuje się 0 lub 1
                 elif (arrayK1[r,c]/n1 != arrayK2[r,c]/n):                
-                    bE[r,c] = 1
+                    bZb[r,c] = 1
+                    print("coś")
+                    
+                  
           
-        bE = (bE == 1)
-        bE[b0] = (arrayK1[b0]/n1 != arrayK2[b0]/n)
-        powerE = np.sum(arrayH[bE])
-        arrayPowerE[i, j-1] = powerE
+        bZb = (bZb == 1)
+        powerZb = np.sum(arrayB[bZb])
+        arrayPowerZb[i, j-1] = powerZb
                 
 
 vectorX = np.arange(1, licznik+1)
@@ -137,18 +153,18 @@ color = ['b', 'g', 'r']
 legZ1 = "test Z: $p_1=" + str(vectorp1[0]) + "$"
 legZ2 = "$p_1=" + str(vectorp1[1]) + "$"
 legZ3 = "$p_1=" + str(vectorp1[2]) + "$"
-legE1 = "test E: $p_1=" + str(vectorp1[0]) + "$"
+legE1 = "test Zb: $p_1=" + str(vectorp1[0]) + "$"
 legE2 = "$p_1=" + str(vectorp1[1]) + "$"
 legE3 = "$p_1=" + str(vectorp1[2]) + "$"
 legZ = [legZ1, legZ2, legZ3]
 legE = [legE1, legE2, legE3]
 for i in range (3):
-    plt.plot(vectorX, arrayPowerE[i], color[i], label = legE[i])
+    plt.plot(vectorX, arrayPowerZb[i], color[i], label = legE[i])
 for i in range (3):
     plt.plot(vectorX, arrayPowerZ[i], color[i], ls = '--', label = legZ[i])
 plt.grid(True)
-#plt.xlabel("$n$", fontsize=14)
-plt.xlabel("$n_1(n_2=2n_1)$", fontsize=14)
+plt.xlabel("$n$", fontsize=14)
+#plt.xlabel("$n_1(n_2=2n_1)$", fontsize=14)
 plt.ylabel("moc testu")
 title = "$N_1=" + str(N1) + "$, $" + "N_2=" + str(N2) + "$, $" + "p_2=" + str(p2) + "$"
 plt.title(title, fontsize=14)

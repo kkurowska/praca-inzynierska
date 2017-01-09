@@ -30,14 +30,14 @@ counter = 1000 # proby monte carlo
 alpha = 0.05
 
 N1 = 100 # cała populacja
-M1 = 10 # ilość z daną cechą
+M1 = 5 # ilość z daną cechą
 n1 = 10 # probka
 p1 = M1/N1
 population1 = np.append(np.ones(M1), np.zeros(N1-M1))
 np.random.shuffle(population1)
     
 N2 = 100 # cała populacja
-M2 = 10        # ilość z daną cechą
+M2 = 5        # ilość z daną cechą
 n2 = 60 # probka
 p2 = M2/N2
 population2 = np.append(np.ones(M2), np.zeros(N2-M2))

@@ -1,5 +1,5 @@
 \chapter{Przedstawienie testów}
-
+\label{rozdzial2}
 W niniejszym rozdziale są przedstawione trzy testy, jeden oparty na rozkładzie dwumianowym i~dwa wykorzystujące rozkład hipergeometryczny. Jest także omówiony sposób liczenia dla nich mocy testu.
 
 \section{Sformułowanie problemu}
@@ -79,7 +79,7 @@ Tymczasem dla testu E, wg Krishnamoorthy i~Thomson (2002), moc zdefiniowana jest
 \begin{equation}
 \begin{split}
 &\sum_{k_1=L_1}^{U_1}\sum_{k_2=L_2}^{U_2} h(k_1;n_1,M_1,N_1)h(k_2;n_2,M_2,N_2) \times \\
-&\times \1{\sum_{x_1=L_{x_1}}^{U_{x_1}}\sum_{x_2=L_{x_2}}^{U_{x_2}} h(x_1;n_1,\hat{M_1},N_1)h(x_2;n_2,\hat{M_2},N_2) \1{|Z_{X_1,X_2}|\geq|Z_{k_1,k_2}|}\leq\alpha },
+&\times \1{\sum_{x_1=L_{x_1}}^{U_{x_1}}\sum_{x_2=L_{x_2}}^{U_{x_2}} h(x_1;n_1,\hat{M_1},N_1)h(x_2;n_2,\hat{M_2},N_2) \1{|Z_{x_1,x_2}|\geq|Z_{k_1,k_2}|}\leq\alpha },
 \end{split}
 \end{equation}
 gdzie wszelkie parametry oznaczają są takie same jak we wzorach (\ref{estpvalue}) i~(\ref{powerZ}).
@@ -113,7 +113,7 @@ Moc testu jest również podobna do mocy testu E. W~tym przypadku wyraża się w
 \begin{equation}
 \begin{split}
 \sum_{k_1=0}^{n}\sum_{k_2=0}^{n} b(k_1;n_1,&p_1)b(k_2;n_2,p_2) \times \\
-\times &\1{\sum_{x_1=0}^{n_1} \sum_{x_2=0}^{n_2} b(x_1;n_1,\hat{p_1}) b(x_2;n_2,\hat{p_2}) \1{|Z_{X_1,X_2}|\geq|Z_{k_1,k_2}|} \leq\alpha}.
+\times &\1{\sum_{x_1=0}^{n_1} \sum_{x_2=0}^{n_2} b(x_1;n_1,\hat{p_1}) b(x_2;n_2,\hat{p_2}) \1{|Z_{x_1,x_2}|\geq|Z_{k_1,k_2}|} \leq\alpha}.
 \end{split}
 \end{equation}
 
