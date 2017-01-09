@@ -25,17 +25,17 @@ Rozkład hipergeometryczny daje bardzo podobne wyniki do rozkładu Bernoullego, 
 
 Rozważmy to na medycznym przykładzie. Załóżmy, że jest na świecie $20$ osób, które są chore na jakąś bardzo rzadką chorobę oraz że $25\%$ z~nich ma szanse na wyzdrowienie. Chcemy dowiedzieć się, ile osób spośród przebadanych może wyzdrowieć. Weźmy $3$~różne próbki o~wielkościach~$n$ równych odpowiednio $10$, $17$, $20$. Możemy tę sytuację opisać za pomocą rozkładem Bernoullego, wtedy badana zmienna losowa będzie z~rozkładu $\mathcal{B}(n,0.25)$. Drugim sposobem jest rozkład hipergeometryczny, wtedy zmienna losowa jest z~rozkładu $\mathcal{H}(n,4,20)$. Na rysunkach \ref{pmf10}\ppauza \ref{pmf20} jest zobrazowana funkcja prawdopodobieństwa dla wymienionych przypadków.
 
-\begin{diagrams}{b_pmf10.png}{hg_pmf10.png}
+\begin{diagrams}{b_pmf10}{hg_pmf10}
 	\caption{Funkcja prawdopodobieństwa dla $n=10$}
 	\label{pmf10}
 \end{diagrams}
 
-\begin{diagrams}{b_pmf17.png}{hg_pmf17.png}
+\begin{diagrams}{b_pmf17}{hg_pmf17}
 	\caption{Funkcja prawdopodobieństwa dla $n=17$}
 	\label{pmf17}
 \end{diagrams}
 
-\begin{diagrams}{b_pmf20.png}{hg_pmf20.png}
+\begin{diagrams}{b_pmf20}{hg_pmf20}
 	\caption{Funkcja prawdopodobieństwa dla $n=20$}
 	\label{pmf20}
 \end{diagrams}
@@ -53,7 +53,7 @@ E(X)=n\frac{M}{N},\quad Var(X)=n\frac{M}{N}\left(1-\frac{M}{N}\right)\frac{N-n}{
 \end{equation}
 Parametr $p$ rozkładu dwumianowego odpowiada ilorazowi parametrów $M/N$ w~rozkładzie hipergeometrycznym. Wobec tego średnie obu rozkładów są sobie równe, a wariancje różni dodatkowy składnik w~rozkładzie hipergeometrycznym $(N-n)/(N-1)$. Przeanalizujmy jak ten czynnik wpływa na zróżnicowanie rozkładów. Rysunek \ref{var} przedstawia wykresy wariancji dla rozważanego przykładu w~zależności od wielkości obserwacji. W~przypadku rozkładu dwumianowego wariancja stale rośnie wraz ze wzrostem próbki. Ostatecznie, gdy już przebadamy wszystkich chorych pacjentów, ma ona największą wartość. Myśląc zdroworozsądkowo, nie jest to poprawny wynik. Oczekujemy raczej, że gdy przebadamy już wszystkich, wariancja osiągnie wartość $0$, ponieważ nie ma wtedy losowości. Taki rezultat daje nam wykres \ref{hg_var.png}. Funkcja na początku rośnie, ale gdy wielkość próbki przekroczy połowę rozmiaru populacji, wariancja zaczyna maleć aż do zera. Odzwierciedla to fakt, że gdy coraz więcej wiemy o~populacji, losowość uzyskanych wyników maleje.
 
-\begin{diagrams}{b_var.png}{hg_var.png}
+\begin{diagrams}{b_var}{hg_var}
 	\caption{Wariancja w~zależności od rozmiaru próbki}
 	\label{var}
 \end{diagrams}

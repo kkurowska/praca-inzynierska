@@ -24,13 +24,13 @@ def countarrayZ(n1, n2, x1, x2, variance):
 alpha = 0.05
 
 N1 = 100
-M1 = 10
+M1 = 5
 #n1 = 5 # probka
 p1 = M1/N1
     
 N2 = 100
-M2 = 10
-n2 = 60 # probka
+M2 = 5
+n2 = 30 # probka
 p2 = M2/N2
 
 vectorSizeZ = np.zeros(n2)    

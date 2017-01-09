@@ -1,43 +1,65 @@
 \chapter{Analiza testów}
+\label{r3}
 
-Do porównania testów napisałam programy, które wyliczają prawdopodobieństwo błędu I rodzaju oraz moc testu dla różnych parametrów. 
+Aby porównać testy opisane w~rozdziale \ref{r2}, napisałam programy, które wyliczają prawdopodobieństwo błędu I~rodzaju i~moc testu oraz generują wykresy dla różnych parametrów.
 
-
+\section{Porównanie testów ze skończoną poprawką}
+W pierwszej kolejności zajęłam się zestawieniem testów ze skończoną poprawką. Na rysunku \ref{sizeZE_n} przedstawiona jest funkcja prawdopodobieństwa błędu I~rodzaju w~zależności od rozmiaru próbki dla różnych proporcji $p$. Po lewej stronie obserwacje z~obu populacji są tej samej wielkości $n_1=n_2=n$, natomiast po prawej różnią się, rozmiar pierwszej próbki ma ustaloną wartość. Pierwszym spostrzeżeniem jest to, że funkcja dla testu~E w~większości przypadków jest mniejsza niż dla testu Z. Dodatkowo dla testu~E prawdopodobieństwo błędu przekracza poziom istotności jedynie kilka razy i~to bardzo nieznacznie. Tymczasem dla testu~Z częściej przyjmuje wartości wyższe od $\alpha$, czasem prawie dwukrotnie, jak na wykresie \ref{sizeZE_p_0_05}. Warto wspomnieć także, że dla większych $p$ (0.1, 0.3) oraz wraz ze wzrostem wielkości próbki funkcje są bliżej siebie i~bardziej skupiają się przy poziomie istotności $\alpha$.
 
 \begin{figure}[!h]
-	\begin{subdiagrams}{sizeZE_p_0_05.png}{sizeZE_p_0_05_n1_5.png}
+	\begin{subdiagrams}{sizeZE_p_0_05}{sizeZE_p_0_05_n1_5}
 	\end{subdiagrams}
 	
-	\begin{subdiagrams}{sizeZE_p_0_1.png}{sizeZE_p_0_1_n1_10.png}
+	\begin{subdiagrams}{sizeZE_p_0_1}{sizeZE_p_0_1_n1_10}
 	\end{subdiagrams}
 	
-	\begin{subdiagrams}{sizeZE_p_0_3.png}{sizeZE_p_0_3_n1_5.png}
+	\begin{subdiagrams}{sizeZE_p_0_3}{sizeZE_p_0_3_n1_5}
 	\end{subdiagrams}
-	\caption{P-stwo błędu I rodzaju jako funkcja rozmiaru próbki $n$, przy zadanym poziomie istotności $\alpha=0.05$; $N_1=N_2=100$}
+	\caption{P-stwo błędu I~rodzaju testów~Z i~E jako funkcja rozmiaru próbki $n$, przy zadanym poziomie istotności $\alpha=0.05$; $N_1=N_2=100$}
 	\label{sizeZE_n}
 \end{figure}
 
+Rysunek \ref{sizeZE_p} obrazuje również prawdopodobieństwo błędu I~rodzaju, ale w~zależności od proporcji $p$. Analizując wykresy funkcji, można dojść do podobnych wniosków, jak dla rysunku \ref{sizeZE_n}. W~każdym przypadku funkcja dla testu~Z jest większa od funkcji dla testu E. Oprócz tego prawdopodobieństwo błędu I~rodzaju testu~E przekracza poziom istotności jedynie na wykresie \ref{sizeZE_n1_30_n2_15}, podczas gdy test~Z tylko w~jednym przypadku (\ref{sizeZE_n1_10_n2_6}) pozostaje całkowicie poniżej $\alpha$.
 
 \begin{figure}[!h]
-	\begin{subdiagrams}{sizeZE_n_10.png}{sizeZE_n1_10_n2_6.png}
+	\begin{subdiagrams}{sizeZE_n_10}{sizeZE_n1_10_n2_6}
 	\end{subdiagrams}
 	
-	\begin{subdiagrams}{sizeZE_n_20.png}{sizeZE_n1_20_n2_5.png}
+	\begin{subdiagrams}{sizeZE_n_20}{sizeZE_n1_20_n2_5}
 	\end{subdiagrams}
 	
-	\begin{subdiagrams}{sizeZE_n_30.png}{sizeZE_n1_30_n2_15.png}
+	\begin{subdiagrams}{sizeZE_n_30}{sizeZE_n1_30_n2_15}
 	\end{subdiagrams}
-	\caption{P-stwo błędu I rodzaju jako funkcja parametru $p=M_1/N_1=M_2/N_2$, przy zadanym poziomie istotności $\alpha=0.05$; $N_1=N_2=100$}
+	\caption{P-stwo błędu I~rodzaju testów~Z i~E jako funkcja proporcji $p=M_1/N_1=M_2/N_2$, przy zadanym poziomie istotności $\alpha=0.05$; $N_1=N_2=100$}
 	\label{sizeZE_p}
 \end{figure}
 
+Rysunek \ref{powerZE_n} zawiera wykresy mocy obu testów w~zależności od rozmiaru próbki dla różnych rozmiarów populacji oraz proporcji $p$. Pierwszą populację modyfikowałam tak, żeby proporcje były większe lub mniejsze niż w~drugiej populacji. W~tym porównaniu lepiej wypada test Z, ponieważ jego moc jest większa od mocy testu E. Jednakże te różnice nie są duże. Zauważalny jest wzrost mocy testu wraz ze zwiększaniem się rozmiaru próbki. Ponadto moc testu wzrasta także dla proporcji bardziej oddalonych od siebie. W~każdym przypadku, dla próby $n=50$ i~różnicy między proporcjami $0.3$ moc jest już równe, albo prawie równe $1$.
+
 \begin{figure}[!h]
-	\begin{subdiagrams}{powerZE_N1_30_N2_50_p_0_6.png}{powerZE_N_100_p_0_1.png}
+	\begin{subdiagrams}{powerZE_N1_30_N2_50_p_0_6}{powerZE_N_100_p_0_1}
 	\end{subdiagrams}
 	
-	\begin{subdiagrams}{powerZE_N1_100_N2_200_p_0_1.png}{powerZE_N1_3000_N2_100_p_0_6.png}
+	\begin{subdiagrams}{powerZE_N1_100_N2_200_p_0_1}{powerZE_N1_3000_N2_100_p_0_6}
 	\end{subdiagrams}
 	
-	\caption{Moc testu jako funkcja rozmiaru próbki $n$, przy zadanym poziomie istotności $\alpha=0.05$}
+	\caption{Moc testów~Z i~E jako funkcja rozmiaru próbki $n$, przy zadanym poziomie istotności $\alpha=0.05$}
 	\label{powerZE_n}
+\end{figure}
+
+Podsumowując, nie można jasno stwierdzić, który test jest lepszy, ponieważ wyliczenia dla prawdopodobieństwa błędu I~rodzaju wskazują na test E, natomiast moc testu jest większa dla testu Z. \textit{czy któryś parametr jest ważniejszy? czy można powiedzieć, że test~E jest lepszy, bo moc testu nie jest dużo mniejsza od mocy testu Z, a~za to błąd I~rodzaju jest znacząco mniejszy od Z?}
+
+\section{Porównanie testu bez skończonej poprawki z~testem Z}
+
+Rysunek \ref{powerZZb_n} przedstawia wykresy mocy obu testów w~zależności od rozmiaru próbki dla różnych rozmiarów populacji oraz proporcji $p$.
+
+\begin{figure}[!h]
+	\begin{subdiagrams}{powerZZb_N1_30_N2_50_p_0_6}{powerZZb_N_100_p_0_1}
+	\end{subdiagrams}
+	
+	\begin{subdiagrams}{powerZZb_N1_100_N2_200_p_0_1}{powerZZb_N1_3000_N2_100_p_0_6}
+	\end{subdiagrams}
+	
+	\caption{Moc testu~Z i~bez skończonej poprawki jako funkcja rozmiaru próbki $n$, przy zadanym poziomie istotności $\alpha=0.05$}
+	\label{powerZZb_n}
 \end{figure}
