@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.10.24)  9 JAN 2017 23:08
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.10.24)  10 JAN 2017 17:33
 entering extended mode
 **./dokument_KK.tex
 (dokument_KK.tex
@@ -591,94 +591,45 @@ Package: subcaption 2016/05/22 v1.1-161 Sub-captions (AR)
 ("C:\Program Files\MiKTeX 2.9\tex\latex\doublestroke\dsfont.sty"
 Package: dsfont 1995/08/01 v0.1 Double stroke roman fonts
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\geometry\geometry.sty"
-Package: geometry 2010/09/12 v5.6 Page Geometry
-
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifvtex.sty"
-Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
-Package ifvtex Info: VTeX not detected.
-)
-("C:\Program Files\MiKTeX 2.9\tex\generic\ifxetex\ifxetex.sty"
-Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
-)
-\Gm@cnth=\count108
-\Gm@cntv=\count109
-\c@Gm@tempcnt=\count110
-\Gm@bindingoffset=\dimen126
-\Gm@wd@mp=\dimen127
-\Gm@odd@mp=\dimen128
-\Gm@even@mp=\dimen129
-\Gm@layoutwidth=\dimen130
-\Gm@layoutheight=\dimen131
-\Gm@layouthoffset=\dimen132
-\Gm@layoutvoffset=\dimen133
-\Gm@dimlist=\toks30
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\geometry\geometry.cfg"))
-*geometry* verbose mode - [ newgeometry ] result:
-* driver: 
-* paper: a4paper
-* layout: <same size as paper>
-* layoutoffset:(h,v)=(0.0pt,0.0pt)
-* modes: twoside 
-* h-part:(L,W,R)=(71.13188pt, 455.24411pt, 71.13188pt)
-* v-part:(T,H,B)=(71.13188pt, 702.78308pt, 71.13188pt)
-* \paperwidth=597.50787pt
-* \paperheight=845.04684pt
-* \textwidth=455.24411pt
-* \textheight=702.78308pt
-* \oddsidemargin=-1.1381pt
-* \evensidemargin=-1.1381pt
-* \topmargin=-32.1381pt
-* \headheight=14.5pt
-* \headsep=16.5pt
-* \topskip=12.0pt
-* \footskip=29.0pt
-* \marginparwidth=0.0pt
-* \marginparsep=0.0pt
-* \columnsep=25.6802pt
-* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
-* \hoffset=0.0pt
-* \voffset=0.0pt
-* \mag=1000
-* \@twocolumnfalse
-* \@twosidetrue
-* \@mparswitchtrue
-* \@reversemarginfalse
-* (1in=72.27pt=25.4mm, 1cm=28.453pt)
-
-
-(dokument_KK.aux (wstep.aux) (rozdzial1.aux) (rozdzial2.aux) (rozdzial3.aux))
+("C:\Program Files\MiKTeX 2.9\tex\latex\float\float.sty"
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count108
+\float@exts=\toks30
+\float@box=\box30
+\@float@everytoks=\toks31
+\@floatcapt=\box31
+) (dokument_KK.aux
+(wstep.aux) (rozdzial1.aux) (rozdzial2.aux) (rozdzial3.aux))
 \openout1 = `dokument_KK.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 64.
-LaTeX Font Info:    ... okay on input line 64.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 64.
-LaTeX Font Info:    ... okay on input line 64.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 64.
-LaTeX Font Info:    ... okay on input line 64.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 64.
-LaTeX Font Info:    ... okay on input line 64.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 64.
-LaTeX Font Info:    ... okay on input line 64.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 64.
-LaTeX Font Info:    ... okay on input line 64.
-LaTeX Font Info:    Checking defaults for OT4/cmr/m/n on input line 64.
-LaTeX Font Info:    ... okay on input line 64.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for OT4/cmr/m/n on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
 
 ("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count111
-\scratchdimen=\dimen134
-\scratchbox=\box30
-\nofMPsegments=\count112
-\nofMParguments=\count113
-\everyMPshowfont=\toks31
-\MPscratchCnt=\count114
-\MPscratchDim=\dimen135
-\MPnumerator=\count115
-\makeMPintoPDFobject=\count116
-\everyMPtoPDFconversion=\toks32
+\scratchcounter=\count109
+\scratchdimen=\dimen126
+\scratchbox=\box32
+\nofMPsegments=\count110
+\nofMParguments=\count111
+\everyMPshowfont=\toks32
+\MPscratchCnt=\count112
+\MPscratchDim=\dimen127
+\MPnumerator=\count113
+\makeMPintoPDFobject=\count114
+\everyMPtoPDFconversion=\toks33
 ) ("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\pdftexcmds.sty"
 Package: pdftexcmds 2016/05/21 v0.22 Utility functions of pdfTeX for LuaTeX (HO
 )
@@ -721,7 +672,7 @@ Package grfext Info: Graphics extension search list:
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
 )
-\AtBeginShipoutBox=\box31
+\AtBeginShipoutBox=\box33
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\pdflscape.sty"
 Package: pdflscape 2016/05/14 v0.11 Display of landscape pages in PDF (HO)
@@ -730,7 +681,10 @@ Package: pdflscape 2016/05/14 v0.11 Display of landscape pages in PDF (HO)
 Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
 )
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
-)
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\ifxetex\ifxetex.sty"
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+))
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: Incompatible package detected (regarding \@caption).
 (caption)             \@caption = \long macro:#1[#2]#3->\par \addcontentsline {
@@ -745,78 +699,44 @@ Package caption Warning: Forced redefinition of \caption since the
 (caption)                was given.
 See the caption package documentation for explanation.
 
+Package caption Info: float package is loaded.
 Package caption Info: End \AtBeginDocument code.
-*geometry* driver: auto-detecting
-*geometry* detected driver: pdftex
-*geometry* verbose mode - [ preamble ] result:
-* driver: pdftex
-* paper: a4paper
-* layout: <same size as paper>
-* layoutoffset:(h,v)=(0.0pt,0.0pt)
-* modes: twoside 
-* h-part:(L,W,R)=(71.13188pt, 455.24411pt, 71.13188pt)
-* v-part:(T,H,B)=(71.13188pt, 702.78308pt, 71.13188pt)
-* \paperwidth=597.50787pt
-* \paperheight=845.04684pt
-* \textwidth=455.24411pt
-* \textheight=702.78308pt
-* \oddsidemargin=-1.1381pt
-* \evensidemargin=-1.1381pt
-* \topmargin=-32.1381pt
-* \headheight=14.5pt
-* \headsep=16.5pt
-* \topskip=12.0pt
-* \footskip=29.0pt
-* \marginparwidth=0.0pt
-* \marginparsep=0.0pt
-* \columnsep=25.6802pt
-* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
-* \hoffset=0.0pt
-* \voffset=0.0pt
-* \mag=1000
-* \@twocolumnfalse
-* \@twosidetrue
-* \@mparswitchtrue
-* \@reversemarginfalse
-* (1in=72.27pt=25.4mm, 1cm=28.453pt)
-
 <StronaTytulowa.pdf, id=1, 597.50829pt x 845.0471pt>
 File: StronaTytulowa.pdf Graphic file (type pdf)
  <use StronaTytulowa.pdf>
-Package pdftex.def Info: StronaTytulowa.pdf used on input line 67.
+Package pdftex.def Info: StronaTytulowa.pdf used on input line 68.
 (pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
 File: StronaTytulowa.pdf Graphic file (type pdf)
 
 <use StronaTytulowa.pdf>
-Package pdftex.def Info: StronaTytulowa.pdf used on input line 67.
+Package pdftex.def Info: StronaTytulowa.pdf used on input line 68.
 (pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
 
 <StronaTytulowa.pdf, id=4, page=1, 597.50829pt x 845.0471pt>
 File: StronaTytulowa.pdf Graphic file (type pdf)
 
 <use StronaTytulowa.pdf, page 1>
-Package pdftex.def Info: StronaTytulowa.pdf, page1 used on input line 67.
+Package pdftex.def Info: StronaTytulowa.pdf, page1 used on input line 68.
 (pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
 File: StronaTytulowa.pdf Graphic file (type pdf)
  <use StronaTytulowa.pdf, page 1>
-Package pdftex.def Info: StronaTytulowa.pdf, page1 used on input line 67.
+Package pdftex.def Info: StronaTytulowa.pdf, page1 used on input line 68.
 (pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
 File: StronaTytulowa.pdf Graphic file (type pdf)
 
 <use StronaTytulowa.pdf, page 1>
-Package pdftex.def Info: StronaTytulowa.pdf, page1 used on input line 67.
+Package pdftex.def Info: StronaTytulowa.pdf, page1 used on input line 68.
 (pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
 File: StronaTytulowa.pdf Graphic file (type pdf)
  <use StronaTytulowa.pdf, page 1>
-Package pdftex.def Info: StronaTytulowa.pdf, page1 used on input line 67.
+Package pdftex.def Info: StronaTytulowa.pdf, page1 used on input line 68.
 (pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
 File: StronaTytulowa.pdf Graphic file (type pdf)
 
 <use StronaTytulowa.pdf, page 1>
-Package pdftex.def Info: StronaTytulowa.pdf, page1 used on input line 67.
+Package pdftex.def Info: StronaTytulowa.pdf, page1 used on input line 68.
 (pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
  [1
-
 
 
  <./StronaTytulowa.pdf{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}>]
@@ -824,36 +744,36 @@ Package pdftex.def Info: StronaTytulowa.pdf, page1 used on input line 67.
 File: StronaTytulowa_ang.pdf Graphic file (type pdf)
 
 <use StronaTytulowa_ang.pdf>
-Package pdftex.def Info: StronaTytulowa_ang.pdf used on input line 68.
+Package pdftex.def Info: StronaTytulowa_ang.pdf used on input line 69.
 (pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
 File: StronaTytulowa_ang.pdf Graphic file (type pdf)
  <use StronaTytulowa_ang.pdf>
-Package pdftex.def Info: StronaTytulowa_ang.pdf used on input line 68.
+Package pdftex.def Info: StronaTytulowa_ang.pdf used on input line 69.
 (pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
 
 <StronaTytulowa_ang.pdf, id=44, page=1, 597.50829pt x 845.0471pt>
 File: StronaTytulowa_ang.pdf Graphic file (type pdf)
 
 <use StronaTytulowa_ang.pdf, page 1>
-Package pdftex.def Info: StronaTytulowa_ang.pdf, page1 used on input line 68.
+Package pdftex.def Info: StronaTytulowa_ang.pdf, page1 used on input line 69.
 (pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
 File: StronaTytulowa_ang.pdf Graphic file (type pdf)
  <use StronaTytulowa_ang.pdf, page 1>
-Package pdftex.def Info: StronaTytulowa_ang.pdf, page1 used on input line 68.
+Package pdftex.def Info: StronaTytulowa_ang.pdf, page1 used on input line 69.
 (pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
 File: StronaTytulowa_ang.pdf Graphic file (type pdf)
 
 <use StronaTytulowa_ang.pdf, page 1>
-Package pdftex.def Info: StronaTytulowa_ang.pdf, page1 used on input line 68.
+Package pdftex.def Info: StronaTytulowa_ang.pdf, page1 used on input line 69.
 (pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
 File: StronaTytulowa_ang.pdf Graphic file (type pdf)
  <use StronaTytulowa_ang.pdf, page 1>
-Package pdftex.def Info: StronaTytulowa_ang.pdf, page1 used on input line 68.
+Package pdftex.def Info: StronaTytulowa_ang.pdf, page1 used on input line 69.
 (pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
 File: StronaTytulowa_ang.pdf Graphic file (type pdf)
 
 <use StronaTytulowa_ang.pdf, page 1>
-Package pdftex.def Info: StronaTytulowa_ang.pdf, page1 used on input line 68.
+Package pdftex.def Info: StronaTytulowa_ang.pdf, page1 used on input line 69.
 (pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
  [2 <./StronaTytulowa_ang.pdf>]
 (dokument_KK.toc
@@ -899,7 +819,13 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 [4
 
 
-]) [5]
+]
+Overfull \hbox (5.33618pt too wide) in paragraph at lines 2--3
+[]\OT4/cmr/m/n/12 Pocz¡tki teo-rii ra-chun-ku praw-do-po-do-bie«-stwa i sta-ty-
+sty-ki si¦-ga-j¡ XVI wie-
+ []
+
+) [5]
 \openout2 = `rozdzial1.aux'.
 
  (rozdzial1.tex [6
@@ -910,114 +836,115 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 Rozdzia\PlPrIeC {\l } 1.
 LaTeX Font Info:    External font `plex10' loaded for size
 (Font)              <12> on input line 7.
-[7] <b_pmf10.png, id=96, 399.4925pt x 288.07625pt>
-File: b_pmf10.png Graphic file (type png)
- <use b_pmf10.png>
-Package pdftex.def Info: b_pmf10.png used on input line 28.
-(pdftex.def)             Requested size: 204.85846pt x 147.72574pt.
+[7] <wykresy/b_pmf10.png, id=96, 399.4925pt x 288.07625pt>
+File: wykresy/b_pmf10.png Graphic file (type png)
 
-<hg_pmf10.png, id=98, 399.4925pt x 288.07625pt>
-File: hg_pmf10.png Graphic file (type png)
- <use hg_pmf10.png>
-Package pdftex.def Info: hg_pmf10.png used on input line 28.
-(pdftex.def)             Requested size: 204.85846pt x 147.72574pt.
+<use wykresy/b_pmf10.png>
+Package pdftex.def Info: wykresy/b_pmf10.png used on input line 35.
+(pdftex.def)             Requested size: 175.49881pt x 126.55173pt.
 
-Overfull \hbox (2.61108pt too wide) in paragraph at lines 28--29
+<wykresy/hg_pmf10.png, id=98, 399.4925pt x 288.07625pt>
+File: wykresy/hg_pmf10.png Graphic file (type png)
+
+<use wykresy/hg_pmf10.png>
+Package pdftex.def Info: wykresy/hg_pmf10.png used on input line 35.
+(pdftex.def)             Requested size: 175.49881pt x 126.55173pt.
+
+Overfull \hbox (2.61108pt too wide) in paragraph at lines 35--36
 []$[]$ $[]$
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 28--29
+Underfull \hbox (badness 10000) in paragraph at lines 35--36
 
  []
 
-<b_pmf17.png, id=99, 392.46625pt x 288.07625pt>
-File: b_pmf17.png Graphic file (type png)
- <use b_pmf17.png>
-Package pdftex.def Info: b_pmf17.png used on input line 33.
-(pdftex.def)             Requested size: 204.85846pt x 150.37193pt.
+[8] <wykresy/b_pmf17.png, id=103, 392.46625pt x 288.07625pt>
+File: wykresy/b_pmf17.png Graphic file (type png)
 
-<hg_pmf17.png, id=100, 392.46625pt x 288.07625pt>
-File: hg_pmf17.png Graphic file (type png)
- <use hg_pmf17.png>
-Package pdftex.def Info: hg_pmf17.png used on input line 33.
-(pdftex.def)             Requested size: 204.85846pt x 150.37193pt.
+<use wykresy/b_pmf17.png>
+Package pdftex.def Info: wykresy/b_pmf17.png used on input line 40.
+(pdftex.def)             Requested size: 175.49881pt x 128.8199pt.
 
-Overfull \hbox (2.61108pt too wide) in paragraph at lines 33--34
+<wykresy/hg_pmf17.png, id=104, 392.46625pt x 288.07625pt>
+File: wykresy/hg_pmf17.png Graphic file (type png)
+
+<use wykresy/hg_pmf17.png>
+Package pdftex.def Info: wykresy/hg_pmf17.png used on input line 40.
+(pdftex.def)             Requested size: 175.49881pt x 128.8199pt.
+
+Overfull \hbox (2.61108pt too wide) in paragraph at lines 40--41
 []$[]$ $[]$
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 33--34
+Underfull \hbox (badness 10000) in paragraph at lines 40--41
 
  []
 
+<wykresy/b_pmf20.png, id=105, 399.4925pt x 288.07625pt>
+File: wykresy/b_pmf20.png Graphic file (type png)
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
+<use wykresy/b_pmf20.png>
+Package pdftex.def Info: wykresy/b_pmf20.png used on input line 45.
+(pdftex.def)             Requested size: 175.49881pt x 126.55173pt.
 
-<b_pmf20.png, id=101, 399.4925pt x 288.07625pt>
-File: b_pmf20.png Graphic file (type png)
- <use b_pmf20.png>
-Package pdftex.def Info: b_pmf20.png used on input line 38.
-(pdftex.def)             Requested size: 204.85846pt x 147.72574pt.
+<wykresy/hg_pmf20.png, id=106, 399.4925pt x 288.07625pt>
+File: wykresy/hg_pmf20.png Graphic file (type png)
 
-<hg_pmf20.png, id=102, 399.4925pt x 288.07625pt>
-File: hg_pmf20.png Graphic file (type png)
- <use hg_pmf20.png>
-Package pdftex.def Info: hg_pmf20.png used on input line 38.
-(pdftex.def)             Requested size: 204.85846pt x 147.72574pt.
+<use wykresy/hg_pmf20.png>
+Package pdftex.def Info: wykresy/hg_pmf20.png used on input line 45.
+(pdftex.def)             Requested size: 175.49881pt x 126.55173pt.
 
-Overfull \hbox (2.61108pt too wide) in paragraph at lines 38--39
+Overfull \hbox (2.61108pt too wide) in paragraph at lines 45--46
 []$[]$ $[]$
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 38--39
+Underfull \hbox (badness 10000) in paragraph at lines 45--46
 
  []
 
+[9 <./wykresy/b_pmf10.png> <./wykresy/hg_pmf10.png> <./wykresy/b_pmf17.png> <./
+wykresy/hg_pmf17.png> <./wykresy/b_pmf20.png> <./wykresy/hg_pmf20.png>]
+<wykresy/b_var.png, id=116, 399.4925pt x 288.07625pt>
+File: wykresy/b_var.png Graphic file (type png)
+ <use wykresy/b_var.png>
+Package pdftex.def Info: wykresy/b_var.png used on input line 63.
+(pdftex.def)             Requested size: 175.49881pt x 126.55173pt.
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
+<wykresy/hg_var.png, id=117, 399.4925pt x 288.07625pt>
+File: wykresy/hg_var.png Graphic file (type png)
 
+<use wykresy/hg_var.png>
+Package pdftex.def Info: wykresy/hg_var.png used on input line 63.
+(pdftex.def)             Requested size: 175.49881pt x 126.55173pt.
 
-LaTeX Warning: Reference `hg_pmf20.png' on page 8 undefined on input line 43.
-
-
-LaTeX Warning: Reference `b_pmf20.png' on page 8 undefined on input line 43.
-
-[8 <./b_pmf10.png> <./hg_pmf10.png>]
-Underfull \vbox (badness 7468) has occurred while \output is active []
-
- [9 <./b_pmf17.png> <./hg_pmf17.png> <./b_pmf20.png> <./hg_pmf20.png>]
-
-LaTeX Warning: Reference `hg_var.png' on page 10 undefined on input line 54.
-
-<b_var.png, id=116, 399.4925pt x 288.07625pt>
-File: b_var.png Graphic file (type png)
- <use b_var.png>
-Package pdftex.def Info: b_var.png used on input line 56.
-(pdftex.def)             Requested size: 204.85846pt x 147.72574pt.
-
-<hg_var.png, id=117, 399.4925pt x 288.07625pt>
-File: hg_var.png Graphic file (type png)
- <use hg_var.png>
-Package pdftex.def Info: hg_var.png used on input line 56.
-(pdftex.def)             Requested size: 204.85846pt x 147.72574pt.
-
-Overfull \hbox (2.61108pt too wide) in paragraph at lines 56--57
+Overfull \hbox (2.61108pt too wide) in paragraph at lines 63--64
 []$[]$ $[]$
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 56--57
+Underfull \hbox (badness 10000) in paragraph at lines 63--64
 
  []
 
-) [10 <./b_var.png> <./hg_var.png>]
+) [10 <./wykresy/b_var.png> <./wykresy/hg_var.png>]
 \openout2 = `rozdzial2.aux'.
 
  (rozdzial2.tex
 Rozdzia\PlPrIeC {\l } 2.
+
+Overfull \hbox (17.27496pt too wide) detected at line 25
+\OML/plm/m/it/12 Var\OT4/cmr/m/n/12 (\OML/plm/m/it/12 X[]=n[] \OMS/plsy/m/n/12 
+  \OML/plm/m/it/12 X[]=n[]\OT4/cmr/m/n/12 ) = \OML/plm/m/it/12 Var\OT4/cmr/m/n/
+12 (\OML/plm/m/it/12 X[]=n[]\OT4/cmr/m/n/12 ) + \OML/plm/m/it/12 Var\OT4/cmr/m/
+n/12 (\OML/plm/m/it/12 X[]=n[]\OT4/cmr/m/n/12 ) = \OML/plm/m/it/12 Var\OT4/cmr/
+m/n/12 (\OML/plm/m/it/12 X[]\OT4/cmr/m/n/12 )\OML/plm/m/it/12 =n[] \OT4/cmr/m/n
+/12 + \OML/plm/m/it/12 Var\OT4/cmr/m/n/12 (\OML/plm/m/it/12 X[]\OT4/cmr/m/n/12 
+)\OML/plm/m/it/12 =n[]:
+ []
+
 [11
 
 
@@ -1026,24 +953,54 @@ Rozdzia\PlPrIeC {\l } 2.
 LaTeX Font Info:    Try loading font information for U+dsrom on input line 57.
  ("C:\Program Files\MiKTeX 2.9\tex\latex\doublestroke\udsrom.fd"
 File: Udsrom.fd 1995/08/01 v0.1 Double stroke roman font definitions
-) [12]
-[13]) [14]
+)
+Overfull \hbox (26.90973pt too wide) in paragraph at lines 58--58
+[] 
+ []
+
+
+Overfull \hbox (9.90955pt too wide) in paragraph at lines 65--65
+[] 
+ []
+
+[12]
+Overfull \hbox (19.42558pt too wide) in paragraph at lines 84--84
+[] 
+ []
+
+[13]
+Overfull \hbox (30.26462pt too wide) detected at line 110
+\OML/plm/m/it/12 P\OT4/cmr/m/n/12 (\OMS/plsy/m/n/12 j\OML/plm/m/it/12 Z[]\OMS/p
+lsy/m/n/12 j ­ j\OML/plm/m/it/12 Z[]\OMS/plsy/m/n/12 j j\OML/plm/m/it/12 H[]\OT
+4/cmr/m/n/12 ) \OMS/plsy/m/n/12  [] [] \OML/plm/m/it/12 b\OT4/cmr/m/n/12 (\OML
+/plm/m/it/12 x[]\OT4/cmr/m/n/12 ; \OML/plm/m/it/12 n[]; []\OT4/cmr/m/n/12 )\OML
+/plm/m/it/12 b\OT4/cmr/m/n/12 (\OML/plm/m/it/12 x[]\OT4/cmr/m/n/12 ; \OML/plm/m
+/it/12 n[]; []\OT4/cmr/m/n/12 )\U/dsrom/m/n/12 1 [] \OML/plm/m/it/12 ;
+ []
+
+
+Overfull \hbox (14.29305pt too wide) in paragraph at lines 120--120
+[] 
+ []
+
+) [14]
 \openout2 = `rozdzial3.aux'.
 
  (rozdzial3.tex
 Rozdzia\PlPrIeC {\l } 3.
-<sizeZE_p_0_05.png, id=140, 397.485pt x 288.07625pt>
-File: sizeZE_p_0_05.png Graphic file (type png)
- <use sizeZE_p_0_05.png>
-Package pdftex.def Info: sizeZE_p_0_05.png used on input line 10.
-(pdftex.def)             Requested size: 204.85846pt x 148.473pt.
+<wykresy/sizeZE_p_0_05.png, id=140, 397.485pt x 288.07625pt>
+File: wykresy/sizeZE_p_0_05.png Graphic file (type png)
 
-<sizeZE_p_0_05_n1_5.png, id=141, 397.485pt x 288.07625pt>
-File: sizeZE_p_0_05_n1_5.png Graphic file (type png)
+<use wykresy/sizeZE_p_0_05.png>
+Package pdftex.def Info: wykresy/sizeZE_p_0_05.png used on input line 10.
+(pdftex.def)             Requested size: 175.49881pt x 127.1935pt.
 
-<use sizeZE_p_0_05_n1_5.png>
-Package pdftex.def Info: sizeZE_p_0_05_n1_5.png used on input line 10.
-(pdftex.def)             Requested size: 204.85846pt x 148.473pt.
+<wykresy/sizeZE_p_0_05_n1_5.png, id=141, 397.485pt x 288.07625pt>
+File: wykresy/sizeZE_p_0_05_n1_5.png Graphic file (type png)
+
+<use wykresy/sizeZE_p_0_05_n1_5.png>
+Package pdftex.def Info: wykresy/sizeZE_p_0_05_n1_5.png used on input line 10.
+(pdftex.def)             Requested size: 175.49881pt x 127.1935pt.
 
 Overfull \hbox (2.61108pt too wide) in paragraph at lines 10--12
 []$[]$ $[]$
@@ -1054,18 +1011,19 @@ Underfull \hbox (badness 10000) in paragraph at lines 10--12
 
  []
 
-<sizeZE_p_0_1.png, id=142, 397.485pt x 287.0725pt>
-File: sizeZE_p_0_1.png Graphic file (type png)
- <use sizeZE_p_0_1.png>
-Package pdftex.def Info: sizeZE_p_0_1.png used on input line 13.
-(pdftex.def)             Requested size: 204.85846pt x 147.95567pt.
+<wykresy/sizeZE_p_0_1.png, id=142, 397.485pt x 287.0725pt>
+File: wykresy/sizeZE_p_0_1.png Graphic file (type png)
 
-<sizeZE_p_0_1_n1_10.png, id=143, 397.485pt x 287.0725pt>
-File: sizeZE_p_0_1_n1_10.png Graphic file (type png)
+<use wykresy/sizeZE_p_0_1.png>
+Package pdftex.def Info: wykresy/sizeZE_p_0_1.png used on input line 13.
+(pdftex.def)             Requested size: 175.49881pt x 126.75032pt.
 
-<use sizeZE_p_0_1_n1_10.png>
-Package pdftex.def Info: sizeZE_p_0_1_n1_10.png used on input line 13.
-(pdftex.def)             Requested size: 204.85846pt x 147.95567pt.
+<wykresy/sizeZE_p_0_1_n1_10.png, id=143, 397.485pt x 287.0725pt>
+File: wykresy/sizeZE_p_0_1_n1_10.png Graphic file (type png)
+
+<use wykresy/sizeZE_p_0_1_n1_10.png>
+Package pdftex.def Info: wykresy/sizeZE_p_0_1_n1_10.png used on input line 13.
+(pdftex.def)             Requested size: 175.49881pt x 126.75032pt.
 
 Overfull \hbox (2.61108pt too wide) in paragraph at lines 13--15
 []$[]$ $[]$
@@ -1076,18 +1034,19 @@ Underfull \hbox (badness 10000) in paragraph at lines 13--15
 
  []
 
-<sizeZE_p_0_3.png, id=144, 397.485pt x 287.0725pt>
-File: sizeZE_p_0_3.png Graphic file (type png)
- <use sizeZE_p_0_3.png>
-Package pdftex.def Info: sizeZE_p_0_3.png used on input line 16.
-(pdftex.def)             Requested size: 204.85846pt x 147.95567pt.
+<wykresy/sizeZE_p_0_3.png, id=144, 397.485pt x 287.0725pt>
+File: wykresy/sizeZE_p_0_3.png Graphic file (type png)
 
-<sizeZE_p_0_3_n1_5.png, id=145, 397.485pt x 288.07625pt>
-File: sizeZE_p_0_3_n1_5.png Graphic file (type png)
+<use wykresy/sizeZE_p_0_3.png>
+Package pdftex.def Info: wykresy/sizeZE_p_0_3.png used on input line 16.
+(pdftex.def)             Requested size: 175.49881pt x 126.75032pt.
 
-<use sizeZE_p_0_3_n1_5.png>
-Package pdftex.def Info: sizeZE_p_0_3_n1_5.png used on input line 16.
-(pdftex.def)             Requested size: 204.85846pt x 148.473pt.
+<wykresy/sizeZE_p_0_3_n1_5.png, id=145, 397.485pt x 288.07625pt>
+File: wykresy/sizeZE_p_0_3_n1_5.png Graphic file (type png)
+
+<use wykresy/sizeZE_p_0_3_n1_5.png>
+Package pdftex.def Info: wykresy/sizeZE_p_0_3_n1_5.png used on input line 16.
+(pdftex.def)             Requested size: 175.49881pt x 127.1935pt.
 
 Overfull \hbox (2.61108pt too wide) in paragraph at lines 16--18
 []$[]$ $[]$
@@ -1101,193 +1060,143 @@ Underfull \hbox (badness 10000) in paragraph at lines 16--18
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<sizeZE_n_10.png, id=146, 399.4925pt x 287.0725pt>
-File: sizeZE_n_10.png Graphic file (type png)
- <use sizeZE_n_10.png>
-Package pdftex.def Info: sizeZE_n_10.png used on input line 25.
-(pdftex.def)             Requested size: 204.85846pt x 147.21101pt.
+<wykresy/sizeZE_n_10.png, id=146, 399.4925pt x 287.0725pt>
+File: wykresy/sizeZE_n_10.png Graphic file (type png)
 
-<sizeZE_n1_10_n2_6.png, id=147, 399.4925pt x 287.0725pt>
-File: sizeZE_n1_10_n2_6.png Graphic file (type png)
+<use wykresy/sizeZE_n_10.png>
+Package pdftex.def Info: wykresy/sizeZE_n_10.png used on input line 27.
+(pdftex.def)             Requested size: 175.49881pt x 126.11078pt.
 
-<use sizeZE_n1_10_n2_6.png>
-Package pdftex.def Info: sizeZE_n1_10_n2_6.png used on input line 25.
-(pdftex.def)             Requested size: 204.85846pt x 147.21101pt.
+<wykresy/sizeZE_n1_10_n2_6.png, id=147, 399.4925pt x 287.0725pt>
+File: wykresy/sizeZE_n1_10_n2_6.png Graphic file (type png)
 
-Overfull \hbox (2.61108pt too wide) in paragraph at lines 25--27
+<use wykresy/sizeZE_n1_10_n2_6.png>
+Package pdftex.def Info: wykresy/sizeZE_n1_10_n2_6.png used on input line 27.
+(pdftex.def)             Requested size: 175.49881pt x 126.11078pt.
+
+Overfull \hbox (2.61108pt too wide) in paragraph at lines 27--29
 []$[]$ $[]$
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 25--27
+Underfull \hbox (badness 10000) in paragraph at lines 27--29
 
  []
 
-<sizeZE_n_20.png, id=148, 399.4925pt x 287.0725pt>
-File: sizeZE_n_20.png Graphic file (type png)
- <use sizeZE_n_20.png>
-Package pdftex.def Info: sizeZE_n_20.png used on input line 28.
-(pdftex.def)             Requested size: 204.85846pt x 147.21101pt.
+<wykresy/sizeZE_n_20.png, id=148, 399.4925pt x 287.0725pt>
+File: wykresy/sizeZE_n_20.png Graphic file (type png)
 
-<sizeZE_n1_20_n2_5.png, id=149, 399.4925pt x 288.07625pt>
-File: sizeZE_n1_20_n2_5.png Graphic file (type png)
+<use wykresy/sizeZE_n_20.png>
+Package pdftex.def Info: wykresy/sizeZE_n_20.png used on input line 30.
+(pdftex.def)             Requested size: 175.49881pt x 126.11078pt.
 
-<use sizeZE_n1_20_n2_5.png>
-Package pdftex.def Info: sizeZE_n1_20_n2_5.png used on input line 28.
-(pdftex.def)             Requested size: 204.85846pt x 147.72574pt.
+<wykresy/sizeZE_n1_20_n2_5.png, id=149, 399.4925pt x 288.07625pt>
+File: wykresy/sizeZE_n1_20_n2_5.png Graphic file (type png)
 
-Overfull \hbox (2.61108pt too wide) in paragraph at lines 28--30
+<use wykresy/sizeZE_n1_20_n2_5.png>
+Package pdftex.def Info: wykresy/sizeZE_n1_20_n2_5.png used on input line 30.
+(pdftex.def)             Requested size: 175.49881pt x 126.55173pt.
+
+Overfull \hbox (2.61108pt too wide) in paragraph at lines 30--32
 []$[]$ $[]$
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 28--30
+Underfull \hbox (badness 10000) in paragraph at lines 30--32
 
  []
 
-<sizeZE_n_30.png, id=150, 399.4925pt x 287.0725pt>
-File: sizeZE_n_30.png Graphic file (type png)
- <use sizeZE_n_30.png>
-Package pdftex.def Info: sizeZE_n_30.png used on input line 31.
-(pdftex.def)             Requested size: 204.85846pt x 147.21101pt.
+<wykresy/sizeZE_n_30.png, id=150, 399.4925pt x 287.0725pt>
+File: wykresy/sizeZE_n_30.png Graphic file (type png)
 
-<sizeZE_n1_30_n2_15.png, id=151, 399.4925pt x 288.07625pt>
-File: sizeZE_n1_30_n2_15.png Graphic file (type png)
+<use wykresy/sizeZE_n_30.png>
+Package pdftex.def Info: wykresy/sizeZE_n_30.png used on input line 33.
+(pdftex.def)             Requested size: 175.49881pt x 126.11078pt.
 
-<use sizeZE_n1_30_n2_15.png>
-Package pdftex.def Info: sizeZE_n1_30_n2_15.png used on input line 31.
-(pdftex.def)             Requested size: 204.85846pt x 147.72574pt.
+<wykresy/sizeZE_n1_30_n2_15.png, id=151, 399.4925pt x 288.07625pt>
+File: wykresy/sizeZE_n1_30_n2_15.png Graphic file (type png)
 
-Overfull \hbox (2.61108pt too wide) in paragraph at lines 31--33
+<use wykresy/sizeZE_n1_30_n2_15.png>
+Package pdftex.def Info: wykresy/sizeZE_n1_30_n2_15.png used on input line 33.
+(pdftex.def)             Requested size: 175.49881pt x 126.55173pt.
+
+Overfull \hbox (2.61108pt too wide) in paragraph at lines 33--35
 []$[]$ $[]$
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 31--33
+Underfull \hbox (badness 10000) in paragraph at lines 33--35
 
  []
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<powerZE_N1_30_N2_50_p_0_6.png, id=152, 521.95pt x 288.07625pt>
-File: powerZE_N1_30_N2_50_p_0_6.png Graphic file (type png)
+[15
 
-<use powerZE_N1_30_N2_50_p_0_6.png>
-Package pdftex.def Info: powerZE_N1_30_N2_50_p_0_6.png used on input line 40.
-(pdftex.def)             Requested size: 204.85846pt x 113.06577pt.
 
-<powerZE_N_100_p_0_1.png, id=153, 520.94624pt x 287.0725pt>
-File: powerZE_N_100_p_0_1.png Graphic file (type png)
 
-<use powerZE_N_100_p_0_1.png>
-Package pdftex.def Info: powerZE_N_100_p_0_1.png used on input line 40.
-(pdftex.def)             Requested size: 204.85846pt x 112.89084pt.
+] <wykresy/powerZE_N1_30_N2_50_p_0_6.png, id=155, 521.95pt x 288.07625pt>
+File: wykresy/powerZE_N1_30_N2_50_p_0_6.png Graphic file (type png)
 
-Overfull \hbox (2.61108pt too wide) in paragraph at lines 40--42
+<use wykresy/powerZE_N1_30_N2_50_p_0_6.png>
+Package pdftex.def Info: wykresy/powerZE_N1_30_N2_50_p_0_6.png used on input li
+ne 44.
+(pdftex.def)             Requested size: 175.49881pt x 96.86328pt.
+
+<wykresy/powerZE_N_100_p_0_1.png, id=156, 520.94624pt x 287.0725pt>
+File: wykresy/powerZE_N_100_p_0_1.png Graphic file (type png)
+
+<use wykresy/powerZE_N_100_p_0_1.png>
+Package pdftex.def Info: wykresy/powerZE_N_100_p_0_1.png used on input line 44.
+
+(pdftex.def)             Requested size: 175.49881pt x 96.70976pt.
+
+Overfull \hbox (2.61108pt too wide) in paragraph at lines 44--46
 []$[]$ $[]$
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 40--42
+Underfull \hbox (badness 10000) in paragraph at lines 44--46
 
  []
 
-<powerZE_N1_100_N2_200_p_0_1.png, id=154, 520.94624pt x 291.0875pt>
-File: powerZE_N1_100_N2_200_p_0_1.png Graphic file (type png)
+<wykresy/powerZE_N1_100_N2_200_p_0_1.png, id=157, 520.94624pt x 291.0875pt>
+File: wykresy/powerZE_N1_100_N2_200_p_0_1.png Graphic file (type png)
 
-<use powerZE_N1_100_N2_200_p_0_1.png>
-Package pdftex.def Info: powerZE_N1_100_N2_200_p_0_1.png used on input line 43.
+<use wykresy/powerZE_N1_100_N2_200_p_0_1.png>
+Package pdftex.def Info: wykresy/powerZE_N1_100_N2_200_p_0_1.png used on input 
+line 47.
+(pdftex.def)             Requested size: 175.49881pt x 98.06233pt.
 
-(pdftex.def)             Requested size: 204.85846pt x 114.46973pt.
+<wykresy/powerZE_N1_3000_N2_100_p_0_6.png, id=158, 520.94624pt x 287.0725pt>
+File: wykresy/powerZE_N1_3000_N2_100_p_0_6.png Graphic file (type png)
 
-<powerZE_N1_3000_N2_100_p_0_6.png, id=155, 520.94624pt x 287.0725pt>
-File: powerZE_N1_3000_N2_100_p_0_6.png Graphic file (type png)
+<use wykresy/powerZE_N1_3000_N2_100_p_0_6.png>
+Package pdftex.def Info: wykresy/powerZE_N1_3000_N2_100_p_0_6.png used on input
+ line 47.
+(pdftex.def)             Requested size: 175.49881pt x 96.70976pt.
 
-<use powerZE_N1_3000_N2_100_p_0_6.png>
-Package pdftex.def Info: powerZE_N1_3000_N2_100_p_0_6.png used on input line 43
-.
-(pdftex.def)             Requested size: 204.85846pt x 112.89084pt.
-
-Overfull \hbox (2.61108pt too wide) in paragraph at lines 43--45
+Overfull \hbox (2.61108pt too wide) in paragraph at lines 47--49
 []$[]$ $[]$
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 43--45
+Underfull \hbox (badness 10000) in paragraph at lines 47--49
 
  []
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<powerZZb_N1_30_N2_50_p_0_6.png, id=156, 528.97626pt x 288.07625pt>
-File: powerZZb_N1_30_N2_50_p_0_6.png Graphic file (type png)
-
-<use powerZZb_N1_30_N2_50_p_0_6.png>
-Package pdftex.def Info: powerZZb_N1_30_N2_50_p_0_6.png used on input line 57.
-(pdftex.def)             Requested size: 204.85846pt x 111.56244pt.
-
-<powerZZb_N_100_p_0_1.png, id=157, 528.97626pt x 287.0725pt>
-File: powerZZb_N_100_p_0_1.png Graphic file (type png)
-
-<use powerZZb_N_100_p_0_1.png>
-Package pdftex.def Info: powerZZb_N_100_p_0_1.png used on input line 57.
-(pdftex.def)             Requested size: 204.85846pt x 111.17374pt.
-
-Overfull \hbox (2.61108pt too wide) in paragraph at lines 57--59
-[]$[]$ $[]$
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 57--59
-
- []
-
-<powerZZb_N1_100_N2_200_p_0_1.png, id=158, 528.97626pt x 291.0875pt>
-File: powerZZb_N1_100_N2_200_p_0_1.png Graphic file (type png)
-
-<use powerZZb_N1_100_N2_200_p_0_1.png>
-Package pdftex.def Info: powerZZb_N1_100_N2_200_p_0_1.png used on input line 60
-.
-(pdftex.def)             Requested size: 204.85846pt x 112.7286pt.
-
-<powerZZb_N1_3000_N2_100_p_0_6.png, id=159, 528.97626pt x 287.0725pt>
-File: powerZZb_N1_3000_N2_100_p_0_6.png Graphic file (type png)
-
-<use powerZZb_N1_3000_N2_100_p_0_6.png>
-Package pdftex.def Info: powerZZb_N1_3000_N2_100_p_0_6.png used on input line 6
-0.
-(pdftex.def)             Requested size: 204.85846pt x 111.17374pt.
-
-Overfull \hbox (2.61108pt too wide) in paragraph at lines 60--62
-[]$[]$ $[]$
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 60--62
-
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [15
-
-
-
-]
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-) [16 <./sizeZE_p_0_05.png> <./sizeZE_p_0_05_n1_5.png> <./sizeZE_p_0_1.png> <./
-sizeZE_p_0_1_n1_10.png> <./sizeZE_p_0_3.png> <./sizeZE_p_0_3_n1_5.png>]
-[17 <./sizeZE_n_10.png> <./sizeZE_n1_10_n2_6.png> <./sizeZE_n_20.png> <./sizeZE
-_n1_20_n2_5.png> <./sizeZE_n_30.png> <./sizeZE_n1_30_n2_15.png>] [18 <./powerZE
-_N1_30_N2_50_p_0_6.png> <./powerZE_N_100_p_0_1.png> <./powerZE_N1_100_N2_200_p_
-0_1.png> <./powerZE_N1_3000_N2_100_p_0_6.png> <./powerZZb_N1_30_N2_50_p_0_6.png
-> <./powerZZb_N_100_p_0_1.png> <./powerZZb_N1_100_N2_200_p_0_1.png> <./powerZZb
-_N1_3000_N2_100_p_0_6.png>] (dokument_KK.lof)
+) [16 <./wykresy/sizeZE_p_0_05.png> <./wykresy/sizeZE_p_0_05_n1_5.png> <./wykre
+sy/sizeZE_p_0_1.png> <./wykresy/sizeZE_p_0_1_n1_10.png> <./wykresy/sizeZE_p_0_3
+.png> <./wykresy/sizeZE_p_0_3_n1_5.png>] [17 <./wykresy/sizeZE_n_10.png> <./wyk
+resy/sizeZE_n1_10_n2_6.png> <./wykresy/sizeZE_n_20.png> <./wykresy/sizeZE_n1_20
+_n2_5.png> <./wykresy/sizeZE_n_30.png> <./wykresy/sizeZE_n1_30_n2_15.png>]
+[18 <./wykresy/powerZE_N1_30_N2_50_p_0_6.png> <./wykresy/powerZE_N_100_p_0_1.pn
+g> <./wykresy/powerZE_N1_100_N2_200_p_0_1.png> <./wykresy/powerZE_N1_3000_N2_10
+0_p_0_6.png>] (dokument_KK.lof)
 \tf@lof=\write4
 \openout4 = `dokument_KK.lof'.
 
@@ -1296,45 +1205,41 @@ _N1_3000_N2_100_p_0_6.png>] (dokument_KK.lof)
 
 ] [20
 
-])
-[21] (dokument_KK.aux (wstep.aux) (rozdzial1.aux) (rozdzial2.aux)
-(rozdzial3.aux))
-
-LaTeX Warning: There were undefined references.
-
- ) 
+]) [21]
+(dokument_KK.aux (wstep.aux) (rozdzial1.aux) (rozdzial2.aux) (rozdzial3.aux)) )
+ 
 Here is how much of TeX's memory you used:
- 6295 strings out of 493334
- 90900 string characters out of 3139251
- 172667 words of memory out of 3000000
- 9624 multiletter control sequences out of 15000+200000
+ 5851 strings out of 493334
+ 84598 string characters out of 3139251
+ 159188 words of memory out of 3000000
+ 9188 multiletter control sequences out of 15000+200000
  13904 words of font info for 46 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 40i,18n,43p,1631b,469s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/pl/plmi.enc}{C:/Program Files/Mi
-KTeX 2.9/fonts/enc/dvips/pl/plrm.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvi
-ps/pl/plit.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/pl/plms.enc}{C:/Pro
-gram Files/MiKTeX 2.9/fonts/enc/dvips/pl/plme.enc}<C:/Program Files/MiKTeX 2.9/
-fonts/type1/public/doublestroke/dsrom12.pfb><C:/Program Files/MiKTeX 2.9/fonts/
-type1/public/fpl/fplrc8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/fp
-l/fplrij8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/pl/plbx10.pfb><C
-:/Program Files/MiKTeX 2.9/fonts/type1/public/pl/plbx12.pfb><C:/Program Files/M
-iKTeX 2.9/fonts/type1/public/pl/plex10.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
-ype1/public/pl/plmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/pl/pl
-mi12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/pl/plmi6.pfb><C:/Progr
-am Files/MiKTeX 2.9/fonts/type1/public/pl/plmi8.pfb><C:/Program Files/MiKTeX 2.
-9/fonts/type1/public/pl/plr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publ
-ic/pl/plr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/pl/plr6.pfb><C:
-/Program Files/MiKTeX 2.9/fonts/type1/public/pl/plr8.pfb><C:/Program Files/MiKT
-eX 2.9/fonts/type1/public/pl/plsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type
-1/public/pl/plsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/pl/plti10
-.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/pl/plti12.pfb><C:/Program 
-Files/MiKTeX 2.9/fonts/type1/urw/palatino/uplb8a.pfb><C:/Program Files/MiKTeX 2
-.9/fonts/type1/urw/palatino/uplr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1
-/urw/palatino/uplri8a.pfb>
-Output written on dokument_KK.pdf (21 pages, 841392 bytes).
+ 40i,18n,43p,1540b,477s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/pl/plmi.enc}{C:/Program Files/MiKT
+eX 2.9/fonts/enc/dvips/pl/plrm.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips
+/pl/plit.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/pl/plms.enc}{C:/Progr
+am Files/MiKTeX 2.9/fonts/enc/dvips/pl/plme.enc}<C:/Program Files/MiKTeX 2.9/fo
+nts/type1/public/doublestroke/dsrom12.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
+pe1/public/fpl/fplrc8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/fpl/
+fplrij8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/pl/plbx10.pfb><C:/
+Program Files/MiKTeX 2.9/fonts/type1/public/pl/plbx12.pfb><C:/Program Files/MiK
+TeX 2.9/fonts/type1/public/pl/plex10.pfb><C:/Program Files/MiKTeX 2.9/fonts/typ
+e1/public/pl/plmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/pl/plmi
+12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/pl/plmi6.pfb><C:/Program
+ Files/MiKTeX 2.9/fonts/type1/public/pl/plmi8.pfb><C:/Program Files/MiKTeX 2.9/
+fonts/type1/public/pl/plr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public
+/pl/plr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/pl/plr6.pfb><C:/P
+rogram Files/MiKTeX 2.9/fonts/type1/public/pl/plr8.pfb><C:/Program Files/MiKTeX
+ 2.9/fonts/type1/public/pl/plsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/
+public/pl/plsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/pl/plti10.p
+fb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/pl/plti12.pfb><C:/Program Fi
+les/MiKTeX 2.9/fonts/type1/urw/palatino/uplb8a.pfb><C:/Program Files/MiKTeX 2.9
+/fonts/type1/urw/palatino/uplr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/u
+rw/palatino/uplri8a.pfb>
+Output written on dokument_KK.pdf (21 pages, 643804 bytes).
 PDF statistics:
- 263 PDF objects out of 1000 (max. 8388607)
+ 255 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 181 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 161 words of extra memory for PDF output out of 10000 (max. 10000000)
 

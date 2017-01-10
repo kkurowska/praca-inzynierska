@@ -11,7 +11,7 @@ import matplotlib.pyplot as plt
 
 N = 20 #N
 M = 5 #M
-n = 20 #n
+n = 15 #n
 
 hg = hypergeom(N, M, n)
 p = M/N

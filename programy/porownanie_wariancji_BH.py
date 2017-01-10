@@ -37,7 +37,7 @@ plt.axis([0, n, 0, maxY])
 plt.grid(True)
 plt.xlabel('$n$', fontsize=14)
 plt.ylabel('$var(X)$', fontsize=14)
-plt.title('$X\sim \mathcal{H}(20,5,n)$', fontsize=14)
+plt.title('$X\sim \mathcal{H}(n,5,20)$', fontsize=14)
 plt.xticks(vectorX)
 
 fig = plt.figure()
