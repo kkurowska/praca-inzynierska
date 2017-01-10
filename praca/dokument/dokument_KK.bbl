@@ -1,5 +1,16 @@
 \begin{thebibliography}{1}
 
+\bibitem{Lehmann1968}
+E.~L. Lehmann.
+\newblock {\em Testowanie hipotez statystycznych}.
+\newblock PWN, 1968.
+
+\bibitem{Edgeworth1918}
+F.~Y. Edgeworth.
+\newblock On the value of a mean as calculated from a sample.
+\newblock {\em Journal of the Royal Statistical Society}, 81(4):624--632, Jul.
+  1918.
+
 \bibitem{K.Krishnamoorthy2002}
 K.~Krishnamoorthy and Jessica Thomson.
 \newblock Hypothesis testing about proportions in two finite populations.

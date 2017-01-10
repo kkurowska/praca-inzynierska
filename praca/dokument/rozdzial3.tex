@@ -4,6 +4,7 @@
 W celu porównania testów opisanych w~rozdziale \ref{r2}, napisano programy, które wyliczają prawdopodobieństwo błędu I~rodzaju i~moc testu oraz generują wykresy dla różnych parametrów.
 
 \section{Porównanie testów ze skończoną poprawką}
+\label{r3:skonczonetesty}
 Na początku zostały porównane testy ze skończoną poprawką. Rysunek \ref{sizeZE_n} przedstawia funkcję prawdopodobieństwa błędu I~rodzaju w~zależności od rozmiaru próbki dla różnych proporcji $p$. Po lewej stronie obserwacje z~obu populacji są tej samej wielkości $n_1=n_2=n$, natomiast po prawej różnią się, rozmiar pierwszej próbki ma ustaloną wartość. Pierwszym spostrzeżeniem jest to, że funkcja dla testu~E w~większości przypadków jest mniejsza niż dla testu Z. Dodatkowo dla testu~E prawdopodobieństwo błędu przekracza poziom istotności jedynie kilka razy i~to bardzo nieznacznie. Tymczasem dla testu~Z funkcja częściej przyjmuje wartości powyżej $\alpha$, dochodząc nawet do $0.95$, jak na wykresie \ref{sizeZE_p_0_05}. Warto wspomnieć także, że dla większych $p$ (0.1, 0.3) oraz wraz ze wzrostem wielkości próbki funkcje są bliżej siebie i~bardziej skupiają się przy poziomie istotności $\alpha$.
 
 \begin{figure}[!h]
@@ -51,17 +52,38 @@ Porównując, moc testu~Z jest większa od mocy testu E, jednakże różnice nie
 	\label{powerZE_n}
 \end{figure}
 
-%\section{Porównanie testu bez skończonej poprawki Zb z~testem E}
-%
-%Rysunek \ref{powerZZb_n} przedstawia wykresy mocy obu testów w~zależności od rozmiaru próbki dla różnych rozmiarów populacji oraz proporcji $p$.
-%
-%\begin{figure}[!h]
-%	\begin{subdiagrams}{powerZZb_N1_30_N2_50_p_0_6}{powerZZb_N_100_p_0_1}
-%	\end{subdiagrams}
-%	
-%	\begin{subdiagrams}{powerZZb_N1_100_N2_200_p_0_1}{powerZZb_N1_3000_N2_100_p_0_6}
-%	\end{subdiagrams}
-%	
-%	\caption{Moc testu~Z i~bez skończonej poprawki jako funkcja rozmiaru próbki $n$}
-%	\label{powerZZb_n}
-%\end{figure}
+\section{Porównanie testu bez skończonej poprawki~Zb z~testem E}
+
+W niniejszym podrozdziale porównano test~Zb z~testem E. Nie włączono do analizy testu Z, z~powodu wniosków opisanych w~podrozdziale \ref{r3:skonczonetesty}. Niniejsze rozważania zostały przeprowadzone, aby potwierdzić zasadność stosowania testu ze skończoną poprawką dla małych populacji lub o~stosunkowo dużej próbie.
+
+Na rysunku \ref{sizeZbE_n} znajdują się wykresy prawdopodobieństwa błędu I~rodzaju analizowanych testów. Test E, jak stwierdzono w~podrozdziale \ref{r3:skonczonetesty}, nie przekracza poziomu istotności $\alpha$. Jednakże dla testu~Zb prawdopodobieństwo błędu I~rodzaju znacząco przekracza poziom istotności. Funkcja błędu~Zb przyjmuje wartości bliskie $0.2$, gdzie największa znajduje się na wykresie \ref{sizeZbE_p_0_1_n1_10}. Warto wspomnieć także, że funkcja jest największa w~przypadku małych próbek. Na wykresach \ref{sizeZbE_p_0_3} i~\ref{sizeZbE_p_0_3_n1_5} widać, że mniej więcej do $n=20$ test~Zb jest powyżej poziomu $\alpha$, następnie oscyluje, podobnie jak test E, w~okolicach poziomu istotności. 
+
+Podsumowując, test~Zb nie jest adekwatny do rozważanego przypadku gdy $n$ jest małe. Odrzuca hipotezę zerową dużo częściej, niż powinien test na poziomie $\alpha$. Jest to spowodowane użyciem rozkładu dwumianowego w~formułowaniu statystyki testowej. Faktycznie dla dużych próbek różnica jest nieznaczna, natomiast w~sytuacji małej próbki rozbieżności są bardzo widoczne.
+
+\begin{figure}[!h]
+	\begin{subdiagrams}{sizeZbE_p_0_05}{sizeZbE_p_0_05_n1_5}
+	\end{subdiagrams}
+	
+	\begin{subdiagrams}{sizeZbE_p_0_1}{sizeZbE_p_0_1_n1_10}
+	\end{subdiagrams}
+	
+	\begin{subdiagrams}{sizeZbE_p_0_3}{sizeZbE_p_0_3_n1_5}
+	\end{subdiagrams}
+	\caption{Prawdopodobieństwo błędu I~rodzaju testów~Zb i~E jako funkcja rozmiaru próbki $n$, przy zadanym poziomie istotności $\alpha=0.05$; $N_1=N_2=100$}
+	\label{sizeZbE_n}
+\end{figure}
+
+Rysunek \ref{powerZbE_n} przedstawia wykresy mocy rozważanych testów w~zależności od rozmiaru próbki dla różnych rozmiarów populacji oraz proporcji $p$. Moc testu~Zb jest niewiele większa od mocy testu E. Jednakże, podobnie jak w~przypadku testu Z, wynika to ze zbyt częstego odrzucania $H_0$. Biorąc pod uwagę ten fakt wyższa wartość testu~Zb nie świadczy o~jego poprawności.
+
+\begin{figure}[!h]
+	\begin{subdiagrams}{powerZbE_N1_30_N2_50_p_0_6}{powerZbE_N_100_p_0_1}
+	\end{subdiagrams}
+	
+	\begin{subdiagrams}{powerZbE_N1_100_N2_200_p_0_1}{powerZbE_N1_3000_N2_100_p_0_6}
+	\end{subdiagrams}
+	
+	\caption{Moc testów~Zb i~E jako funkcja rozmiaru próbki $n$}
+	\label{powerZbE_n}
+\end{figure}
+
+Ostatecznie pokazano, że test bez skończonej poprawki nie powinien być stosowany w~przypadku małej populacji, ponieważ wtedy znacznie  przekracza poziom istotności $\alpha$. Najlepszym testem ze skończoną poprawką okazał się test E, który dla różnych przypadków utrzymuje poziom $\alpha$. 

@@ -1,7 +1,15 @@
 % Encoding: UTF-8
 
+\Sort{
+  Mode{on}
+  Collation{mixed}
+  SortTypeOrder{name}
+  NameOrder{ascending}
+  StringSort{ascending}
+}
+
 @Article{Edgeworth1918,
-  author  = {F. Y. Edgeworth},
+  author  = {Edgeworth, F. Y.},
   title   = {On the Value of a Mean as Calculated from a Sample},
   journal = {Journal of the Royal Statistical Society},
   year    = {1918},
@@ -12,7 +20,7 @@
 }
 
 @Article{K.Krishnamoorthy2002,
-  author  = {K. Krishnamoorthy, J. Thomson},
+  author  = {Krishnamoorthy, K. and Thomson, Jessica},
   title   = {Hypothesis Testing about Proportions in Two Finite Populations},
   journal = {The American Statistician},
   year    = {2002},
@@ -22,7 +30,7 @@
 }
 
 @Article{Buonaccorsi1987,
-  author  = {J. P. Buonaccorsi},
+  author  = {Buonaccorsi, J. P.},
   title   = {A Note on Confidence Intervals for Proportions in Finite Populations},
   journal = {The American Statistician},
   year    = {1987},

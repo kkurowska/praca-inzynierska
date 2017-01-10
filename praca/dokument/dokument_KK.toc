@@ -13,5 +13,7 @@
 \contentsline {subsection}{\numberline {2.3.1\relax .\kern .5em }Test Zb}{14}
 \contentsline {chapter}{Rozdzia\PlPrIeC {\l }\ 3\relax .\kern .5em Analiza test\IeC {\'o}w}{15}
 \contentsline {section}{\numberline {3.1\relax .\kern .5em }Por\IeC {\'o}wnanie test\IeC {\'o}w ze sko\IeC {\'n}czon\IeC {\k a} poprawk\IeC {\k a}}{15}
-\contentsline {chapter}{Spis rysunk\'ow}{19}
-\contentsline {chapter}{Bibliografia}{21}
+\contentsline {section}{\numberline {3.2\relax .\kern .5em }Por\IeC {\'o}wnanie testu bez sko\IeC {\'n}czonej poprawki\nobreakspace {}Zb z\nobreakspace {}testem E}{17}
+\contentsline {chapter}{Rozdzia\PlPrIeC {\l }\ 4\relax .\kern .5em Podsumowanie}{21}
+\contentsline {chapter}{Spis rysunk\'ow}{23}
+\contentsline {chapter}{Bibliografia}{25}
