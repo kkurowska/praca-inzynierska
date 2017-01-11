@@ -58,7 +58,7 @@ W niniejszym podrozdziale porównano test~Zb z~testem E. Nie włączono do anali
 
 Na rysunku \ref{sizeZbE_n} znajdują się wykresy prawdopodobieństwa błędu I~rodzaju analizowanych testów. Test E, jak stwierdzono w~podrozdziale \ref{r3:skonczonetesty}, nie przekracza poziomu istotności $\alpha$. Jednakże dla testu~Zb prawdopodobieństwo błędu I~rodzaju znacząco przekracza poziom istotności. Funkcja błędu~Zb przyjmuje wartości bliskie $0.2$, gdzie największa znajduje się na wykresie \ref{sizeZbE_p_0_1_n1_10}. Warto wspomnieć także, że funkcja jest największa w~przypadku małych próbek. Na wykresach \ref{sizeZbE_p_0_3} i~\ref{sizeZbE_p_0_3_n1_5} widać, że mniej więcej do $n=20$ test~Zb jest powyżej poziomu $\alpha$, następnie oscyluje, podobnie jak test E, w~okolicach poziomu istotności. 
 
-Podsumowując, test~Zb nie jest adekwatny do rozważanego przypadku gdy $n$ jest małe. Odrzuca hipotezę zerową dużo częściej, niż powinien test na poziomie $\alpha$. Jest to spowodowane użyciem rozkładu dwumianowego w~formułowaniu statystyki testowej. Faktycznie dla dużych próbek różnica jest nieznaczna, natomiast w~sytuacji małej próbki rozbieżności są bardzo widoczne.
+Podsumowując, test~Zb nie jest adekwatny do rozważanego przypadku gdy wartość $n$ jest mała. Odrzuca hipotezę zerową dużo częściej, niż powinien test na poziomie $\alpha$. Jest to spowodowane użyciem rozkładu dwumianowego w~formułowaniu statystyki testowej. Faktycznie dla dużych próbek różnica jest nieznaczna, natomiast w~sytuacji małej próbki rozbieżności są bardzo widoczne.
 
 \begin{figure}[!h]
 	\begin{subdiagrams}{sizeZbE_p_0_05}{sizeZbE_p_0_05_n1_5}
@@ -76,12 +76,15 @@ Podsumowując, test~Zb nie jest adekwatny do rozważanego przypadku gdy $n$ jest
 Rysunek \ref{powerZbE_n} przedstawia wykresy mocy rozważanych testów w~zależności od rozmiaru próbki dla różnych rozmiarów populacji oraz proporcji $p$. Moc testu~Zb jest niewiele większa od mocy testu E. Jednakże, podobnie jak w~przypadku testu Z, wynika to ze zbyt częstego odrzucania $H_0$. Biorąc pod uwagę ten fakt wyższa wartość testu~Zb nie świadczy o~jego poprawności.
 
 \begin{figure}[!h]
-	\begin{subdiagrams}{powerZbE_N1_30_N2_50_p_0_6}{powerZbE_N_100_p_0_1}
-	\end{subdiagrams}
-	
-	\begin{subdiagrams}{powerZbE_N1_100_N2_200_p_0_1}{powerZbE_N1_3000_N2_100_p_0_6}
-	\end{subdiagrams}
-	
+	\begin{subdiagram}{powerZbE_N1_30_N2_50_p_0_6}
+	\end{subdiagram}
+	\begin{subdiagram}{powerZbE_N_100_p_0_1}
+	\end{subdiagram}
+	\begin{subdiagram}{powerZbE_N1_100_N2_200_p_0_1}
+	\end{subdiagram}
+	\begin{subdiagram}{powerZbE_N1_3000_N2_100_p_0_6}
+	\end{subdiagram}
+
 	\caption{Moc testów~Zb i~E jako funkcja rozmiaru próbki $n$}
 	\label{powerZbE_n}
 \end{figure}

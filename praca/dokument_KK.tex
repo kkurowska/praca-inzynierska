@@ -61,6 +61,15 @@
 		\end{subfigure}
 	} {}
 
+\newenvironment{subdiagram}[1]{
+	\begin{subfigure}{\textwidth}
+		\centering
+		\includegraphics[width=.7\textwidth]{wykresy/#1.png}
+		\caption{}
+		\label{#1}
+	\end{subfigure}
+} {}
+
 
 \begin{document}
 	

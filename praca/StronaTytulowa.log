@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.10.24)  10 JAN 2017 09:25
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.10.24)  11 JAN 2017 14:00
 entering extended mode
 **./StronaTytulowa.tex
 (StronaTytulowa.tex
@@ -1053,19 +1053,19 @@ Package rerunfilecheck Info: File `StronaTytulowa.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 78.
  ) 
 Here is how much of TeX's memory you used:
- 12323 strings out of 493334
- 215248 string characters out of 3139251
+ 12318 strings out of 493334
+ 215203 string characters out of 3139251
  375821 words of memory out of 3000000
  15538 multiletter control sequences out of 15000+200000
- 47112 words of font info for 122 fonts, out of 3000000 for 9000
+ 46831 words of font info for 118 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,14n,51p,401b,370s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 41i,14n,51p,432b,370s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Program File
 s/MiKTeX 2.9/fonts/type1/public/fpl/fplrc8a.pfb><C:/Program Files/MiKTeX 2.9/fo
 nts/type1/public/fpl/fplrij8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/
 palatino/uplb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/palatino/uplr8
 a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on StronaTytulowa.pdf (1 page, 79139 bytes).
+Output written on StronaTytulowa.pdf (1 page, 79616 bytes).
 PDF statistics:
  40 PDF objects out of 1000 (max. 8388607)
  4 named destinations out of 1000 (max. 500000)

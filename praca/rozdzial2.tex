@@ -21,7 +21,10 @@ Jak już było wspomniane w~podrozdziale \ref{r1:skonczonapopulacja}, próbki w~
 
 W celu wyprowadzenia wariancji rozkładu $X_1/n_1-X_2/n_2$ pod warunkiem $p_1=p_2$ w~połączonej próbie, zapiszmy wariancję rozważanej zmiennej losowej w~łącznej próbie, korzystając z~własności wariancji oraz tego, że $Cov(X_1,X_2)=0$ z~niezależności $X_1$ i~$X_2$
 \begin{equation}
-Var(X_1/n_1-X_2/n_2)=Var(X_1/n_1) + Var(X_2/n_2) = Var(X_1)/n_1^2+Var(X_2)/n_2^2.
+\begin{split}
+Var(X_1/n_1-X_2/n_2)=&Var(X_1/n_1) + Var(X_2/n_2) =\\
+ =& Var(X_1)/n_1^2+Var(X_2)/n_2^2.
+\end{split}
 \end{equation}
 Wariancje $X_1$ i~$X_2$ są równe
 \begin{align}
@@ -31,8 +34,8 @@ Var(X_2)=n_2 p_2 (1-p_2)(N_2-n_2)/(N_2-1).
 Pamiętając, że zakładamy równość $p_1=p_2$ zastąpmy oba parametry jednym równym $p$. Po podstawieniu otrzymujemy
 \begin{equation}
 \begin{split}
-V_{X_1,X_2} =& \frac{1}{n_1}p(1-p)\frac{N_1-n_1}{N_1-1} + \frac{1}{n_2}p(1-p)\frac{N_2-n_2}{N_2-1}= \\
-=&p(1-p)\left(\frac{N_1-n_1}{n_1(N_1-1)}+\frac{N_2-n_2}{n_2(N_2-1)}\right),
+V_{X_1,X_2} & = \frac{1}{n_1}p(1-p)\frac{N_1-n_1}{N_1-1} + \frac{1}{n_2}p(1-p)\frac{N_2-n_2}{N_2-1}= \\
+&= p(1-p)\left(\frac{N_1-n_1}{n_1(N_1-1)}+\frac{N_2-n_2}{n_2(N_2-1)}\right),
 \end{split}
 \end{equation}
 przy czym $p$ to proporcja liczby osobników z~daną cechą do całości populacji w~rozkładzie łącznym. Wobec czego $p=(X_1+X_2)/(n_1+n_2)$. Ostatecznie otrzymujemy
@@ -52,7 +55,7 @@ Test E opiera się o~rzeczywistą $p$-wartość, która, według artykułu K. Kr
 \begin{equation}
 \label{realpvalue}
 \begin{split}
-P(|Z_{X_1,X_2}|&\geq|Z_{k_1,k_2}|\ |H_0) = E_{X_1,X_2}(\1{|Z_{X_1,X_2}|\geq|Z_{k_1,k_2}|}\ |H_0) = \\
+&P(|Z_{X_1,X_2}|\geq|Z_{k_1,k_2}|\ |H_0) = E_{X_1,X_2}(\1{|Z_{X_1,X_2}|\geq|Z_{k_1,k_2}|}\ |H_0) = \\
 &= \sum_{x_1=L_1}^{U_1}\sum_{x_2=L_2}^{U_2} h(x_1;n_1,N_1p,N_1)h(x_2;n_2,N_2p,N_2)\1{|Z_{X_1,X_2}|\geq|Z_{k_1,k_2}|},
 \end{split}
 \end{equation}
@@ -60,7 +63,7 @@ gdzie $E_{X_1,X_2}$ to wartość oczekiwana łącznego rozkładu $(X_1,X_2)$, a~
 \begin{equation}
 \label{estpvalue}
 \begin{split}
-P(|Z_{X_1,X_2}|\geq|Z_{k_1,k_2}|\ |H_0) \approx& \\ =\sum_{x_1=L_{x_1}}^{U_{x_1}}\sum_{x_2=L_{x_2}}^{U_{x_2}} h(x_1;&n_1,\hat{M_1},N_1)h(x_2;n_2,\hat{M_2},N_2)\1{|Z_{X_1,X_2}|\geq|Z_{k_1,k_2}|},
+P(|Z_{X_1,X_2}|\geq|Z_{k_1,k_2}|\ |H_0) \approx& \\ =\sum_{x_1=L_{x_1}}^{U_{x_1}}\sum_{x_2=L_{x_2}}^{U_{x_2}} h(x_1;n_1,\hat{M_1},&N_1)h(x_2;n_2,\hat{M_2},N_2)\1{|Z_{X_1,X_2}|\geq|Z_{k_1,k_2}|},
 \end{split}
 \end{equation}
 przy czym $\hat{p}=(k_1+k_2)/(n_1+n_2)$, $\hat{M_i}=[N_i\hat{p}]$ oraz  $L_{x_i}=\max\{0,\hat{M_i}-N_i+n_i\}$, $U_{x_i}=\min\{n_i,\hat{M_i}\}$, $i=1,2$. Test odrzuca $H_0$ wtedy, gdy $p$-wartość wyliczona według wzoru (\ref{estpvalue}) jest mniejsza od poziomu istotności $\alpha$.
@@ -106,7 +109,10 @@ przy czym $p=(X_1+X_2)/(n_1+n_2)$.
 
 Test~Zb jest, podobnie jak omówiony wcześniej test E, oparty o~estymator $p$-wartości, który, zgodnie z~artykułem Storer i~Kim z~1990 roku, jest równy \cite{Storer1990}
 \begin{equation}
-P(|Z_{X_1,X_2}|\geq|Z_{k_1,k_2}|\ |H_0) \approx \sum_{x_1=0}^{n_1}\sum_{x_2=0}^{n_2} b(x_1;n_1,\hat{p_1})b(x_2;n_2,\hat{p_2})\1{|Z_{X_1,X_2}|\geq|Z_{k_1,k_2}|},
+\begin{split}
+P(|Z_{X_1,X_2}|&\geq|Z_{k_1,k_2}|\ |H_0) \approx \\
+\approx & \sum_{x_1=0}^{n_1}\sum_{x_2=0}^{n_2} b(x_1;n_1,\hat{p_1})b(x_2;n_2,\hat{p_2})\1{|Z_{X_1,X_2}|\geq|Z_{k_1,k_2}|},
+\end{split}
 \end{equation}
 gdzie $\hat{p}=(k_1+k_2)/(n_1+n_2)$.
 Test odrzuca hipotezę zerową, gdy $p$-wartość jest mniejsza od poziomu istotności $\alpha$.
@@ -114,7 +120,7 @@ Test odrzuca hipotezę zerową, gdy $p$-wartość jest mniejsza od poziomu istot
 Moc testu wyraża się wzorem
 \begin{equation}
 \begin{split}
-\sum_{k_1=0}^{n}\sum_{k_2=0}^{n} b(k_1;n_1,&p_1)b(k_2;n_2,p_2) \times \\
+\sum_{k_1=0}^{n}\sum_{k_2=0}^{n}& b(k_1;n_1,p_1)b(k_2;n_2,p_2) \times \\
 \times &\1{\sum_{x_1=0}^{n_1} \sum_{x_2=0}^{n_2} b(x_1;n_1,\hat{p_1}) b(x_2;n_2,\hat{p_2}) \1{|Z_{x_1,x_2}|\geq|Z_{k_1,k_2}|} \leq\alpha}.
 \end{split}
 \end{equation}
