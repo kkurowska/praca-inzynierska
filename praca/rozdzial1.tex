@@ -1,6 +1,6 @@
 \chapter{Schemat pobierania obserwacji}
 \label{r1}
-W niniejszej pracy analizowane są testy, które sprawdzają, czy dwie populacje mają te same proporcje badanej cechy. Zatem, aby wykonać test, potrzebne są próbki z~obu populacji. Proporcja jest liczona jako stosunek wartości obserwacji do wielkości próbki, gdzie wartość obserwacji to liczba osobników z~badaną cechą w~próbce. Zakładamy również, że populacje są od siebie niezależne, tym samym próbki pochodzące z~tych populacji także nie zależą od siebie. 
+Gdy rozważamy skończoną populację, należy dokładnie przyjrzeć się schematowi pobierania obserwacji. Jakimi rozkładami są opisane próbki oraz jakie są własności tych rozkładów. Wyznaczymy także przedziały ufności dla proporcji~$p$ w~obu rozkładach. Przy czym, proporcja to stosunek wartości obserwacji do wielkości próbki, gdzie wartość obserwacji to liczba osobników z~badaną cechą w~próbce.
 
 
 \section{Nieskończona populacja}
@@ -22,16 +22,24 @@ gdzie
 L=\max\{0,M-N+n\},\quad U=\min\{n,M\}.
 \end{equation}
 
-Zauważmy, że wzór (\ref{hg}) ma prostą interpretację. Klasyczna definicja prawdopodobieństwa określa szansę zajścia zdarzenia~$A$ jako iloraz liczby zdarzeń elementarnych w~$A$ przez liczbę zdarzeń elementarnych w~$\Omega$, czyli $P(A) = |A|/|\Omega|$. W~rozważanym przypadku zdarzeniu~$A$ odpowiada sytuacja, w~której próbka będzie zawierać $k$~osobników z~daną cechą. Zatem ilość zdarzeń elementarnych w~$A$ to iloczyn dwóch kombinacji. Mamy: $\binom{M}{k}$ możliwych wyborów $k$ osobników z $M$ posiadających daną cechę oraz $\binom{N-M}{n-k}$ możliwych wyborów $n-k$ osobników z $N-M$ nieposiadających tej cechy. Wobec tego $|A| = \binom{M}{k} \binom{N-M}{n-k}$. Natomiast zbiór wszystkich zdarzeń elementarnych w~$\Omega$ to wybór losowej próbki $n$~osobników z~$N$-elementowej populacji, wobec tego $|\Omega| = \binom{N}{n}$. Ograniczenia nałożone na~$k$ są również naturalne. Dolne ograniczenie~$L$ jest równe maksimum z~$0$ i~$M-N+n$. Będzie ono niezerowe, gdy $M-N+n>0$. Przekształcając nierówność, otrzymujemy $n>N-M$, czyli rozmiar próbki jest większy od liczby osobników bez badanej cechy w~populacji. W~rezultacie mamy pewność, że w~próbce będzie przynajmniej tyle osobników z~daną cechą, ile wynosi różnica $n-(N-M)$. Ograniczenie górne jest równe minimum z~$n$~i~$M$, co wynika z~faktu, że nie może być więcej osób w~próbce z~daną cechą niż w~całej populacji. Analiza wzoru (\ref{hg}) pokazuje, że rozkład hipergeometryczny jest ściśle związany z~rozmiarem populacji.
+Zauważmy, że wzór (\ref{hg}) ma prostą interpretację. Klasyczna definicja prawdopodobieństwa określa szansę zajścia zdarzenia~$A$ jako iloraz liczby zdarzeń elementarnych w~$A$ przez liczbę zdarzeń elementarnych w~$\Omega$, czyli $P(A) = |A|/|\Omega|$. W~rozważanym przypadku zdarzeniu~$A$ odpowiada sytuacja, w~której próbka będzie zawierać $k$~osobników z~daną cechą. Zatem ilość zdarzeń elementarnych w~$A$ to iloczyn dwóch kombinacji bez powtórzeń. Mamy: {\small $\binom{M}{k}$} możliwych wyborów $k$ osobników z $M$ posiadających daną cechę oraz {\small $\binom{N-M}{n-k}$} możliwych wyborów $n-k$ osobników z $N-M$ nieposiadających tej cechy. Wobec tego
+\begin{equation}
+|A| = \binom{M}{k} \binom{N-M}{n-k}.
+\end{equation}
+Natomiast zbiór wszystkich zdarzeń elementarnych w~$\Omega$ to wybór losowej próbki $n$~osobników z~$N$\dywiz elementowej populacji, wobec tego
+\begin{equation}
+|\Omega| = \binom{N}{n}.
+\end{equation}
+Ograniczenia nałożone na~$k$ są również naturalne. Dolne ograniczenie~$L$ jest równe maksimum z~$0$ i~$M-N+n$. Będzie ono niezerowe, gdy $M-N+n>0$. Przekształcając nierówność, otrzymujemy $n>N-M$, czyli rozmiar próbki jest większy od liczby osobników bez badanej cechy w~populacji. W~rezultacie mamy pewność, że w~próbce będzie przynajmniej tyle osobników z~daną cechą, ile wynosi różnica $n-(N-M)$. Ograniczenie górne jest równe minimum z~$n$~i~$M$, co wynika z~faktu, że nie może być więcej osób w~próbce z~daną cechą niż w~całej populacji. Analiza wzoru (\ref{hg}) pokazuje, że rozkład hipergeometryczny jest ściśle związany z~rozmiarem populacji.
 
 \section{Porównanie rozkładów}
 
 Rozkład hipergeometryczny daje bardzo podobne wyniki do rozkładu Bernoulliego, gdy populacja jest duża, albo~próbka stosunkowo mała. Natomiast przy małej populacji i~dużej próbce różnica między tymi rozkładami jest znaczna.
 
-Rozważmy to na medycznym przykładzie. Załóżmy, że jest grupa $20$ osób, które są chore na jakąś bardzo rzadką chorobę oraz że $25\%$ z~nich ma szanse na wyzdrowienie. Chcemy dowiedzieć się, ile osób spośród przebadanych może wyzdrowieć. Weźmy $3$~różne próbki o~wielkościach~$n$ równych odpowiednio $10$, $17$, $20$. Możemy tę sytuację opisać za pomocą rozkładu Bernoulliego, wtedy badana zmienna losowa jest z~rozkładu $\mathcal{B}(n,0.25)$. Drugim sposobem jest rozkład hipergeometryczny $\mathcal{H}(n,5,20)$. Rysunki \ref{pmf10}\ppauza\ref{pmf20} na stronie~\pageref{pmf10} przedstawiają funkcję prawdopodobieństwa dla wymienionych przypadków.
+Rozważmy to na medycznym przykładzie. Załóżmy, że jest grupa $20$ osób, które są chore na jakąś bardzo rzadką chorobę oraz że $25\%$ z~nich ma szanse na wyzdrowienie. Chcemy dowiedzieć się, ile osób spośród przebadanych może wyzdrowieć. Weźmy $3$~różne próbki o~wielkościach~$n$ równych odpowiednio $10$, $17$ oraz $20$. Możemy tę sytuację opisać za pomocą rozkładu Bernoulliego, wtedy badana zmienna losowa jest z~rozkładu $\mathcal{B}(n,0.25)$. Drugim sposobem jest rozkład hipergeometryczny $\mathcal{H}(n,5,20)$. Rysunki \ref{pmf10}\ppauza\ref{pmf20} na stronie~\pageref{pmf10} przedstawiają funkcję prawdopodobieństwa dla wymienionych przypadków.
 
 Przeanalizujmy jakie wartości mogą przyjmować zmienne losowe z~obu rozkładów. W~rozkładzie dwumianowym zmienna w~każdym z~przypadków przyjmuje wartości od $0$ do $n$. Na przykład na wykresie \ref{b_pmf10} argumenty funkcji to zbiór $\{0,1,\ldots,9,10\}$. 
-Mimo że w populacji maksymalnie może wyzdrowieć $5$ osób, dla rozkładu Bernoulliego prawdopodobieństwo $X=6$ wynosi $0.09$. Przedstawiona rozbieżność wynika z~założenia, że pobieranie próbki to losowanie ze zwracaniem, czyli w~próbce mogą znaleźć się dwie te same osoby. Natomiast w~rozkładzie hipergeometrycznym zmienną losową ograniczają $L$ i~$U$, zdefiniowane wzorem (\ref{ograniczenia}), które uwzględniają wielkość próbki. Porównując, na wykresie \ref{hg_pmf10} zmienna losowa nie przyjmuje wartości większej niż $5$. Dodatkowo na wykresie \ref{hg_pmf17} najmniejszą wartością jest $2$, ponieważ populacja zawiera $15$ osób, które nie wyzdrowieją, zatem w~$17$~osobowej próbce jest pewne, że przynajmniej dwie będą zdrowe. Kolejne losowania są od siebie zależne, więc nie możemy drugi raz wylosować tej samej osoby.
+Mimo że w populacji maksymalnie może wyzdrowieć $5$ osób, dla rozkładu Bernoulliego prawdopodobieństwo $X=6$ wynosi $0.09$. Przedstawiona rozbieżność wynika z~założenia, że pobieranie próbki to losowanie ze zwracaniem, czyli w~próbce mogą znaleźć się dwie te same osoby. Natomiast w~rozkładzie hipergeometrycznym zmienną losową ograniczają $L$ i~$U$, zdefiniowane wzorem (\ref{ograniczenia}), które uwzględniają wielkość próbki. Porównując, na wykresie \ref{hg_pmf10} zmienna losowa nie przyjmuje wartości większej niż $5$. Dodatkowo na wykresie \ref{hg_pmf17} najmniejszą wartością jest $2$, ponieważ populacja zawiera $15$ osób, które nie wyzdrowieją, zatem w~$17$\dywiz osobowej próbce jest pewne, że przynajmniej dwie będą zdrowe. Kolejne losowania są od siebie zależne, więc nie możemy drugi raz wylosować tej samej osoby.
 
 \begin{diagrams}{b_pmf10}{hg_pmf10}
 	\caption{Funkcje prawdopodobieństwa $b(k;10,0.25)$ oraz $h(k;10,5,20)$}
@@ -48,9 +56,9 @@ Mimo że w populacji maksymalnie może wyzdrowieć $5$ osób, dla rozkładu Bern
 	\label{pmf20}
 \end{diagrams}
 
-Różnica między funkcjami obu rozkładów rośnie wraz ze wzrostem próbki. Skrajny przypadek przedstawia rysunek \ref{pmf20}, na którym próbka równa się populacji. Wykres \ref{hg_pmf20} idealnie obrazuje przypadek $n=N$. Pewne jest to, że w~$20$ osobach będzie dokładnie $5$, które mogą wyzdrowieć. Natomiast na wykresie \ref{b_pmf20} prawdopodobieństwo, że $X=5$ wynosi jedynie $0.2$, ponieważ funkcja prawdopodobieństwa dla rozkładu dwumianowego nie uwzględnia wielkości populacji. Warto również zaznaczyć, że im większa próbka, tym $P(X=5)$ dla rozkładu Bernoulliego jest coraz mniejsze, ponieważ mamy więcej elementów w~obserwacji. Tymczasem dla rozkładu hipergeometrycznego jest odwrotnie, funkcja prawdopodobieństwa dla $k=5$ rośnie, aż w~końcu osiąga wartość $1$. Gdy przebadamy więcej osobników, wzrasta nasza wiedza o~próbce oraz jest bardziej prawdopodobne to, że znajdzie się w~niej aż $5$ zdrowych pacjentów.
+Różnica między funkcjami prawdopodobieństwa obu rozkładów rośnie wraz ze wzrostem próbki. Skrajny przypadek przedstawia rysunek \ref{pmf20}, na którym próbka równa się populacji. Wykres \ref{hg_pmf20} idealnie obrazuje przypadek $n=N$. Pewne jest to, że w~$20$ osobach będzie dokładnie $5$, które mogą wyzdrowieć. Natomiast na wykresie \ref{b_pmf20} prawdopodobieństwo, że $X=5$ wynosi jedynie $0.2$, ponieważ funkcja prawdopodobieństwa dla rozkładu dwumianowego nie uwzględnia wielkości populacji. Warto również zaznaczyć, że im większa próbka, tym $P(X=5)$ dla rozkładu Bernoulliego jest coraz mniejsze, ponieważ mamy więcej elementów w~obserwacji. Tymczasem dla rozkładu hipergeometrycznego jest odwrotnie, funkcja prawdopodobieństwa dla $k=5$ rośnie, aż w~końcu osiąga wartość $1$. Gdy przebadamy więcej osobników, wzrasta nasza wiedza o~próbce oraz jest bardziej prawdopodobne to, że znajdzie się w~niej aż pięcioro zdrowych pacjentów.
 
-Spójrzmy jeszcze, jak wyglądają średnia i~wariancja dla rozważanych rozkładów.
+Spójrzmy, jak wyglądają średnia i~wariancja dla rozważanych rozkładów.
 Gdy $X\sim\mathcal{B}(n,p)$, to
 \begin{equation}
 E(X)=np,\quad Var(X)=np(1-p).
@@ -65,3 +73,20 @@ Parametr $p$ rozkładu dwumianowego odpowiada ilorazowi parametrów $M/N$ w~rozk
 	\caption{Wariancja rozkładów Bernoulliego i~hipergeometrycznego w~zależności od rozmiaru próbki}
 	\label{var}
 \end{diagrams}
+
+Rozważmy także, jak wyglądają przedziały ufności dla zmiennych losowych z obu rozkładów. Zakładamy, że unormowana zmienna losowa pochodzi z rozkładu standardowego normalnego, czyli
+\begin{equation}
+\frac{X-E(X)}{Var(X)}\sim \mathcal{N}(0,1).
+\end{equation}
+Wobec tego dla $X\sim \mathcal{B}(n,p)$ przedział ufności parametru $p$ jest równy
+\begin{equation}
+\left[\, \hat{p}-z_{1-\alpha/2}\sqrt{\frac{\hat{p}(1-\hat{p})}{n}}\, , \,  \hat{p}+z_{1-\alpha/2}\sqrt{\frac{\hat{p}(1-\hat{p})}{n}}\, \right],
+\end{equation}
+gdzie $z_{1-\alpha/2}$ to kwantyl rozkładu normalnego rzędu $1-\alpha/2$.
+Natomiast dla $X\sim\mathcal{H}(n,M,N)$ przedział ufności proporcji $p=M/N$ to
+\begin{equation}
+\left[\, \hat{p}-z_{1-\alpha/2} \sqrt{\frac{\hat{p}(1-\hat{p})(N-n)}{n(N-1)}}\, , \, \hat{p} + z_{1-\alpha/2} \sqrt{\frac{\hat{p}(1-\hat{p})(N-n)}{n(N-1)}}\, \right].
+\end{equation}
+W obu przypadkach estymator $\hat{p}=\bar{x}/n$, gdzie $\bar{x}$ to średnia z obserwacji.
+Wyliczmy wartości brzegowe przedziałów ufności $p$ obu rozkładów. 
+

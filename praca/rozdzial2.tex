@@ -1,6 +1,6 @@
 \chapter{Przedstawienie testów}
 \label{r2}
-W niniejszym rozdziale znajduje się opis trzech testów. Dwa testy ze skończoną poprawką wykorzystują rozkład hipergeometryczny, a~trzeci test, bez skończonej poprawki, opiera się o~rozkład dwumianowy. Następnie omówiony jest sposób liczenia mocy dla wymienionych testów.
+W niniejszym rozdziale znajduje się opis trzech testów. Dwa testy ze skończoną poprawką wykorzystują rozkład hipergeometryczny, a~trzeci test, bez skończonej poprawki, opiera się o~rozkład dwumianowy. Następnie omówiony jest sposób liczenia mocy dla wymienionych testów. Wymienione testy sprawdzają, czy dwie populacje mają te same proporcje badanej cechy. Zatem, aby wykonać test, potrzebne są próbki z~obu populacji. Zakładamy również, że populacje są od siebie niezależne, tym samym próbki pochodzące z~tych populacji także nie zależą od siebie. 
 
 \section{Sformułowanie problemu}
 Załóżmy, że $X_1$ i~$X_2$ są niezależnymi zmiennymi losowymi. Zaobserwowane wartości $X_1$ i~$X_2$ oznaczmy odpowiednio $k_1$ i~$k_2$ oraz proporcje w~obserwacjach $p_1$ i~$p_2$. Będziemy testować
@@ -17,16 +17,20 @@ Wartość statystyki $Z_{X_1,X_2}$ oznaczmy jako $Z_{k_1,k_2}$. Jest ona wylicza
 
 \section{Testy ze skończoną poprawką}
 \label{r2:skonczonapoprawka}
-Jak już było wspomniane w~podrozdziale \ref{r1:skonczonapopulacja}, próbki w~przypadku skończonej populacji pochodzą z~rozkładu hipergeometrycznego. Zatem $X_1\sim \mathcal{H}(n_1,M_1,N_1)$, $X_2\sim \mathcal{H}(n_2,M_2,N_2)$ oraz proporcje są równe $p_1=M_1/N_1$, $p_2=M_2/N_2$. Znane parametry to rozmiary próbek $n_1$ i~$n_2$ i~wielkości populacji $N_1$ i~$N_2$.
+Jak już było wspomniane w~podrozdziale \ref{r1:skonczonapopulacja}, próbki w~przypadku skończonej populacji pochodzą z~rozkładu hipergeometrycznego. Zatem:
+\begin{equation}
+X_1\sim \mathcal{H}(n_1,M_1,N_1),\ X_2\sim \mathcal{H}(n_2,M_2,N_2)
+\end{equation}
+oraz proporcje są równe $p_1=M_1/N_1$, $p_2=M_2/N_2$. Znane parametry to rozmiary próbek $n_1$ i~$n_2$ i~wielkości populacji $N_1$ i~$N_2$.
 
-W celu wyprowadzenia wariancji rozkładu $X_1/n_1-X_2/n_2$ pod warunkiem $p_1=p_2$ w~połączonej próbie, zapiszmy wariancję rozważanej zmiennej losowej w~łącznej próbie, korzystając z~własności wariancji oraz tego, że $Cov(X_1,X_2)=0$ z~niezależności $X_1$ i~$X_2$
+W celu wyprowadzenia wariancji rozkładu $X_1/n_1-X_2/n_2$ pod warunkiem $p_1=p_2$ w~połączonej próbie zapiszmy wariancję rozważanej zmiennej losowej w~łącznej próbie, korzystając z~własności wariancji oraz tego, że $Cov(X_1,X_2)=0$ z~niezależności $X_1$ i~$X_2$
 \begin{equation}
 \begin{split}
 Var(X_1/n_1-X_2/n_2)=&Var(X_1/n_1) + Var(X_2/n_2) =\\
  =& Var(X_1)/n_1^2+Var(X_2)/n_2^2.
 \end{split}
 \end{equation}
-Wariancje $X_1$ i~$X_2$ są równe
+Wariancje $X_1$ i~$X_2$ są równe:
 \begin{align}
 Var(X_1)=n_1 p_1 (1-p_1)(N_1-n_1)/(N_1-1),\\
 Var(X_2)=n_2 p_2 (1-p_2)(N_2-n_2)/(N_2-1).
@@ -38,20 +42,33 @@ V_{X_1,X_2} & = \frac{1}{n_1}p(1-p)\frac{N_1-n_1}{N_1-1} + \frac{1}{n_2}p(1-p)\f
 &= p(1-p)\left(\frac{N_1-n_1}{n_1(N_1-1)}+\frac{N_2-n_2}{n_2(N_2-1)}\right),
 \end{split}
 \end{equation}
-przy czym $p$ to proporcja liczby osobników z~daną cechą do całości populacji w~rozkładzie łącznym. Wobec czego $p=(X_1+X_2)/(n_1+n_2)$. Ostatecznie otrzymujemy
+przy czym $p$ to proporcja liczby osobników z~daną cechą do całości populacji w~rozkładzie łącznym, zatem $p=(X_1+X_2)/(n_1+n_2)$. Ostatecznie otrzymujemy
 \begin{equation}
 V_{X_1,X_2} = \left(\frac{N_1-n_1}{n_1(N_1-1)}+\frac{N_2-n_2}{n_2(N_2-1)}\right)\left(\frac{X_1+X_2}{n_1+n_2}\right)\left(1-\frac{X_1+X_2}{n_1+n_2}\right).
 \end{equation}
 
 \subsection{Test Z}
-Test~Z jest oparty na centralnym twierdzeniu granicznym, według którego, rozważana statystyka $Z_{X_1,X_2}$, pod warunkiem prawdziwości $H_0$, jest w~przybliżeniu z~rozkładu standardowego normalnego $\mathcal{N}(0,1)$. Wtedy $p$-wartość wyraża się wzorem
+\label{r2:testZ}
+Test~Z jest oparty na aproksymacji rozkładem normalnym, zatem rozważana statystyka $Z_{X_1,X_2}$, pod warunkiem prawdziwości $H_0$, jest w~przybliżeniu z~rozkładu standardowego normalnego $\mathcal{N}(0,1)$. Wtedy $p$\dywiz wartość wyraża się wzorem
 \begin{equation}
 P(|Z_{X_1,X_2}|\geq|Z_{k_1,k_2}|\ |H_0) \approx 2(1-\Phi(|Z_{k_1,k_2}|)),
 \end{equation}
-gdzie $\Phi$ oznacza dystrybuantę rozkładu $N(0,1)$. Test Z~odrzuca hipotezę zerową, gdy $p$-wartość jest mniejsza od poziomu istotności $\alpha$.
+gdzie $\Phi$ oznacza dystrybuantę rozkładu $N(0,1)$. Test Z~odrzuca hipotezę zerową, gdy $p$\dywiz wartość jest mniejsza od poziomu istotności $\alpha$.
+
+Jeżeli zakładamy, że $Z_{X_1,X_2} \sim \mathcal{N}(0,1)$, możemy wyznaczyć przedział ufności statystyki~$Z_{X_1,X_2}$. Wiemy, że
+\begin{equation}
+P\left(-z_{1-\alpha/2}\leq \frac{p_1-p_2}{\sqrt{V_{X_1,X_2}}} \leq z_{1-\alpha/2}\right) = 1-\alpha,
+\end{equation}
+gdzie $-z_{1-\alpha/2}$ i $z_{1-\alpha/2}$ to kwantyle rozkładu normalnego. Wobec czego przedział ufności na poziomie $1-\alpha$ dla różnicy proporcji $p_1-p_2$ jest równy
+\begin{equation}
+\label{r2:ci}
+\left[\, -z_{1-\alpha/2} \sqrt{V_{X_1,X_2}}\, , \, z_{1-\alpha/2} \sqrt{V_{X_1,X_2}}\, \right]
+\end{equation}
+Przedział ufności w~kontekście testowania to obszar akceptacji hipotezy zerowej. Jego dopełnieniem jest obszar krytyczny, czyli zbiór wartości różnicy proporcji $p_1-p_2$, dla których test odrzuca~$H_0$.
 
 \subsection{Test E}
-Test E opiera się o~rzeczywistą $p$-wartość, która, według artykułu K. Krishnamoorthy i~J. Thomson z~2002 roku, jest równa \cite{K.Krishnamoorthy2002}
+\label{r2:testE}
+Test E opiera się o~rzeczywistą $p$\dywiz wartość, która, według artykułu K.~Krishnamoorthy i~J.~Thomson z~2002 roku, jest równa~\cite{K.Krishnamoorthy2002}
 \begin{equation}
 \label{realpvalue}
 \begin{split}
@@ -59,19 +76,21 @@ Test E opiera się o~rzeczywistą $p$-wartość, która, według artykułu K. Kr
 &= \sum_{x_1=L_1}^{U_1}\sum_{x_2=L_2}^{U_2} h(x_1;n_1,N_1p,N_1)h(x_2;n_2,N_2p,N_2)\1{|Z_{X_1,X_2}|\geq|Z_{k_1,k_2}|},
 \end{split}
 \end{equation}
-gdzie $E_{X_1,X_2}$ to wartość oczekiwana łącznego rozkładu $(X_1,X_2)$, a~$p$ jest nieznaną wspólną proporcją pod warunkiem $H_0$. Nie jest możliwe policzenie $p$-wartości wprost ze wzoru (\ref{realpvalue}), ponieważ nie znamy parametru proporcji~$p$. Krishnamoorthy i~Thomson (2002) zaproponowali estymator $p$-wartości \cite{K.Krishnamoorthy2002}
+gdzie $E_{X_1,X_2}$ to wartość oczekiwana łącznego rozkładu $(X_1,X_2)$, a~$p$ jest nieznaną wspólną proporcją pod warunkiem $H_0$. Nie jest możliwe policzenie $p$\dywiz wartości wprost ze wzoru (\ref{realpvalue}), ponieważ nie znamy parametru proporcji~$p$. Krishnamoorthy i~Thomson (2002) zaproponowali estymator $p$\dywiz wartości~\cite{K.Krishnamoorthy2002}
 \begin{equation}
 \label{estpvalue}
 \begin{split}
-P(|Z_{X_1,X_2}|\geq|Z_{k_1,k_2}|\ |H_0) \approx& \\ =\sum_{x_1=L_{x_1}}^{U_{x_1}}\sum_{x_2=L_{x_2}}^{U_{x_2}} h(x_1;n_1,\hat{M_1},&N_1)h(x_2;n_2,\hat{M_2},N_2)\1{|Z_{x_1,x_2}|\geq|Z_{k_1,k_2}|},
+P(|Z_{X_1,X_2}|\geq|Z_{k_1,k_2}|\ |H_0) \approx& \\ \approx \sum_{x_1=L_{x_1}}^{U_{x_1}}\sum_{x_2=L_{x_2}}^{U_{x_2}} h(x_1;n_1,\hat{M_1},&N_1)h(x_2;n_2,\hat{M_2},N_2)\1{|Z_{x_1,x_2}|\geq|Z_{k_1,k_2}|},
 \end{split}
 \end{equation}
-przy czym $\hat{p}=(k_1+k_2)/(n_1+n_2)$, $\hat{M_i}=[N_i\hat{p}]$ oraz  $L_{x_i}=\max\{0,\hat{M_i}-N_i+n_i\}$, $U_{x_i}=\min\{n_i,\hat{M_i}\}$, $i=1,2$. Test odrzuca $H_0$ wtedy, gdy $p$-wartość wyliczona według wzoru (\ref{estpvalue}) jest mniejsza od poziomu istotności $\alpha$.
+przy czym $\hat{p}=(k_1+k_2)/(n_1+n_2)$, $\hat{M_i}=[N_i\hat{p}]$, $L_{x_i}=\max\{0,\hat{M_i}-N_i+n_i\}$ oraz $U_{x_i}=\min\{n_i,\hat{M_i}\}$, $i=1,2$. Test odrzuca $H_0$ wtedy, gdy $p$\dywiz wartość wyliczona według wzoru (\ref{estpvalue}) jest mniejsza od poziomu istotności $\alpha$.
+
+W przypadku testu~E nie da się łatwo wyznaczyć przedziału ufności dla różnicy proporcji w~oparciu o~obszar krytyczny testu~E. Jednakże w~rozdziale~\ref{r3} znajdują się numeryczne oszacowania przedziału ufności dla różnicy proporcji.
 
 \subsection{Moc testu}
 Moc testu to prawdopodobieństwo odrzucenia hipotezy zerowej, gdy jest ona nieprawdziwa. Wobec tego, spośród testów na zadanym poziomie istotności, interesują nas te o~najwyższej mocy.
 
-Moc obu testów można wyliczyć, korzystając z~funkcji prawdopodobieństwa rozkładu hipergeometrycznego. Dla testu~Z pod warunkiem hipotezy alternatywnej $H_1$ moc, zgodnie z~rozważaniami Krishnamoorthy i~Thomson (2002), jest równa \cite{K.Krishnamoorthy2002}
+Moc obu testów można wyliczyć, korzystając z~funkcji prawdopodobieństwa rozkładu hipergeometrycznego. Dla testu~Z pod warunkiem hipotezy alternatywnej $H_1$, zgodnie z~rozważaniami Krishnamoorthy i~Thomson (2002), moc jest równa \cite{K.Krishnamoorthy2002}
 \begin{equation}
 \label{powerZ}
 \sum_{k_1=L_1}^{U_1}\sum_{k_2=L_2}^{U_2} h(k_1;n_1,M_1,N_1)h(k_2;n_2,M_2,N_2)\1{|Z_{k_1,k_2}|>z_{1-\alpha/2}},
@@ -88,26 +107,30 @@ Natomiast dla testu E, według Krishnamoorthy i~Thomson (2002), moc zdefiniowana
 gdzie parametry są takie same jak we wzorach (\ref{estpvalue}) i~(\ref{powerZ}).
 
 \section{Test bez skończonej poprawki}
-Dla testu bez poprawki na skończony rozmiar populacji, zamiast rozkładu hipergeometrycznego stosujemy dwumianowy, więc $X_1$ i~$X_2$ są niezależnymi zmiennymi losowymi o~rozkładzie Bernoulliego $X_1\sim \mathcal{B}(n_1,p_1)$, $X_2\sim \mathcal{B}(n_2,p_2)$. Znane parametry to rozmiary próbek $n_1$ i~$n_2$.
+Dla testu bez poprawki na skończony rozmiar populacji, zamiast rozkładu hipergeometrycznego stosujemy dwumianowy, więc $X_1$ i~$X_2$ są niezależnymi zmiennymi losowymi o~rozkładzie Bernoulliego:
+\begin{equation}
+ X_1\sim \mathcal{B}(n_1,p_1),\ X_2\sim \mathcal{B}(n_2,p_2).
+\end{equation}
+Znane parametry to rozmiary próbek $n_1$ i~$n_2$.
 
-Wariancję rozkładu $X_1/n_1-X_2/n_2$, pod warunkiem $p_1=p_2$, w~łącznej próbie możemy wyprowadzić analogicznie jak w~podrozdziale \ref{r2:skonczonapoprawka}, wychodząc od wariancji rozważanej zmiennej losowej
+Wariancję rozkładu $X_1/n_1-X_2/n_2$ w~łącznej próbie, pod warunkiem $p_1=p_2$, możemy wyprowadzić analogicznie jak w~podrozdziale \ref{r2:skonczonapoprawka}, wychodząc od wariancji rozważanej zmiennej losowej
 \begin{equation}
 Var(X_1/n_1-X_2/n_2) = Var(X_1)/n_1^2+Var(X_2)/n_2^2.
 \end{equation}
-Wariancje $X_1$ i~$X_2$ są równe
+Wariancje $X_1$ i~$X_2$ są równe:
 \begin{align}
 Var(X_1)=n_1 p_1 (1-p_1),\\
 Var(X_2)=n_2 p_2 (1-p_2).
 \end{align}
 Zastępując $p_1$ i~$p_2$ jednym parametrem równym $p$, otrzymujemy
 \begin{equation}
-V_{X_1,X_2} = p(1-p)/n_1 + p(1-p)/n_2 = p(1-p)(1/n_1+1/n_2)
+V_{X_1,X_2} = p(1-p)/n_1 + p(1-p)/n_2 = p(1-p)(1/n_1+1/n_2),
 \end{equation}
 przy czym $p=(X_1+X_2)/(n_1+n_2)$.
 
 \subsection{Test Zb}
 
-Test~Zb jest, podobnie jak omówiony wcześniej test E, oparty o~estymator $p$-wartości, który, zgodnie z~artykułem Storer i~Kim z~1990 roku, jest równy \cite{Storer1990}
+Test~Zb jest, podobnie jak omówiony wcześniej test E, oparty o~estymator $p$\dywiz wartości, który, zgodnie z~artykułem Storer i~Kim z~1990 roku, jest równy~\cite{Storer1990}
 \begin{equation}
 \begin{split}
 P(|Z_{X_1,X_2}|&\geq|Z_{k_1,k_2}|\ |H_0) \approx \\
@@ -115,7 +138,9 @@ P(|Z_{X_1,X_2}|&\geq|Z_{k_1,k_2}|\ |H_0) \approx \\
 \end{split}
 \end{equation}
 gdzie $\hat{p}=(k_1+k_2)/(n_1+n_2)$.
-Test odrzuca hipotezę zerową, gdy $p$-wartość jest mniejsza od poziomu istotności $\alpha$.
+Test odrzuca hipotezę zerową, gdy $p$\dywiz wartość jest mniejsza od poziomu istotności $\alpha$.
+
+Coś o oszacowaniu przedziału ufności w oparciu o statystykę testową..........
 
 Moc testu wyraża się wzorem
 \begin{equation}

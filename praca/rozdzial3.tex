@@ -1,13 +1,45 @@
 \chapter{Analiza testów}
 \label{r3}
 
-W celu porównania testów opisanych w~rozdziale \ref{r2}, napisano programy, które wyliczają prawdopodobieństwo błędu I~rodzaju i~moc testu oraz generują wykresy dla różnych parametrów.
+W celu porównania testów opisanych w~rozdziale \ref{r2} napisano programy, które wyliczają prawdopodobieństwo błędu I~rodzaju i~moc testu oraz generują wykresy dla różnych parametrów.
 
 \section{Porównanie testów ze skończoną poprawką}
 \label{r3:skonczonetesty}
-Na początku zostały porównane testy ze skończoną poprawką. Rysunek \ref{sizeZE_n} na stronie \pageref{sizeZE_n} przedstawia funkcję prawdopodobieństwa błędu I~rodzaju w~zależności od rozmiaru próbki dla różnych proporcji $p$. Po lewej stronie obserwacje z~obu populacji są tej samej wielkości $n_1=n_2=n$, natomiast po prawej różnią się, rozmiar pierwszej próbki ma ustaloną wartość. Pierwszym spostrzeżeniem jest to, że funkcja dla testu~E w~większości przypadków jest mniejsza niż dla testu Z. Dodatkowo dla testu~E prawdopodobieństwo błędu przekracza poziom istotności jedynie kilka razy i~to bardzo nieznacznie. Tymczasem dla testu~Z funkcja częściej przyjmuje wartości powyżej $\alpha$, dochodząc nawet do $0.95$, jak na wykresie \ref{sizeZE_p_0_05}. Warto wspomnieć także, że dla większych $p$ (0.1, 0.3) oraz wraz ze wzrostem wielkości próbki funkcje są bliżej siebie i~bardziej skupiają się przy poziomie istotności $\alpha$.
 
-\begin{figure}[!h]
+\subsection{Obszary krytyczne}
+Najpierw porównano testy ze skończoną poprawką. Zacznijmy od wyznaczenia obszaru krytycznego dla testu~Z i~E na poziomie istotności $\alpha = 0.05$. Dla testu~Z w~podrozdziale~\ref{r2:testZ} został wyznaczony wzór (\ref{r2:ci}) na przedział ufności różnicy proporcji $p_1-p_2$. Wiadomo, że obszar krytyczny to dopełnienie przedziału ufności. Wobec tego wyliczając kwantyl~$z_{1-0.05/2}$ otrzymujemy, że zbiór wartości różnicy $p_1-p_2$, dla których test~Z odrzuca~$H_0$ jest równy
+\begin{equation}
+\left(-\infty,-1.96\sqrt{V_{X_1,X_2}}\right)\cup \left(1.96\sqrt{V_{X_1,X_2}}, \infty\right).
+\end{equation}
+
+Dla testu~E nie jesteśmy w~stanie w~prosty sposób wyznaczyć obszaru krytycznego. Jednakże wiemy, że jest to zbiór wartości, dla których test~E odrzuca hipotezę zerową oraz będzie on postaci
+\begin{equation}
+(-\infty,a)\cup (b, \infty).
+\end{equation}
+Wobec czego możemy wyznaczyć wartości brzegowe $a$ i~$b$, dla konkretnych parametrów rozkładów $X_1$ i~$X_2$, sprawdzając, dla każdych możliwych wartości $k_1$ i~$k_2$, kiedy test~E odrzuci $H_0$. Następnie, $a$ można wyliczyć jako największą ujemną wartość różnicy $p_1-p_2$, która została odrzucona, zaś $b$ jako najmniejszą dodatnią wartość $p_1-p_2$. W~tabeli \ref{r3:tabab} zostały przedstawione wyniki dla różnych parametrów, gdy $p_1=p_2$. Nie przedstawiono wyników w~przypadku $p_1\neq p_2$, ponieważ zmienienie jednej z~proporcji nie wpływa na zmianę wartości $a$ i~$b$.
+
+\begin{table}
+\centering
+\caption{Wartości brzegowe obszaru krytycznego testu~E dla różnych parametrów}
+\label{r3:tabab}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|} \hline
+	$n_1$ & $n_2$ & $M_1$ & $M_2$ & $N_1$ & $N_2$ & $p_1 = p_2$ & $a$ & $b$ \\
+	\hline \hline
+	5 & 5 & 50 & 50 & 100 & 100 & 0.5 & -2.64 & 2.64 \\
+	10 & 10 & 30 & 30 & 100 & 100 & 0.3 & -2.35 & 2.35 \\
+	5 & 20 & 10 & 10 & 100 & 100 & 0.1 & -2.12 & 2.12 \\
+	15 & 15 & 18 & 30 & 30 & 50 & 0.6 & -2.1 & 2.1 \\
+	40 & 40 & 1800 & 500 & 3000 & 1000 & 0.5 & -2.03 & 2.03 \\
+	\hline
+\end{tabular}
+\end{table}
+
+Analizując wyniki przedstawione w~tabeli~\ref{r3:tabab} widzimy, że obszar krytyczny testu~E w~każdym z~przypadków jest mniejszy niż dla testu Z. W~związku z~czym test~E będzie rzadziej odrzucał hipotezę zerową. Tu jeszcze kilka wniosków... + w kolejnym podrozdziale odniesienie się do tych wniosków
+
+\subsection{Błąd I rodzaju i~moc testu}
+Rysunek~\ref{sizeZE_n} na stronie~\pageref{sizeZE_n} przedstawia funkcję prawdopodobieństwa błędu I~rodzaju w~zależności od rozmiaru próbki dla różnych proporcji $p$. Po lewej stronie obserwacje z~obu populacji są tej samej wielkości $n_1=n_2=n$, natomiast po prawej się różnią. Pierwszym spostrzeżeniem jest to, że funkcja dla testu~E w~większości przypadków jest mniejsza niż dla testu Z. Dodatkowo dla testu~E prawdopodobieństwo błędu przekracza poziom istotności jedynie kilka razy, i~to bardzo nieznacznie. Tymczasem dla testu~Z funkcja częściej przyjmuje wartości powyżej $\alpha$, dochodząc nawet do $0.95$, jak na wykresie \ref{sizeZE_p_0_05}. Warto wspomnieć także, że dla większych $p$ (0.1 i~0.3) oraz wraz ze wzrostem wielkości próbki, funkcje są bliżej siebie i~bardziej skupiają się przy poziomie istotności $\alpha$.
+
+\begin{figure}[p]
 	\begin{subdiagrams}{sizeZE_p_0_05}{sizeZE_p_0_05_n1_5}
 	\end{subdiagrams}
 	
@@ -16,19 +48,20 @@ Na początku zostały porównane testy ze skończoną poprawką. Rysunek \ref{si
 	
 	\begin{subdiagrams}{sizeZE_p_0_3}{sizeZE_p_0_3_n1_5}
 	\end{subdiagrams}
-	\caption{Prawdopodobieństwo błędu I~rodzaju testów~Z i~E jako funkcja rozmiaru próbki $n$, przy zadanym poziomie istotności $\alpha=0.05$; $N_1=N_2=100$}
+	\caption{Prawdopodobieństwo błędu I~rodzaju testów~Z i~E jako funkcja rozmiaru próbki $n$; $\alpha=0.05$; $N_1=N_2=100$}
 	\label{sizeZE_n}
 \end{figure}
 
 Rysunek \ref{sizeZE_p} na stronie \pageref{sizeZE_p} obrazuje również prawdopodobieństwo błędu I~rodzaju, ale w~zależności od proporcji $p$. Analizując wykresy funkcji, można dojść do analogicznych wniosków, jak dla rysunku \ref{sizeZE_n}. W~każdym przypadku prawdopodobieństwo błędu I~rodzaju testu~Z jest większe od prawdopodobieństwa błędu testu E. Oprócz tego funkcja dla testu~E przekracza poziom istotności jedynie na wykresie \ref{sizeZE_n1_30_n2_15}, podczas gdy funkcja błędu testu~Z tylko w~jednym przypadku (\ref{sizeZE_n1_10_n2_6}) pozostaje całkowicie poniżej $\alpha$.
 
-Podsumowując, dla małych rozmiarów próbek test~Z nie jest na poziomie istotności $\alpha$, co wynika z~zastosowania centralnego twierdzenia granicznego w~wyliczaniu $p$-wartości. Przybliżenie rozkładem normalnym działa dobrze tylko dla dużych prób. Wobec czego test~Z zbyt często odrzuca hipotezę zerową, gdy jest ona prawdziwa. 
+Podsumowując, dla małych rozmiarów próbek test~Z nie jest na poziomie istotności $\alpha$, co wynika z~zastosowania aproksymacji rozkładem normalnym do~wyliczenia $p$\dywiz wartości. Przybliżenie rozkładem normalnym działa dobrze tylko dla dużych prób. Wobec tego test~Z zbyt często odrzuca hipotezę zerową, gdy jest ona prawdziwa.
+Pamiętajmy, że analizujemy testy dla małych populacji, zatem to że test~Z działa dla dużych prób nie jest wystarczające.
 
-Rysunek \ref{powerZE_n} na stronie \pageref{powerZE_n} zawiera wykresy mocy obu testów w~zależności od rozmiaru próbki dla różnych proporcji oraz rozmiarów populacji. Druga populacja ma ustaloną proporcję $p_2$, a~pierwsza przyjmuje trzy wartości różne od $p_2$. Dla obu testów zauważalny jest wzrost mocy wraz ze zwiększaniem się rozmiaru próbki. Ponadto moc testu wzrasta także dla proporcji bardziej oddalonych od siebie. W~każdym przypadku, dla próby $n=50$ i~różnicy między proporcjami $0.3$, moce mają wartość bliską $1$. 
+Rysunki \ref{powerZE_n1} i~\ref{powerZE_n2} na stronach \pageref{powerZE_n1} i~\pageref{powerZE_n2} zawierają wykresy mocy obu testów w~zależności od rozmiaru próbki dla różnych proporcji oraz rozmiarów populacji. Druga populacja ma ustaloną proporcję $p_2$, a~pierwsza przyjmuje trzy wartości różne od $p_2$. Dla obu testów zauważalny jest wzrost mocy wraz ze zwiększaniem się rozmiaru próbki. Ponadto moc testu wzrasta także dla proporcji bardziej oddalonych od siebie. W~każdym przypadku, dla próby $n=50$ i~różnicy między proporcjami $0.3$, moce mają wartość bliską $1$. 
 
-Porównując, moc testu~Z jest większa od mocy testu E, jednakże różnice nie są znaczne. Ponadto, z~analizy błędu I~rodzaju, wiemy, że test~Z zbyt często odrzuca $H_0$, co wpływa na wyższą moc testu. Natomiast test~E utrzymuje poziom istotności $\alpha$, wobec czego niewiele mniejsza moc testu nie oznacza, że test~E jest gorszy. Wprost przeciwnie, patrząc na wartości prawdopodobieństwa błędu I~rodzaju, test~E jest poprawny, podczas gdy test~Z nie spełnia swojej roli.
+Porównując, moc testu~Z jest większa od mocy testu E, jednakże różnice nie są znaczne. Ponadto, z~analizy błędu I~rodzaju, wiemy, że test~Z zbyt często odrzuca $H_0$, co wpływa na wyższą moc testu. Natomiast test~E utrzymuje poziom istotności $\alpha$, wobec czego niewiele mniejsza moc testu nie oznacza, że test~E jest gorszy. 
 
-\begin{figure}[H]
+\begin{figure}[p]
 	\begin{subdiagrams}{sizeZE_n_10}{sizeZE_n1_10_n2_6}
 	\end{subdiagrams}
 	
@@ -37,36 +70,40 @@ Porównując, moc testu~Z jest większa od mocy testu E, jednakże różnice nie
 	
 	\begin{subdiagrams}{sizeZE_n_30}{sizeZE_n1_30_n2_15}
 	\end{subdiagrams}
-	\caption{Prawdopodobieństwo błędu I~rodzaju testów~Z i~E jako funkcja proporcji $p=M_1/N_1=M_2/N_2$, przy zadanym poziomie istotności $\alpha=0.05$; $N_1=N_2=100$}
+	\caption{Prawdopodobieństwo błędu I~rodzaju testów~Z i~E jako funkcja proporcji $p=M_1/N_1=M_2/N_2$; $\alpha=0.05$; $N_1=N_2=100$}
 	\label{sizeZE_p}
 \end{figure}
 
 
-\begin{figure}[H]
+\begin{figure}[p]
 	\begin{subdiagram}{powerZE_N1_30_N2_50_p_0_6}
 	\end{subdiagram}
 	\begin{subdiagram}{powerZE_N_100_p_0_1}
 	\end{subdiagram}
+	
+	\caption{Moc testów~Z i~E jako funkcja rozmiaru próbki $n$, cz.~1}
+	\label{powerZE_n1}
+\end{figure}
+
+\begin{figure}[p]
 	\begin{subdiagram}{powerZE_N1_100_N2_200_p_0_1}
 	\end{subdiagram}
 	\begin{subdiagram}{powerZE_N1_3000_N2_100_p_0_6}
 	\end{subdiagram}
 	
-	\caption{Moc testów~Z i~E jako funkcja rozmiaru próbki $n$}
-	\label{powerZE_n}
+	\caption{Moc testów~Z i~E jako funkcja rozmiaru próbki $n$, cz.~2}
+	\label{powerZE_n2}
 \end{figure}
-
-\newpage
 
 \section{Porównanie testu bez skończonej poprawki~Zb z~testem E}
 
 W niniejszym podrozdziale porównano test~Zb z~testem E. Nie włączono do analizy testu Z, z~powodu wniosków opisanych w~podrozdziale \ref{r3:skonczonetesty}. Poniższe rozważania zostały przeprowadzone, aby potwierdzić zasadność stosowania testu ze skończoną poprawką dla małych populacji lub o~stosunkowo dużej próbie.
 
-Na rysunku \ref{sizeZbE_n} umieszczonym ne stronie \pageref{sizeZbE_n} znajdują się wykresy prawdopodobieństwa błędu I~rodzaju analizowanych testów. Test E, jak stwierdzono w~podrozdziale \ref{r3:skonczonetesty}, nie przekracza poziomu istotności $\alpha$. Jednakże dla testu~Zb prawdopodobieństwo błędu I~rodzaju znacząco przekracza poziom istotności. Funkcja błędu~Zb przyjmuje wartości bliskie $0.2$, gdzie największa znajduje się na wykresie \ref{sizeZbE_p_0_1_n1_10}. Warto wspomnieć także, że funkcja jest największa w~przypadku małych próbek. Na wykresach \ref{sizeZbE_p_0_3} i~\ref{sizeZbE_p_0_3_n1_5} widać, że mniej więcej do $n=20$ test~Zb jest powyżej poziomu $\alpha$, następnie oscyluje, podobnie jak test E, w~okolicach poziomu istotności. 
+Na rysunku \ref{sizeZbE_n} umieszczonym na stronie \pageref{sizeZbE_n} znajdują się wykresy prawdopodobieństwa błędu I~rodzaju analizowanych testów. Test E, jak stwierdzono w~podrozdziale \ref{r3:skonczonetesty}, nie przekracza poziomu istotności $\alpha$. Jednakże dla testu~Zb prawdopodobieństwo błędu I~rodzaju znacząco przekracza poziom istotności. Funkcja błędu~Zb przyjmuje wartości bliskie $0.2$, gdzie największa znajduje się na wykresie \ref{sizeZbE_p_0_1_n1_10}. Warto wspomnieć także, że funkcja jest największa w~przypadku małych próbek. Na wykresach \ref{sizeZbE_p_0_3} i~\ref{sizeZbE_p_0_3_n1_5} widać, że mniej więcej do $n=20$ test~Zb jest powyżej poziomu $\alpha$, następnie oscyluje, podobnie jak test E, w~okolicach poziomu istotności. 
 
-Podsumowując, test~Zb nie jest adekwatny do rozważanego przypadku gdy wartość $n$ jest mała. Odrzuca hipotezę zerową dużo częściej, niż powinien test na poziomie $\alpha$. Jest to spowodowane użyciem rozkładu dwumianowego w~formułowaniu statystyki testowej. Faktycznie dla dużych próbek różnica jest nieznaczna, natomiast w~sytuacji małej próbki rozbieżności są bardzo widoczne.
+Podsumowując, test~Zb nie jest adekwatny do rozważanego przypadku małej populacji gdy wartość $n$ jest mała. Test Zb odrzuca hipotezę zerową dużo częściej, niż powinien test na poziomie $\alpha$. Jest to spowodowane użyciem rozkładu dwumianowego w~formułowaniu statystyki testowej. Faktycznie dla dużych próbek różnica jest nieznaczna, natomiast w~sytuacji małej próbki rozbieżności są bardzo widoczne.
 
-\begin{figure}[!h]
+\begin{figure}[p]
 	\begin{subdiagrams}{sizeZbE_p_0_05}{sizeZbE_p_0_05_n1_5}
 	\end{subdiagrams}
 	
@@ -75,24 +112,30 @@ Podsumowując, test~Zb nie jest adekwatny do rozważanego przypadku gdy wartoś�
 	
 	\begin{subdiagrams}{sizeZbE_p_0_3}{sizeZbE_p_0_3_n1_5}
 	\end{subdiagrams}
-	\caption{Prawdopodobieństwo błędu I~rodzaju testów~Zb i~E jako funkcja rozmiaru próbki $n$, przy zadanym poziomie istotności $\alpha=0.05$; $N_1=N_2=100$}
+	\caption{Prawdopodobieństwo błędu I~rodzaju testów~Zb i~E jako funkcja rozmiaru próbki $n$; $\alpha=0.05$; $N_1=N_2=100$}
 	\label{sizeZbE_n}
 \end{figure}
 
-Rysunek \ref{powerZbE_n} na stronie \pageref{powerZbE_n} przedstawia wykresy mocy rozważanych testów w~zależności od rozmiaru próbki dla różnych rozmiarów populacji oraz proporcji $p$. Moc testu~Zb jest niewiele większa od mocy testu E. Jednakże, podobnie jak w~przypadku testu Z, wynika to ze zbyt częstego odrzucania~$H_0$. Biorąc pod uwagę ten fakt wyższa wartość testu~Zb nie świadczy o~jego poprawności.
+Rysunki \ref{powerZbE_n1} i \ref{powerZbE_n2} na stronach \pageref{powerZbE_n1} i \pageref{powerZbE_n2} przedstawiają wykresy mocy rozważanych testów w~zależności od rozmiaru próbki dla różnych rozmiarów populacji oraz proporcji $p$. Moc testu~Zb jest niewiele większa od mocy testu E. Jednakże podobnie jak w~przypadku testu Z, wynika to ze zbyt częstego odrzucania~$H_0$. Biorąc pod uwagę ten fakt, wyższa wartość testu~Zb nie świadczy o~jego poprawności.
 
-\begin{figure}[!h]
+\begin{figure}[p]
 	\begin{subdiagram}{powerZbE_N1_30_N2_50_p_0_6}
 	\end{subdiagram}
 	\begin{subdiagram}{powerZbE_N_100_p_0_1}
 	\end{subdiagram}
+
+	\caption{Moc testów~Zb i~E jako funkcja rozmiaru próbki $n$, cz.~1}
+	\label{powerZbE_n1}
+\end{figure}
+
+\begin{figure}[p]
 	\begin{subdiagram}{powerZbE_N1_100_N2_200_p_0_1}
 	\end{subdiagram}
 	\begin{subdiagram}{powerZbE_N1_3000_N2_100_p_0_6}
 	\end{subdiagram}
-
-	\caption{Moc testów~Zb i~E jako funkcja rozmiaru próbki $n$}
-	\label{powerZbE_n}
+	
+	\caption{Moc testów~Zb i~E jako funkcja rozmiaru próbki $n$, cz.~2}
+	\label{powerZbE_n2}
 \end{figure}
 
 Ostatecznie pokazano, że test bez skończonej poprawki nie powinien być stosowany w~przypadku małej populacji, ponieważ wtedy znacznie przekracza poziom istotności $\alpha$. Najlepszym testem dla skończonej populacji okazał się test E, który dla różnych przypadków utrzymuje poziom istotności $\alpha$. 

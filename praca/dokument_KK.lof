@@ -1,16 +1,18 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {1.1}{\ignorespaces Funkcje prawdopodobie\IeC {\'n}stwa $b(k;10,0.25)$ oraz $h(k;10,5,20)$\relax }}{9}
-\contentsline {figure}{\numberline {1.2}{\ignorespaces Funkcje prawdopodobie\IeC {\'n}stwa $b(k;17,0.25)$ oraz $h(k;17,5,20)$\relax }}{9}
-\contentsline {figure}{\numberline {1.3}{\ignorespaces Funkcje prawdopodobie\IeC {\'n}stwa $b(k;20,0.25)$ oraz $h(k;20,5,20)$\relax }}{9}
-\contentsline {figure}{\numberline {1.4}{\ignorespaces Wariancja rozk\IeC {\l }ad\IeC {\'o}w Bernoulliego i\nobreakspace {}hipergeometrycznego w\nobreakspace {}zale\IeC {\.z}no\IeC {\'s}ci od rozmiaru pr\IeC {\'o}bki\relax }}{10}
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Funkcje prawdopodobie\IeC {\'n}stwa $b(k;10,0.25)$ oraz $h(k;10,5,20)$\relax }}{10}
+\contentsline {figure}{\numberline {1.2}{\ignorespaces Funkcje prawdopodobie\IeC {\'n}stwa $b(k;17,0.25)$ oraz $h(k;17,5,20)$\relax }}{10}
+\contentsline {figure}{\numberline {1.3}{\ignorespaces Funkcje prawdopodobie\IeC {\'n}stwa $b(k;20,0.25)$ oraz $h(k;20,5,20)$\relax }}{10}
+\contentsline {figure}{\numberline {1.4}{\ignorespaces Wariancja rozk\IeC {\l }ad\IeC {\'o}w Bernoulliego i\nobreakspace {}hipergeometrycznego w\nobreakspace {}zale\IeC {\.z}no\IeC {\'s}ci od rozmiaru pr\IeC {\'o}bki\relax }}{12}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Prawdopodobie\IeC {\'n}stwo b\IeC {\l }\IeC {\k e}du I\nobreakspace {}rodzaju test\IeC {\'o}w\nobreakspace {}Z i\nobreakspace {}E jako funkcja rozmiaru pr\IeC {\'o}bki $n$, przy zadanym poziomie istotno\IeC {\'s}ci $\alpha =0.05$; $N_1=N_2=100$\relax }}{16}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Prawdopodobie\IeC {\'n}stwo b\IeC {\l }\IeC {\k e}du I\nobreakspace {}rodzaju test\IeC {\'o}w\nobreakspace {}Z i\nobreakspace {}E jako funkcja proporcji $p=M_1/N_1=M_2/N_2$, przy zadanym poziomie istotno\IeC {\'s}ci $\alpha =0.05$; $N_1=N_2=100$\relax }}{17}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Moc test\IeC {\'o}w\nobreakspace {}Z i\nobreakspace {}E jako funkcja rozmiaru pr\IeC {\'o}bki $n$\relax }}{18}
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Prawdopodobie\IeC {\'n}stwo b\IeC {\l }\IeC {\k e}du I\nobreakspace {}rodzaju test\IeC {\'o}w\nobreakspace {}Zb i\nobreakspace {}E jako funkcja rozmiaru pr\IeC {\'o}bki $n$, przy zadanym poziomie istotno\IeC {\'s}ci $\alpha =0.05$; $N_1=N_2=100$\relax }}{20}
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Moc test\IeC {\'o}w\nobreakspace {}Zb i\nobreakspace {}E jako funkcja rozmiaru pr\IeC {\'o}bki $n$\relax }}{21}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Prawdopodobie\IeC {\'n}stwo b\IeC {\l }\IeC {\k e}du I\nobreakspace {}rodzaju test\IeC {\'o}w\nobreakspace {}Z i\nobreakspace {}E jako funkcja rozmiaru pr\IeC {\'o}bki $n$; $\alpha =0.05$; $N_1=N_2=100$\relax }}{21}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Prawdopodobie\IeC {\'n}stwo b\IeC {\l }\IeC {\k e}du I\nobreakspace {}rodzaju test\IeC {\'o}w\nobreakspace {}Z i\nobreakspace {}E jako funkcja proporcji $p=M_1/N_1=M_2/N_2$; $\alpha =0.05$; $N_1=N_2=100$\relax }}{23}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Moc test\IeC {\'o}w\nobreakspace {}Z i\nobreakspace {}E jako funkcja rozmiaru pr\IeC {\'o}bki $n$, cz.\nobreakspace {}1\relax }}{24}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Moc test\IeC {\'o}w\nobreakspace {}Z i\nobreakspace {}E jako funkcja rozmiaru pr\IeC {\'o}bki $n$, cz.\nobreakspace {}2\relax }}{25}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Prawdopodobie\IeC {\'n}stwo b\IeC {\l }\IeC {\k e}du I\nobreakspace {}rodzaju test\IeC {\'o}w\nobreakspace {}Zb i\nobreakspace {}E jako funkcja rozmiaru pr\IeC {\'o}bki $n$; $\alpha =0.05$; $N_1=N_2=100$\relax }}{26}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Moc test\IeC {\'o}w\nobreakspace {}Zb i\nobreakspace {}E jako funkcja rozmiaru pr\IeC {\'o}bki $n$, cz.\nobreakspace {}1\relax }}{27}
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Moc test\IeC {\'o}w\nobreakspace {}Zb i\nobreakspace {}E jako funkcja rozmiaru pr\IeC {\'o}bki $n$, cz.\nobreakspace {}2\relax }}{28}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
