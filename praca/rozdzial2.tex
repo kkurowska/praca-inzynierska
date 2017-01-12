@@ -42,7 +42,7 @@ V_{X_1,X_2} & = \frac{1}{n_1}p(1-p)\frac{N_1-n_1}{N_1-1} + \frac{1}{n_2}p(1-p)\f
 &= p(1-p)\left(\frac{N_1-n_1}{n_1(N_1-1)}+\frac{N_2-n_2}{n_2(N_2-1)}\right),
 \end{split}
 \end{equation}
-przy czym $p$ to proporcja liczby osobników z~daną cechą do całości populacji w~rozkładzie łącznym, zatem $p=(X_1+X_2)/(n_1+n_2)$. Ostatecznie otrzymujemy
+przy czym $p$ to proporcja liczby osobników z~daną cechą do całości populacji w~połączonej próbie, zatem $p=(X_1+X_2)/(n_1+n_2)$. Ostatecznie otrzymujemy
 \begin{equation}
 V_{X_1,X_2} = \left(\frac{N_1-n_1}{n_1(N_1-1)}+\frac{N_2-n_2}{n_2(N_2-1)}\right)\left(\frac{X_1+X_2}{n_1+n_2}\right)\left(1-\frac{X_1+X_2}{n_1+n_2}\right).
 \end{equation}
@@ -55,14 +55,14 @@ P(|Z_{X_1,X_2}|\geq|Z_{k_1,k_2}|\ |H_0) \approx 2(1-\Phi(|Z_{k_1,k_2}|)),
 \end{equation}
 gdzie $\Phi$ oznacza dystrybuantę rozkładu $N(0,1)$. Test Z~odrzuca hipotezę zerową, gdy $p$\dywiz wartość jest mniejsza od poziomu istotności $\alpha$.
 
-Jeżeli zakładamy, że $Z_{X_1,X_2} \sim \mathcal{N}(0,1)$, możemy wyznaczyć przedział ufności statystyki~$Z_{X_1,X_2}$. Wiemy, że
+Jeżeli zakładamy, że $Z_{X_1,X_2} \sim \mathcal{N}(0,1)$, mamy
 \begin{equation}
 P\left(-z_{1-\alpha/2}\leq \frac{p_1-p_2}{\sqrt{V_{X_1,X_2}}} \leq z_{1-\alpha/2}\right) = 1-\alpha,
 \end{equation}
-gdzie $-z_{1-\alpha/2}$ i $z_{1-\alpha/2}$ to kwantyle rozkładu normalnego. Wobec czego przedział ufności na poziomie $1-\alpha$ dla różnicy proporcji $p_1-p_2$ jest równy
+gdzie $z_{1-\alpha/2}$ to kwantyl rzędu $1-\alpha/2$ z rozkładu normalnego $\mathcal{N}(0, 1)$. Wobec tego, przedział ufności na poziomie $1-\alpha$ dla różnicy proporcji $p_1-p_2$ jest równy
 \begin{equation}
 \label{r2:ci}
-\left[\, -z_{1-\alpha/2} \sqrt{V_{X_1,X_2}}\, , \, z_{1-\alpha/2} \sqrt{V_{X_1,X_2}}\, \right]
+\left[\, -z_{1-\alpha/2} \sqrt{V_{X_1,X_2}}\, , \, z_{1-\alpha/2} \sqrt{V_{X_1,X_2}}\, \right].
 \end{equation}
 Przedział ufności w~kontekście testowania to obszar akceptacji hipotezy zerowej. Jego dopełnieniem jest obszar krytyczny, czyli zbiór wartości różnicy proporcji $p_1-p_2$, dla których test odrzuca~$H_0$.
 
@@ -85,7 +85,7 @@ P(|Z_{X_1,X_2}|\geq|Z_{k_1,k_2}|\ |H_0) \approx& \\ \approx \sum_{x_1=L_{x_1}}^{
 \end{equation}
 przy czym $\hat{p}=(k_1+k_2)/(n_1+n_2)$, $\hat{M_i}=[N_i\hat{p}]$, $L_{x_i}=\max\{0,\hat{M_i}-N_i+n_i\}$ oraz $U_{x_i}=\min\{n_i,\hat{M_i}\}$, $i=1,2$. Test odrzuca $H_0$ wtedy, gdy $p$\dywiz wartość wyliczona według wzoru (\ref{estpvalue}) jest mniejsza od poziomu istotności $\alpha$.
 
-W przypadku testu~E nie da się łatwo wyznaczyć przedziału ufności dla różnicy proporcji w~oparciu o~obszar krytyczny testu~E. Jednakże w~rozdziale~\ref{r3} znajdują się numeryczne oszacowania przedziału ufności dla różnicy proporcji.
+W przypadku testu~E nie da się łatwo wyznaczyć przedziału ufności dla różnicy proporcji w~oparciu o~obszar krytyczny testu~E. Jednakże można numerycznie oszacować przedział ufności dla różnicy proporcji, korzystając ze wzoru~(\ref{estpvalue}).
 
 \subsection{Moc testu}
 Moc testu to prawdopodobieństwo odrzucenia hipotezy zerowej, gdy jest ona nieprawdziwa. Wobec tego, spośród testów na zadanym poziomie istotności, interesują nas te o~najwyższej mocy.
@@ -132,6 +132,7 @@ przy czym $p=(X_1+X_2)/(n_1+n_2)$.
 
 Test~Zb jest, podobnie jak omówiony wcześniej test E, oparty o~estymator $p$\dywiz wartości, który, zgodnie z~artykułem Storer i~Kim z~1990 roku, jest równy~\cite{Storer1990}
 \begin{equation}
+\label{estpZb}
 \begin{split}
 P(|Z_{X_1,X_2}|&\geq|Z_{k_1,k_2}|\ |H_0) \approx \\
 \approx & \sum_{x_1=0}^{n_1}\sum_{x_2=0}^{n_2} b(x_1;n_1,\hat{p_1})b(x_2;n_2,\hat{p_2})\1{|Z_{X_1,X_2}|\geq|Z_{k_1,k_2}|},
@@ -140,8 +141,8 @@ P(|Z_{X_1,X_2}|&\geq|Z_{k_1,k_2}|\ |H_0) \approx \\
 gdzie $\hat{p}=(k_1+k_2)/(n_1+n_2)$.
 Test odrzuca hipotezę zerową, gdy $p$\dywiz wartość jest mniejsza od poziomu istotności $\alpha$.
 
-\textit{Przedziału ufności też nie da się prosto wyznaczyć tak jak dla testu E. Nie wiem czy jest sens o tym pisać. Na razie zostawiam tak, zobaczymy co z tymi wynikami w rozdziale 3}
-
+Tak jak w przypadku testu~E, nie da się prosto wyznaczyć przedziału ufności dla różnicy proporcji $p_1-p_2$. Jednak również można wyliczyć ten przedział numerycznie, korzystając ze wzoru~(\ref{estpZb}).
+ 
 Moc testu wyraża się wzorem
 \begin{equation}
 \begin{split}

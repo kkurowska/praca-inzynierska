@@ -6,42 +6,41 @@ W celu porównania testów opisanych w~rozdziale \ref{r2} napisano programy, kt�
 \section{Porównanie testów ze skończoną poprawką}
 \label{r3:skonczonetesty}
 
-\subsection{Obszary krytyczne}
-Najpierw porównano testy ze skończoną poprawką. Zacznijmy od wyznaczenia obszaru krytycznego dla testu~Z i~E na poziomie istotności $\alpha = 0.05$. Dla testu~Z w~podrozdziale~\ref{r2:testZ} został wyznaczony wzór (\ref{r2:ci}) na przedział ufności różnicy proporcji $p_1-p_2$. Wiadomo, że obszar krytyczny to dopełnienie przedziału ufności. Wobec tego wyliczając kwantyl~$z_{1-0.05/2}$ otrzymujemy, że zbiór wartości różnicy $p_1-p_2$, dla których test~Z odrzuca~$H_0$ jest równy
-\begin{equation}
-\left(-\infty,-1.96\sqrt{V_{X_1,X_2}}\right)\cup \left(1.96\sqrt{V_{X_1,X_2}}, \infty\right).
-\end{equation}
+%\subsection{Obszary krytyczne}
+%Najpierw porównano testy ze skończoną poprawką. Zacznijmy od wyznaczenia obszaru krytycznego dla testu~Z i~E na poziomie istotności $\alpha = 0.05$. Dla testu~Z w~podrozdziale~\ref{r2:testZ} został wyznaczony wzór (\ref{r2:ci}) na przedział ufności różnicy proporcji $p_1-p_2$. Wiadomo, że obszar krytyczny to dopełnienie przedziału ufności. Wobec tego wyliczając kwantyl~$z_{1-0.05/2}$ otrzymujemy, że zbiór wartości różnicy $p_1-p_2$, dla których test~Z odrzuca~$H_0$ jest równy
+%\begin{equation}
+%\left(-\infty,-1.96\sqrt{V_{X_1,X_2}}\right)\cup \left(1.96\sqrt{V_{X_1,X_2}}, \infty\right).
+%\end{equation}
+%
+%\textit{Nie wiem jak konkretnie wyznaczyć te wartości, bo $V_{X_1,X_2}$ jest różne w zależności od $k_1$ i $k_2$}.
+%
+%Dla testu~E nie jesteśmy w~stanie w~prosty sposób wyznaczyć obszaru krytycznego. Jednakże wiemy, że jest to zbiór wartości, dla których test~E odrzuca hipotezę zerową oraz będzie on postaci
+%\begin{equation}
+%(-\infty,a)\cup (b, \infty).
+%\end{equation}
+%Wobec czego możemy wyznaczyć wartości brzegowe $a$ i~$b$ dla konkretnych parametrów rozkładów $X_1$ i~$X_2$, sprawdzając kiedy test~E odrzuci $H_0$ dla każdych możliwych wartości $k_1$ i~$k_2$. Następnie, $a$ można wyliczyć jako największą ujemną wartość różnicy $p_1-p_2$, która została odrzucona, zaś $b$ jako najmniejszą dodatnią wartość $p_1-p_2$. W~tabeli \ref{r3:tabab} zostały przedstawione wyniki dla różnych parametrów, gdy $p_1=p_2$. Nie przedstawiono wyników w~przypadku $p_1\neq p_2$, ponieważ zmienienie jednej z~proporcji nie wpływa na zmianę wartości $a$ i~$b$.
+%
+%\begin{table}
+%\centering
+%\caption{Wartości brzegowe obszaru krytycznego testu~E dla różnicy proporcji $p_1-p_2$, z różnymi parametrami rozkładów obserwacji}
+%\label{r3:tabab}
+%\begin{tabular}{|c|c|c|c|c|c|c|c|c|} \hline
+%	$n_1$ & $n_2$ & $M_1$ & $M_2$ & $N_1$ & $N_2$ & $p_1 = p_2$ & $a$ & $b$ \\
+%	\hline \hline
+%	5 & 5 & 50 & 50 & 100 & 100 & 0.5 & -0.6 & 0.6 \\
+%	10 & 10 & 30 & 30 & 100 & 100 & 0.3 & -0.3 & 0.3 \\
+%	5 & 20 & 10 & 10 & 100 & 100 & 0.1 & -0.5 & 0.35 \\
+%	15 & 15 & 18 & 30 & 30 & 50 & 0.6 & -0.2 & 0.2 \\
+%	40 & 40 & 1800 & 500 & 3000 & 1000 & 0.5 & -0.1 & 0.1 \\
+%	\hline
+%\end{tabular}
+%\end{table}
+%
+%%Analizując wyniki przedstawione w~tabeli~\ref{r3:tabab} widzimy, że obszar krytyczny testu~E w~każdym z~przypadków jest mniejszy niż dla testu Z. W~związku z~czym test~E będzie rzadziej odrzucał hipotezę zerową.
+%
+%\textit{Tu kilka wniosków... + w kolejnym podrozdziale odniesienie się do tych wniosków}
 
-\textit{Nie wiem jak konkretnie wyznaczyć te wartości, bo $V_{X_1,X_2}$ jest różne w zależności od $k_1$ i $k_2$}.
-
-Dla testu~E nie jesteśmy w~stanie w~prosty sposób wyznaczyć obszaru krytycznego. Jednakże wiemy, że jest to zbiór wartości, dla których test~E odrzuca hipotezę zerową oraz będzie on postaci
-\begin{equation}
-(-\infty,a)\cup (b, \infty).
-\end{equation}
-Wobec czego możemy wyznaczyć wartości brzegowe $a$ i~$b$ dla konkretnych parametrów rozkładów $X_1$ i~$X_2$, sprawdzając kiedy test~E odrzuci $H_0$ dla każdych możliwych wartości $k_1$ i~$k_2$. Następnie, $a$ można wyliczyć jako największą ujemną wartość różnicy $p_1-p_2$, która została odrzucona, zaś $b$ jako najmniejszą dodatnią wartość $p_1-p_2$. W~tabeli \ref{r3:tabab} zostały przedstawione wyniki dla różnych parametrów, gdy $p_1=p_2$. Nie przedstawiono wyników w~przypadku $p_1\neq p_2$, ponieważ zmienienie jednej z~proporcji nie wpływa na zmianę wartości $a$ i~$b$.
-
-\begin{table}
-\centering
-\caption{Wartości brzegowe obszaru krytycznego testu~E dla różnicy proporcji $p_1-p_2$, z różnymi parametrami rozkładów obserwacji}
-\label{r3:tabab}
-\begin{tabular}{|c|c|c|c|c|c|c|c|c|} \hline
-	$n_1$ & $n_2$ & $M_1$ & $M_2$ & $N_1$ & $N_2$ & $p_1 = p_2$ & $a$ & $b$ \\
-	\hline \hline
-	5 & 5 & 50 & 50 & 100 & 100 & 0.5 & -0.6 & 0.6 \\
-	10 & 10 & 30 & 30 & 100 & 100 & 0.3 & -0.3 & 0.3 \\
-	5 & 20 & 10 & 10 & 100 & 100 & 0.1 & -0.5 & 0.35 \\
-	15 & 15 & 18 & 30 & 30 & 50 & 0.6 & -0.2 & 0.2 \\
-	40 & 40 & 1800 & 500 & 3000 & 1000 & 0.5 & -0.1 & 0.1 \\
-	\hline
-\end{tabular}
-\end{table}
-
-%Analizując wyniki przedstawione w~tabeli~\ref{r3:tabab} widzimy, że obszar krytyczny testu~E w~każdym z~przypadków jest mniejszy niż dla testu Z. W~związku z~czym test~E będzie rzadziej odrzucał hipotezę zerową.
-
-\textit{Tu kilka wniosków... + w kolejnym podrozdziale odniesienie się do tych wniosków}
-
-\subsection{Błąd I rodzaju i~moc testu}
-Rysunek~\ref{sizeZE_n} na stronie~\pageref{sizeZE_n} przedstawia funkcję prawdopodobieństwa błędu I~rodzaju w~zależności od rozmiaru próbki dla różnych proporcji $p$. Po lewej stronie obserwacje z~obu populacji są tej samej wielkości $n_1=n_2=n$, natomiast po prawej się różnią. Pierwszym spostrzeżeniem jest to, że funkcja dla testu~E w~większości przypadków jest mniejsza niż dla testu Z. Dodatkowo dla testu~E prawdopodobieństwo błędu przekracza poziom istotności jedynie kilka razy, i~to bardzo nieznacznie. Tymczasem dla testu~Z funkcja częściej przyjmuje wartości powyżej $\alpha$, dochodząc nawet do $0.95$, jak na wykresie \ref{sizeZE_p_0_05}. Warto wspomnieć także, że dla większych $p$ (0.1 i~0.3) oraz wraz ze wzrostem wielkości próbki, funkcje są bliżej siebie i~bardziej skupiają się przy poziomie istotności $\alpha$.
+Najpierw porównano testy ze skończoną poprawką. Rysunek~\ref{sizeZE_n} na stronie~\pageref{sizeZE_n} przedstawia funkcję prawdopodobieństwa błędu I~rodzaju w~zależności od rozmiaru próbki dla różnych proporcji $p$. Po lewej stronie obserwacje z~obu populacji są tej samej wielkości $n_1=n_2=n$, natomiast po prawej się różnią. Pierwszym spostrzeżeniem jest to, że funkcja dla testu~E w~większości przypadków jest mniejsza niż dla testu Z. Dodatkowo dla testu~E prawdopodobieństwo błędu przekracza poziom istotności jedynie kilka razy, i~to bardzo nieznacznie. Tymczasem dla testu~Z funkcja częściej przyjmuje wartości powyżej $\alpha$, dochodząc nawet do $0.95$, jak na wykresie \ref{sizeZE_p_0_05}. Warto wspomnieć także, że dla większych $p$ (0.1 i~0.3) oraz wraz ze wzrostem wielkości próbki, funkcje są bliżej siebie i~bardziej skupiają się przy poziomie istotności $\alpha$.
 
 \begin{figure}[p]
 	\begin{subdiagrams}{sizeZE_p_0_05}{sizeZE_p_0_05_n1_5}
