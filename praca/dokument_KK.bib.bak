@@ -20,7 +20,7 @@
 }
 
 @Article{K.Krishnamoorthy2002,
-  author  = {Krishnamoorthy, K. and Thomson, Jessica},
+  author  = {K. {Krishnamoorthy, Jessica Thomson}},
   title   = {Hypothesis Testing about Proportions in Two Finite Populations},
   journal = {The American Statistician},
   year    = {2002},
@@ -39,14 +39,13 @@
   pages   = {215-218},
 }
 
-@article{Storer1990,
-  Author = {Storer, Barry E. and Kim, Choongrak},
-  Title = {Exact properties of some exact test statistics for comparing two binomial proportions},
-  Journal = {Journal of the American Statistical Association},
-  Volume = {85},
-  Year = {1990},
-  Pages = {146--155},
-  Keywords = {}
+@Article{Storer1990,
+  author  = {Barry E. {Storer, Choongrak Kim}},
+  title   = {Exact properties of some exact test statistics for comparing two binomial proportions},
+  journal = {Journal of the American Statistical Association},
+  year    = {1990},
+  volume  = {85},
+  pages   = {146--155},
 }
 
 @Book{Lehmann1968,
@@ -54,6 +53,24 @@
   publisher = {PWN},
   year      = {1968},
   author    = {Lehmann, E. L.},
+}
+
+@Book{Hald2003,
+  title     = {A History of Probability and Statistics and Their Applications before 1750},
+  publisher = {Wiley Interscience},
+  year      = {2003},
+  author    = {A. Hald},
+}
+
+@Article{Wang2015,
+  author  = {Weizhen Wang},
+  title   = {Exact Optimal Confidence Intervals for Hypergeometric Parameters},
+  journal = {Journal of the American Statistical Association},
+  year    = {2015},
+  volume  = {110},
+  number  = {512},
+  pages   = {1491-1499},
+  month   = {Dec.},
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}

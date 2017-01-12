@@ -1,0 +1,24 @@
+\documentclass[12pt]{mwrep}
+
+\usepackage{polski}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{dsfont}
+
+\newcommand{\1}[1]{\mathds{1}\left(#1\right)}
+
+
+\begin{document}
+Wiemy, że $p$-wartość możemy estymować jako
+\begin{equation}
+\sum_{x_1=L_{x_1}}^{U_{x_1}}\sum_{x_2=L_{x_2}}^{U_{x_2}} h(x_1;n_1,\hat{M_1},N_1)h(x_2;n_2,\hat{M_2},N_2) \1{|Z_{x_1,x_2}|\geq|Z_{k_1,k_2}|}
+\end{equation}
+i test E odrzuca $H_0$, gdy jest mniejsza $\alpha$. Więc jak byśmy chcieli wyznaczyć obszar krytyczny, to musielibyśmy jakoś wyciągnąć $p_1-p_2$ z tego
+\begin{equation}
+\begin{split}
+\sum_{x_1=L_{x_1}}^{U_{x_1}}\sum_{x_2=L_{x_2}}^{U_{x_2}} h(x_1;n_1,\hat{M_1},N_1)h(x_2;n_2,\hat{M_2},N_2) \times \\
+\times \1{-Z_{x_1,x_2}V_{k_1,k_2}\leq (p_1-p_2)\leq Z_{x_1,x_2}V_{k_1,k_2}} < \alpha.
+\end{split}
+\end{equation}
+Ale nie wiem jak to można zrobić.
+\end{document}

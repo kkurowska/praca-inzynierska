@@ -1,15 +1,9 @@
 \begin{thebibliography}{1}
 
-\bibitem{Hald2003}
-A.~Hald.
-\newblock {\em A History of Probability and Statistics and Their Applications
-  before 1750}.
-\newblock Wiley Interscience, 2003.
-
-\bibitem{Lehmann1968}
-E.~L. Lehmann.
-\newblock {\em Testowanie hipotez statystycznych}.
-\newblock PWN, 1968.
+\bibitem{Buonaccorsi1987}
+J.~P. Buonaccorsi.
+\newblock A note on confidence intervals for proportions in finite populations.
+\newblock {\em The American Statistician}, 41(3):215--218, 1987.
 
 \bibitem{Edgeworth1918}
 F.~Y. Edgeworth.
@@ -17,16 +11,33 @@ F.~Y. Edgeworth.
 \newblock {\em Journal of the Royal Statistical Society}, 81(4):624--632, Jul.
   1918.
 
+\bibitem{Hald2003}
+A.~Hald.
+\newblock {\em A History of Probability and Statistics and Their Applications
+  before 1750}.
+\newblock Wiley Interscience, 2003.
+
 \bibitem{K.Krishnamoorthy2002}
-K.~Krishnamoorthy i~Jessica~Thomson.
+K.~{Krishnamoorthy, J. Thomson}.
 \newblock Hypothesis testing about proportions in two finite populations.
 \newblock {\em The American Statistician}, 56(1):215--222, 2002.
 
+\bibitem{Lehmann1968}
+E.~L. Lehmann.
+\newblock {\em Testowanie hipotez statystycznych}.
+\newblock PWN, 1968.
+
 \bibitem{Storer1990}
-Barry E.~Storer i~Choongrak~Kim.
+B.~E. {Storer, C. Kim}.
 \newblock Exact properties of some exact test statistics for comparing two
   binomial proportions.
 \newblock {\em Journal of the American Statistical Association}, 85:146--155,
   1990.
+
+\bibitem{Wang2015}
+W.~Wang.
+\newblock Exact optimal confidence intervals for hypergeometric parameters.
+\newblock {\em Journal of the American Statistical Association},
+  110(512):1491--1499, Dec. 2015.
 
 \end{thebibliography}

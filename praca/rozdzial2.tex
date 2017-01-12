@@ -1,6 +1,6 @@
 \chapter{Przedstawienie testów}
 \label{r2}
-W niniejszym rozdziale znajduje się opis trzech testów. Dwa testy ze skończoną poprawką wykorzystują rozkład hipergeometryczny, a~trzeci, test bez skończonej poprawki, opiera się o~rozkład dwumianowy. Następnie omówiony jest sposób liczenia mocy dla wymienionych testów.
+W niniejszym rozdziale znajduje się opis trzech testów. Dwa testy ze skończoną poprawką wykorzystują rozkład hipergeometryczny, a~trzeci test, bez skończonej poprawki, opiera się o~rozkład dwumianowy. Następnie omówiony jest sposób liczenia mocy dla wymienionych testów.
 
 \section{Sformułowanie problemu}
 Załóżmy, że $X_1$ i~$X_2$ są niezależnymi zmiennymi losowymi. Zaobserwowane wartości $X_1$ i~$X_2$ oznaczmy odpowiednio $k_1$ i~$k_2$ oraz proporcje w~obserwacjach $p_1$ i~$p_2$. Będziemy testować
@@ -59,11 +59,11 @@ Test E opiera się o~rzeczywistą $p$-wartość, która, według artykułu K. Kr
 &= \sum_{x_1=L_1}^{U_1}\sum_{x_2=L_2}^{U_2} h(x_1;n_1,N_1p,N_1)h(x_2;n_2,N_2p,N_2)\1{|Z_{X_1,X_2}|\geq|Z_{k_1,k_2}|},
 \end{split}
 \end{equation}
-gdzie $E_{X_1,X_2}$ to wartość oczekiwana łącznego rozkładu $(X_1,X_2)$, a~$p$ jest nieznaną wspólną proporcją pod warunkiem $H_0$. Nie jest możliwe policzenie $p$-wartości wprost ze wzoru (\ref{realpvalue}), ponieważ nie znamy parametru proporcji $p$. Krishnamoorthy i~Thomson (2002) zaproponowali estymator $p$-wartości \cite{K.Krishnamoorthy2002}
+gdzie $E_{X_1,X_2}$ to wartość oczekiwana łącznego rozkładu $(X_1,X_2)$, a~$p$ jest nieznaną wspólną proporcją pod warunkiem $H_0$. Nie jest możliwe policzenie $p$-wartości wprost ze wzoru (\ref{realpvalue}), ponieważ nie znamy parametru proporcji~$p$. Krishnamoorthy i~Thomson (2002) zaproponowali estymator $p$-wartości \cite{K.Krishnamoorthy2002}
 \begin{equation}
 \label{estpvalue}
 \begin{split}
-P(|Z_{X_1,X_2}|\geq|Z_{k_1,k_2}|\ |H_0) \approx& \\ =\sum_{x_1=L_{x_1}}^{U_{x_1}}\sum_{x_2=L_{x_2}}^{U_{x_2}} h(x_1;n_1,\hat{M_1},&N_1)h(x_2;n_2,\hat{M_2},N_2)\1{|Z_{X_1,X_2}|\geq|Z_{k_1,k_2}|},
+P(|Z_{X_1,X_2}|\geq|Z_{k_1,k_2}|\ |H_0) \approx& \\ =\sum_{x_1=L_{x_1}}^{U_{x_1}}\sum_{x_2=L_{x_2}}^{U_{x_2}} h(x_1;n_1,\hat{M_1},&N_1)h(x_2;n_2,\hat{M_2},N_2)\1{|Z_{x_1,x_2}|\geq|Z_{k_1,k_2}|},
 \end{split}
 \end{equation}
 przy czym $\hat{p}=(k_1+k_2)/(n_1+n_2)$, $\hat{M_i}=[N_i\hat{p}]$ oraz  $L_{x_i}=\max\{0,\hat{M_i}-N_i+n_i\}$, $U_{x_i}=\min\{n_i,\hat{M_i}\}$, $i=1,2$. Test odrzuca $H_0$ wtedy, gdy $p$-wartość wyliczona według wzoru (\ref{estpvalue}) jest mniejsza od poziomu istotności $\alpha$.
