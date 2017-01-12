@@ -69,24 +69,40 @@ E(X)=n\frac{M}{N},\quad Var(X)=n\frac{M}{N}\left(1-\frac{M}{N}\right)\frac{N-n}{
 \end{equation}
 Parametr $p$ rozkładu dwumianowego odpowiada ilorazowi parametrów $M/N$ w~rozkładzie hipergeometrycznym. Wobec tego średnie obu rozkładów są sobie równe, ale wariancje różni dodatkowy składnik w~rozkładzie hipergeometrycznym $(N-n)/(N-1)$. Przeanalizujmy, jak ten czynnik wpływa na zróżnicowanie rozkładów. Rysunek \ref{var} przedstawia wykresy wariancji dla rozważanego przykładu w~zależności od wielkości obserwacji. W~przypadku rozkładu dwumianowego wariancja stale rośnie wraz ze wzrostem próbki. Ostatecznie, gdy $n=20$ jest ona największa. Jednakże, gdy przebadamy całą populację, oczekiwanym rezultatem jest wartość zerowa wariancji, ponieważ nie ma wtedy losowości. Taki wynik daje nam wykres \ref{hg_var}. Funkcja na początku rośnie, ale gdy wielkość próbki przekroczy połowę rozmiaru populacji, wariancja zaczyna maleć aż do zera. Odzwierciedla to fakt, że gdy coraz więcej wiemy o~populacji, losowość uzyskanych wyników maleje.
 
-\begin{diagrams}{b_var}{hg_var}
+
+\begin{figure}[h]
+	\begin{subdiagrams}{b_var}{hg_var}
+	\end{subdiagrams}
+
 	\caption{Wariancja rozkładów Bernoulliego i~hipergeometrycznego w~zależności od rozmiaru próbki}
 	\label{var}
-\end{diagrams}
+\end{figure}
 
-Rozważmy także, jak wyglądają przedziały ufności dla zmiennych losowych z obu rozkładów. Zakładamy, że unormowana zmienna losowa pochodzi z rozkładu standardowego normalnego, czyli
+Rozważmy także, jak wyglądają przedziały ufności dla zmiennych losowych z~obu rozkładów. Załóżmy, że unormowana zmienna losowa pochodzi z~rozkładu standardowego normalnego, czyli
 \begin{equation}
-\frac{X-E(X)}{Var(X)}\sim \mathcal{N}(0,1).
+\frac{X-E(X)}{\sqrt{Var(X)}}\sim \mathcal{N}(0,1).
 \end{equation}
-Wobec tego dla $X\sim \mathcal{B}(n,p)$ przedział ufności parametru $p$ jest równy
+Wobec tego dla $X\sim \mathcal{B}(n,p)$ przedział ufności parametru~$p$ jest równy
 \begin{equation}
 \left[\, \hat{p}-z_{1-\alpha/2}\sqrt{\frac{\hat{p}(1-\hat{p})}{n}}\, , \,  \hat{p}+z_{1-\alpha/2}\sqrt{\frac{\hat{p}(1-\hat{p})}{n}}\, \right],
 \end{equation}
-gdzie $z_{1-\alpha/2}$ to kwantyl rozkładu normalnego rzędu $1-\alpha/2$.
+gdzie $z_{1-\alpha/2}$ to kwantyl rozkładu normalnego rzędu~$1-\alpha/2$.
 Natomiast dla $X\sim\mathcal{H}(n,M,N)$ przedział ufności proporcji $p=M/N$ to
 \begin{equation}
 \left[\, \hat{p}-z_{1-\alpha/2} \sqrt{\frac{\hat{p}(1-\hat{p})(N-n)}{n(N-1)}}\, , \, \hat{p} + z_{1-\alpha/2} \sqrt{\frac{\hat{p}(1-\hat{p})(N-n)}{n(N-1)}}\, \right].
 \end{equation}
-W obu przypadkach estymator $\hat{p}=\bar{x}/n$, gdzie $\bar{x}$ to średnia z obserwacji.
-Wyliczmy wartości brzegowe przedziałów ufności $p$ obu rozkładów. 
+W obu przypadkach estymator $\hat{p}=k/n$, gdzie $k$ to wartość obserwacji.
+
+Kontynuując rozważany przykład, załóżmy teraz, że nie wiemy ile osób może wyzdrowieć w~całej populacji, ale mamy wyniki badań. W~grupie $10$~osób wyzdrowiały $3$. Chcemy się dowiedzieć ile osób może wyzdrowieć wśród wszystkich $20$. Podsumowując, znamy parametry $N=20$, $n=10$ i~wartość obserwacji $k=3$, zatem możemy wyznaczyć przedziały ufności dla parametru $p$ w~obu rozkładach. Dla rozkładu dwumianowego
+\begin{equation}
+p\in \left[\, 0.02 \, , \, 0.58\, \right].
+\end{equation}
+Natomiast dla rozkładu hipergeometrycznego
+\begin{equation}
+p\in \left[\, 0.09 \, , \, 0.5\, \right].
+\end{equation}
+Prawdziwy parametr $p=0.25$ faktycznie zawiera się w~tych przedziałach. Zauważmy, że przedział dla rozkładu Bernoulliego jest szerszy, ze względu na brak skończonej poprawki w~wariancji.
+
+
+
 

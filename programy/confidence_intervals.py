@@ -17,13 +17,18 @@ q = norm.ppf(1-alpha/2)
 
 N = 20
 M = 5
-n = 6
+n = 10
 p = M/N
 
-ba = -q*sqrt(p*(1-p)/n)
-bb = q*sqrt(p*(1-p)/n)
+k = 3
+
+estp = k/n
+print(estp)
+
+ba = estp-q*sqrt(estp*(1-estp)/n)
+bb = estp+q*sqrt(estp*(1-estp)/n)
 print(ba,bb)
 
-ha = -q*sqrt(p*(1-p)*(N-n)/(n*(N-1)))
-hb = q*sqrt(p*(1-p)*(N-n)/(n*(N-1)))
+ha = estp-q*sqrt(estp*(1-estp)*(N-n)/(n*(N-1)))
+hb = estp+q*sqrt(estp*(1-estp)*(N-n)/(n*(N-1)))
 print(ha,hb)

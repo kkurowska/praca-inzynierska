@@ -22,14 +22,14 @@ def countarrayZ(n1, n2, x1, x2, variance):
     
 alpha = 0.05
 
-N1 = 100
-M1 = 30
-n1 = 5 # probka
+N1 = 3000
+M1 = 1500
+n1 = 40 # probka
 p1 = M1/N1
     
-N2 = 100
-M2 = 10
-n2 = 20 # probka
+N2 = 1000
+M2 = 500
+n2 = 40 # probka
 p2 = M2/N2
 
 
@@ -65,13 +65,14 @@ bZ[b0] = (arrayK1[b0]/n1 != arrayK2[b0]/n2)
 #Ath = -quantile*np.sqrt(variance_k)
 #Bth = quantile*np.sqrt(variance_k)
 #
-#ath = np.min(Ath)
-#bth = np.max(Bth)
+#ath = np.max(Ath)
+#bth = np.min(Bth)
+#print("Test Z ", ath, bth, "(teoretycznie)")
 
 print("Test Z ", -quantile, quantile, "(teoretycznie)")
 
-#P = (arrayK1/n1 - arrayK2/n2)
-P = Z_k
+P = (arrayK1/n1 - arrayK2/n2)
+#P = Z_k
 KP = P[bZ]
 KPD = KP[KP>0]
 KPU = KP[KP<0]
