@@ -1,0 +1,15 @@
+\beamer@endinputifotherversion {3.36pt}
+\select@language {polish}
+\beamer@sectionintoc {1}{Schemat pobierania obserwacji}{3}{0}{1}
+\beamer@subsectionintoc {1}{1}{Niesko\IeC {\'n}czona populacja}{3}{0}{1}
+\beamer@subsectionintoc {1}{2}{Sko\IeC {\'n}czona populacja}{4}{0}{1}
+\beamer@subsectionintoc {1}{3}{Por\IeC {\'o}wnanie rozk\IeC {\l }ad\IeC {\'o}w}{5}{0}{1}
+\beamer@sectionintoc {2}{Przedstawienie test\IeC {\'o}w}{7}{0}{2}
+\beamer@subsectionintoc {2}{1}{Sformu\IeC {\l }owanie problemu}{8}{0}{2}
+\beamer@subsectionintoc {2}{2}{Testy ze sko\IeC {\'n}czon\IeC {\k a} poprawk\IeC {\k a}}{9}{0}{2}
+\beamer@subsectionintoc {2}{3}{Test bez sko\IeC {\'n}czonej poprawki}{12}{0}{2}
+\beamer@sectionintoc {3}{Analiza test\IeC {\'o}w}{14}{0}{3}
+\beamer@subsectionintoc {3}{1}{Por\IeC {\'o}wnanie test\IeC {\'o}w ze sko\IeC {\'n}czon\IeC {\k a} poprawk\IeC {\k a}}{14}{0}{3}
+\beamer@subsectionintoc {3}{2}{Por\IeC {\'o}wnanie testu bez sko\IeC {\'n}czonej poprawki~Zb z~testem E}{18}{0}{3}
+\beamer@sectionintoc {4}{Wnioski}{21}{0}{4}
+\beamer@sectionintoc {5}{Bibliografia}{26}{0}{5}

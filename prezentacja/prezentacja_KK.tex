@@ -1,0 +1,350 @@
+\documentclass{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage[polish]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{mathtools}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usetheme{CambridgeUS}
+\usepackage{multicol}
+\usepackage[margin=5pt, font={scriptsize}, labelfont={bf, it}, figurename=Rys., labelsep=space]{caption}
+\usepackage[font={scriptsize}, labelfont={bf}]{subcaption}
+\captionsetup{compatibility=false}
+
+\usepackage{dsfont}
+\newcommand{\1}[1]{\mathds{1}\left(#1\right)}
+
+
+\newenvironment{diagrams}[2]{\begin{figure}[p]
+		%\centering
+		\begin{subfigure}{.4\textwidth}
+			\centering
+			\includegraphics[width=\textwidth]{wykresy/#1.png}
+			\caption{}
+			\label{#1}
+		\end{subfigure}
+		\begin{subfigure}{.4\textwidth}
+			\centering
+			\includegraphics[width=\textwidth]{wykresy/#2.png}
+			\caption{}
+			\label{#2}
+		\end{subfigure}
+	}
+	{
+	\end{figure}
+}
+
+\newenvironment{subdiagrams}[2]{
+	\begin{subfigure}{.35\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{wykresy/#1.png}
+		\caption{}
+		\label{#1}
+	\end{subfigure}
+	\begin{subfigure}{.35\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{wykresy/#2.png}
+		\caption{}
+		\label{#2}
+	\end{subfigure}
+} {}
+
+\newenvironment{subdiagram}[1]{
+	\begin{subfigure}{.45\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{wykresy/#1.png}
+		\caption{}
+		\label{#1}
+	\end{subfigure}
+} {}
+
+
+\title[Testowanie hipotez i estymacja w...]{Testowanie hipotez i estymacja w sytuacji populacji skończonego rozmiaru}
+\author[Kinga Kurowska]{Kinga Kurowska \\ promotor:  dr inż. Andrzej Giniewicz}
+\date[Wrocław 23.01.2017r.]{Wrocław, 23.01.2017r.}
+\institute[PWr]{Wydział Matematyki \\ Politechnika Wrocławska}
+
+\begin{document}
+	
+\frame{\titlepage}
+
+\begin{frame}{Spis treści}
+\tableofcontents
+\end{frame}
+
+%\section{Motywacja}
+%\begin{frame}{Motywacja}
+%\begin{itemize} [<+->]
+%	\item Teoria dotycząca testowania skończonej populacji nie jest powszechnie znana.
+%	\item W~określonych przypadkach testy ze skończoną poprawką dają dużo dokładniejszą informację o~badanym przypadku niż testy zakładające nieskończoną populację.
+%	\item Zastosowanie testów ze skończoną poprawką ma duże znaczenie w~medycynie, gdzie często rozważane populacje mają na tyle wyspecjalizowane cechy, że są uważane za małe.
+%\end{itemize}
+%\end{frame}
+
+\section{Schemat pobierania obserwacji}
+\subsection{Nieskończona populacja}
+\begin{frame}{Schemat pobierania obserwacji - nieskończona populacja}
+Pobieranie obserwacji to losowanie ze zwracaniem. Próbka pochodzi z~rozkładu Bernoulliego o funkcji prawdopodobieństwa danej wzorem
+\begin{equation}
+b(k;n,p) = P(X=k) = \binom{n}{k} p^k (1-p)^{n-k},\ 0\leq k\leq n,
+\end{equation}
+gdzie $n$ to rozmiar próbki, a $p$ prawdopodobieństwo sukcesu. 
+\end{frame}
+
+\subsection{Skończona populacja}
+\begin{frame}{Schemat pobierania obserwacji - skończona populacja}
+Pobieranie obserwacji to losowanie bez zwracania. Próbka pochodzi z~rozkładu hipergeometrycznego o funkcji prawdopodobieństwa danej wzorem.
+\begin{equation}
+\label{hg}
+h(k;n,M,N) = P(X=k) = \frac{\binom{M}{k} \binom{N-M}{n-k}}{\binom{N}{n}},\ L\leq k\leq U,
+\end{equation}
+gdzie
+\begin{equation}
+\label{ograniczenia}
+L=\max\{0,M-N+n\},\quad U=\min\{n,M\}.
+\end{equation}
+Przy czym $n$ to wielkość próbki, $M$ liczba elementów z badaną cechą, a~$N$~to rozmiar populacji.
+\end{frame}
+
+\subsection{Porównanie rozkładów}
+\begin{frame}{Porównanie rozkładów}
+Załóżmy, że jest grupa $20$ osób, które są chore na jakąś bardzo rzadką chorobę oraz że $25\%$ z~nich ma szanse na wyzdrowienie. Chcemy dowiedzieć się, ile osób spośród przebadanych może wyzdrowieć. Weźmy $2$~różne próbki o~wielkościach~$n$ równych odpowiednio $15$ i $20$. 
+
+\begin{diagrams}{b_pmf15}{hg_pmf15}
+	\caption{Funkcje prawdopodobieństwa $b(k;15,0.25)$ oraz $h(k;15,5,20)$}
+	\label{pmf15}
+\end{diagrams}
+
+\end{frame}
+
+\begin{frame}{Porównanie rozkładów}
+\begin{diagrams}{b_pmf20}{hg_pmf20}
+	\caption{Funkcje prawdopodobieństwa $b(k;20,0.25)$ oraz $h(k;20,5,20)$}
+	\label{pmf20}
+\end{diagrams}
+\end{frame}
+
+%\begin{frame}{Porównanie wariancji}
+%Gdy $X\sim\mathcal{B}(n,p)$, to
+%\begin{equation}
+%E(X)=np,\quad Var(X)=np(1-p).
+%\end{equation}
+%\newline
+%Podczas gdy $X\sim\mathcal{H}(n,M,N)$, to
+%\begin{equation}
+%E(X)=n\frac{M}{N},\quad Var(X)=n\frac{M}{N}\left(1-\frac{M}{N}\right)\frac{N-n}{N-1}.
+%\end{equation}
+%\end{frame}
+%
+%
+%\begin{frame}{Porównanie wariancji}
+%
+%\begin{diagrams}{b_var}{hg_var}	
+%	\caption{Wariancja rozkładów Bernoulliego i~hipergeometrycznego w~zależności od rozmiaru próbki}
+%	\label{var}
+%\end{diagrams}
+%\end{frame}
+
+\section{Przedstawienie testów}
+\begin{frame}
+	\begin{alertblock}{\centering \Huge \textbf{Przedstawienie testów}}
+	\end{alertblock}
+\end{frame}
+
+\subsection{Sformułowanie problemu}
+\begin{frame}{Sformułowanie problemu}
+$X_1$ i~$X_2$ - niezależne zmienne losowe. Wartości obserwacji oznaczmy $k_1$ i $k_2$ oraz proporcje w~obserwacjach $p_1$ i~$p_2$. Interesuje nas testowanie
+\begin{equation}
+H_0{:}\ p_1=p_2\quad \text{przeciwko} \quad H_1{:}\ p_1\neq p_2.
+\end{equation}
+Unormowana statystyka testowa to
+\begin{equation}
+Z_{X_1,X_2} = \frac{X_1/n_1-X_2/n_2}{\sqrt{V_{X_1,X_2}}},
+\end{equation}
+gdzie $V_{X_1,X_2}$ to estymator wariancji rozkładu zmiennej losowej $X_1/n_1-X_2/n_2$, pod warunkiem prawdziwości $H_0$, w~połączonej próbie.
+\end{frame}
+
+\subsection{Testy ze skończoną poprawką}
+\begin{frame}{Testy ze skończoną poprawką}
+Rozważmy zmienne losowe:
+\begin{equation}
+X_1\sim \mathcal{H}(n_1,M_1,N_1),\ X_2\sim \mathcal{H}(n_2,M_2,N_2).
+\end{equation}
+Proporcje są równe $p_1=M_1/N_1$, $p_2=M_2/N_2$. Wariancja rozkładu $X_1/n_1-X_2/n_2$ pod warunkiem $p_1=p_2$ w~połączonej próbie jest równa
+\begin{equation}
+V_{X_1,X_2} = \left(\frac{N_1-n_1}{n_1(N_1-1)}+\frac{N_2-n_2}{n_2(N_2-1)}\right)\left(\frac{X_1+X_2}{n_1+n_2}\right)\left(1-\frac{X_1+X_2}{n_1+n_2}\right).
+\end{equation}
+\end{frame}
+
+
+%\subsubsection{Test Z}
+\begin{frame}{Test Z}
+Zakładamy, że rozważana statystyka $Z_{X_1,X_2}\sim\mathcal{N}(0,1)$, pod warunkiem prawdziwości $H_0$. Wtedy $p$-wartość wyraża się wzorem
+\begin{equation}
+P(|Z_{X_1,X_2}|\geq|Z_{k_1,k_2}|\ |H_0) \approx 2(1-\Phi(|Z_{k_1,k_2}|)),
+\end{equation}
+gdzie $\Phi$ to dystrybuanta rozkładu $N(0,1)$.
+\end{frame}
+
+%\subsubsection{Test E}
+\begin{frame}{Test E}
+Test E opiera się o~estymator $p$-wartości, którą w~swoim artykule zaproponowali Krishnamoorthy i~Thomson (2002)~\cite{Krishnamoorthy2002}
+\begin{equation}
+\begin{split}
+P(|Z_{X_1,X_2}|\geq|Z_{k_1,k_2}|\ |H_0) \approx& \\ \approx \sum_{x_1=L_{x_1}}^{U_{x_1}}\sum_{x_2=L_{x_2}}^{U_{x_2}} h(x_1;n_1,\hat{M_1},&N_1)h(x_2;n_2,\hat{M_2},N_2)\1{|Z_{x_1,x_2}|\geq|Z_{k_1,k_2}|},
+\end{split}
+\end{equation}
+przy czym $\hat{p}=(k_1+k_2)/(n_1+n_2)$, $\hat{M_i}=[N_i\hat{p}]$, $L_{x_i}=\max\{0,\hat{M_i}-N_i+n_i\}$ oraz $U_{x_i}=\min\{n_i,\hat{M_i}\}$, $i=1,2$.
+\end{frame}
+
+\subsection{Test bez skończonej poprawki}
+\begin{frame}{Test bez skończonej poprawki}
+Rozważamy zmienne losowe:
+\begin{equation}
+X_1\sim \mathcal{B}(n_1,p_1),\ X_2\sim \mathcal{B}(n_2,p_2).
+\end{equation}
+Wariancja rozkładu $X_1/n_1-X_2/n_2$ w~łącznej próbie, pod warunkiem $p_1=p_2$ jest równa
+\begin{equation}
+V_{X_1,X_2} = p(1-p)(1/n_1+1/n_2),
+\end{equation}
+przy czym $p=(X_1+X_2)/(n_1+n_2)$.
+\end{frame}
+
+%\subsubsection{Test Zb}
+\begin{frame}{Test Zb}
+Test~Zb jest oparty o~estymator $p$-wartości, który, zgodnie z~artykułem Storer i~Kim z~1990 roku, jest równy~\cite{Storer1990}
+\begin{equation}
+\begin{split}
+P(|Z_{X_1,X_2}|&\geq|Z_{k_1,k_2}|\ |H_0) \approx \\
+\approx & \sum_{x_1=0}^{n_1}\sum_{x_2=0}^{n_2} b(x_1;n_1,\hat{p_1})b(x_2;n_2,\hat{p_2})\1{|Z_{X_1,X_2}|\geq|Z_{k_1,k_2}|},
+\end{split}
+\end{equation}
+gdzie $\hat{p}=(k_1+k_2)/(n_1+n_2)$.
+\end{frame}
+
+\section{Analiza testów}
+\subsection{Porównanie testów ze skończoną poprawką}
+\begin{frame}
+\begin{alertblock}{\centering \Huge \textbf{Analiza testów}} 
+	\Large \centering Porównanie testów ze skończoną poprawką
+\end{alertblock}
+\end{frame}
+
+\begin{frame}
+\begin{figure}[p]	
+	\caption{Prawdopodobieństwo błędu I~rodzaju testów~Z i~E jako funkcja rozmiaru próbki~$n$; $\alpha=0.05$; $N_1=N_2=100$}
+	\begin{subdiagrams}{sizeZE_p_0_1}{sizeZE_p_0_1_n1_10}
+	\end{subdiagrams}
+	
+	\begin{subdiagrams}{sizeZE_p_0_3}{sizeZE_p_0_3_n1_5}
+	\end{subdiagrams}
+\end{figure}
+\end{frame}
+
+\begin{frame}
+	\begin{figure}[p]
+		\caption{Prawdopodobieństwo błędu I~rodzaju testów~Z i~E jako funkcja proporcji $p=M_1/N_1=M_2/N_2$; $\alpha=0.05$; $N_1=N_2=100$}
+		\begin{subdiagrams}{sizeZE_n_20}{sizeZE_n1_20_n2_5}
+		\end{subdiagrams}
+		
+		\begin{subdiagrams}{sizeZE_n_30}{sizeZE_n1_30_n2_15}
+		\end{subdiagrams}
+	\end{figure}
+\end{frame}
+
+\begin{frame}
+	\begin{figure}[p]
+		\caption{Moc testów~Z i~E jako funkcja rozmiaru próbki $n$}
+		\label{powerZE_n1}
+		\begin{subdiagram}{powerZE_N1_30_N2_50_p_0_6}
+		\end{subdiagram}
+		\begin{subdiagram}{powerZE_N_100_p_0_1}
+		\end{subdiagram}
+		\begin{subdiagram}{powerZE_N1_100_N2_200_p_0_1}
+		\end{subdiagram}
+		\begin{subdiagram}{powerZE_N1_3000_N2_100_p_0_6}
+		\end{subdiagram}
+	\end{figure}
+\end{frame}
+
+\subsection{Porównanie testu bez skończonej poprawki~Zb z~testem E}
+\begin{frame}
+	\begin{alertblock}{\centering \Huge \textbf{Analiza testów}} 
+		\Large \centering Porównanie testu bez skończonej poprawki~Zb z~testem E
+	\end{alertblock}
+\end{frame}
+
+\begin{frame}
+\begin{figure}[p]
+	\caption{Prawdopodobieństwo błędu I~rodzaju testów~Zb i~E jako funkcja rozmiaru próbki $n$; $\alpha=0.05$; $N_1=N_2=100$}
+	\begin{subdiagrams}{sizeZbE_p_0_1}{sizeZbE_p_0_1_n1_10}
+	\end{subdiagrams}
+	
+	\begin{subdiagrams}{sizeZbE_p_0_3}{sizeZbE_p_0_3_n1_5}
+	\end{subdiagrams}
+\end{figure}
+\end{frame}
+
+\begin{frame}
+\begin{figure}[p]
+	\caption{Moc testów~Zb i~E jako funkcja rozmiaru próbki $n$}
+	\begin{subdiagram}{powerZbE_N1_30_N2_50_p_0_6}
+	\end{subdiagram}
+	\begin{subdiagram}{powerZbE_N_100_p_0_1}
+	\end{subdiagram}
+	\begin{subdiagram}{powerZbE_N1_100_N2_200_p_0_1}
+	\end{subdiagram}
+	\begin{subdiagram}{powerZbE_N1_3000_N2_100_p_0_6}
+	\end{subdiagram}
+\end{figure}
+\end{frame}
+
+\section{Wnioski}
+\begin{frame}{Wnioski}
+\begin{itemize} [<+->]
+\item Różnica między rozkładem dwumianowym i hipergeometrycznym jest najbardziej widoczna, gdy populacja jest mała albo obserwacja stanowi znaczną część populacji.
+\item Test~Z nie utrzymuje poziomu istotności $\alpha$, ze względu na zastosowanie aproksymacji rozkładem normalnym do statystyki testowej.
+\item Test~Zb również przekracza poziom istotności $\alpha$, szczególnie dla małych próbek.
+\item Stosowanie testu bez skończonej poprawki w~sytuacji małej populacji wiąże się z~dużymi błędami.
+\item Test~E jest dobry w~przypadku małej populacji - nie wykracza znacząco powyżej poziomu istotności oraz jego moc jest niewiele mniejsza od mocy testów Z i Zb.
+\end{itemize}
+\end{frame}
+
+\section{Bibliografia}
+%[allowframebreaks]
+\begin{frame}{Bibliografia}
+\begin{thebibliography}{9}
+	\beamertemplatearticlebibitems
+	\bibitem{Krishnamoorthy2002}
+	K. Krishnamoorthy, J. Thomson. ,,Hypothesis testing about proportions in two
+	finite populations''. The American Statistician, 56(1):215–222, 2002.
+	
+	\bibitem{Buonaccorsi1987}
+	J. P. Buonaccorsi. ,,A note on confidence intervals for proportions in finite
+	populations''. The American Statistician, 41(3):215–218, 1987.
+	
+%	\bibitem{Edgeworth1918}
+%	F. Y. Edgeworth. ,,On the value of a mean as calculated from a sample''. Journal
+%	of the Royal Statistical Society, 81(4):624–632, Jul.~1918.
+
+	\bibitem{Wang20015}
+	W. Wang. ,,Exact optimal confidence intervals for hypergeometric parameters''.
+	Journal of the American Statistical Association, 110(512):1491–1499, Dec.
+	2015.
+	
+	\bibitem{Storer1990}
+	B. E. Storer, C. Kim. ,,Exact properties of some exact test statistics for comparing
+	two binomial proportions''. Journal of the American Statistical Association,
+	85:146–155, 1990.
+	
+	\beamertemplatebookbibitems
+	\bibitem{Lehmann1968}
+	E. L. Lehmann. ,,Testowanie hipotez statystycznych''. PWN, 1968.
+	
+%	\bibitem{Hald2003}
+%	A. Hald. ,,A History of Probability and Statistics and Their Applications before
+%	1750''. Wiley Interscience, 2003.
+\end{thebibliography}
+\end{frame}
+
+\end{document}
